@@ -11,7 +11,8 @@ const Work: React.FC = () => {
       sx={{
         width: '100vw',
         minHeight: '100vh',
-        background: 'linear-gradient(135deg, #546E51, #394C36, #1C261B)',
+        // background: 'linear-gradient(135deg, #546E51, #394C36, #1C261B)',
+        background:'#345150',
         backgroundRepeat: 'repeat',
         color: '#8fdbc2',
         display: 'flex',

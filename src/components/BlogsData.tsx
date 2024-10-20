@@ -61,38 +61,38 @@ export const posts: Post[] = [
         'https://images.unsplash.com/photo-1550525811-e5869dd03032?ixid=MnwzNjUyOXwwfDF8c2VhcmNofDEyfHxjdXN0b21lciUyMHN1cHBvcnR8ZW58MHx8fHwxNjc2NzgzODYy&ixlib=rb-1.2.1&auto=format&fit=crop&w=256&h=256&q=80',
     },
   },
-  // {
-  //   id: 4,
-  //   title: 'A guide to building an effective team',
-  //   href: '#',
-  //   description:
-  //     'Nemo facilis harum quos asperiores. Rerum itaque reiciendis et accusantium ullam quo. Minima laborum architecto voluptates eum tempore eaque molestias aut eveniet.',
-  //   date: 'Jan 5, 2022',
-  //   datetime: '2022-01-05',
-  //   category: { title: 'Leadership', href: '#' },
-  //   author: {
-  //     name: 'Sophia Walker',
-  //     role: 'CEO & Founder',
-  //     href: '#',
-  //     imageUrl:
-  //       'https://images.unsplash.com/photo-1599566150163-29194dcaad36?ixlib=rb-1.2.1&ixid=MnwzNjUyOXwwfDF8c2VhcmNofDJ8fHdvbWFufGVufDB8fHx8MTY3Njc4Mzg2Mg&auto=format&fit=crop&w=256&h=256&q=80',
-  //   },
-  // },
-  // {
-  //   id: 5,
-  //   title: 'The power of networking in business',
-  //   href: '#',
-  //   description:
-  //     'Totam qui doloremque asperiores pariatur ipsam. Voluptas sit fugiat officiis voluptatem. Rerum reiciendis repudiandae eligendi laborum omnis accusamus.',
-  //   date: 'Feb 14, 2022',
-  //   datetime: '2022-02-14',
-  //   category: { title: 'Networking', href: '#' },
-  //   author: {
-  //     name: 'Benjamin Lewis',
-  //     role: 'Business Development Manager',
-  //     href: '#',
-  //     imageUrl:
-  //       'https://images.unsplash.com/photo-1564564295391-7f24f26f568b?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=256&ixid=MnwzNjUyOXwwfDF8c2VhcmNofDEyfHxidXNpbmVzc3xlbnwwfHx8fDE2NzcxNjgwMzM&ixlib=rb-1.2.1&q=80&w=256',
-  //   },
-  // },
+  {
+    id: 4,
+    title: 'A guide to building an effective team',
+    href: '#',
+    description:
+      'Nemo facilis harum quos asperiores. Rerum itaque reiciendis et accusantium ullam quo. Minima laborum architecto voluptates eum tempore eaque molestias aut eveniet.',
+    date: 'Jan 5, 2022',
+    datetime: '2022-01-05',
+    category: { title: 'Leadership', href: '#' },
+    author: {
+      name: 'Sophia Walker',
+      role: 'CEO & Founder',
+      href: '#',
+      imageUrl:
+        'https://images.unsplash.com/photo-1599566150163-29194dcaad36?ixlib=rb-1.2.1&ixid=MnwzNjUyOXwwfDF8c2VhcmNofDJ8fHdvbWFufGVufDB8fHx8MTY3Njc4Mzg2Mg&auto=format&fit=crop&w=256&h=256&q=80',
+    },
+  },
+  {
+    id: 5,
+    title: 'The power of networking in business',
+    href: '#',
+    description:
+      'Totam qui doloremque asperiores pariatur ipsam. Voluptas sit fugiat officiis voluptatem. Rerum reiciendis repudiandae eligendi laborum omnis accusamus.',
+    date: 'Feb 14, 2022',
+    datetime: '2022-02-14',
+    category: { title: 'Networking', href: '#' },
+    author: {
+      name: 'Benjamin Lewis',
+      role: 'Business Development Manager',
+      href: '#',
+      imageUrl:
+        'https://images.unsplash.com/photo-1564564295391-7f24f26f568b?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=256&ixid=MnwzNjUyOXwwfDF8c2VhcmNofDEyfHxidXNpbmVzc3xlbnwwfHx8fDE2NzcxNjgwMzM&ixlib=rb-1.2.1&q=80&w=256',
+    },
+  },
 ]

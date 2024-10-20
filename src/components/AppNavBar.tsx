@@ -5,33 +5,44 @@ import Button from '@mui/material/Button'
 import Container from '@mui/material/Container'
 import Typography from '@mui/material/Typography'
 import Link from 'next/link'
+import { useRouter } from 'next/router'
 
 const AppNavBar: React.FC = () => {
+  const router = useRouter()
   const [showBackground, setShowBackground] = React.useState(false)
-  const [activeButton, setActiveButton] = React.useState('work') // Set 'work' as the active button by default
 
   // Handle scroll event
   const handleScroll = () => {
-    if (window.scrollY > 50) {
-      setShowBackground(true)
-    } else {
-      setShowBackground(false)
-    }
+    setShowBackground(window.scrollY > 50)
   }
 
   React.useEffect(() => {
     window.addEventListener('scroll', handleScroll)
 
-    // Cleanup the event listener on component unmount
     return () => {
       window.removeEventListener('scroll', handleScroll)
     }
   }, [])
 
-  // Function to handle button click
-  const handleButtonClick = (button: string) => {
-    setActiveButton(button)
+  const getActiveButton = () => {
+    switch (router.pathname) {
+      case '/work':
+        return 'work'
+      case '/blogs':
+        return 'blogs'
+      case '/about':
+        return 'about'
+      case '/article':
+        return 'article'
+      case '/contact':
+        return 'contact'
+      default:
+        return 'work'
+    }
   }
+
+  // Define your page text color
+  const textColor = '#000' // You can change this to match your page's text color
 
   return (
     <nav>
@@ -40,7 +51,6 @@ const AppNavBar: React.FC = () => {
         sx={{
           boxShadow: 0,
           backgroundColor: 'transparent',
-          backgroundImage: 'none',
           top: 0,
         }}
       >
@@ -64,150 +74,38 @@ const AppNavBar: React.FC = () => {
                   : 'transparent',
                 transition: 'background-color 0.3s ease',
                 padding: '2px',
-                borderRadius: '16px',
-                backdropFilter: showBackground ? 'blur(10px)' : 'none',
-                WebkitBackdropFilter: showBackground ? 'blur(10px)' : 'none',
+                borderRadius: '12px',
+                backdropFilter: showBackground ? 'blur(2px)' : 'none',
+                WebkitBackdropFilter: showBackground ? 'blur(2px)' : 'none',
               }}
             >
-              <Link href='/work' passHref>
-                <Button
-                  variant={activeButton === 'work' ? 'contained' : 'text'}
-                  color='inherit'
-                  size='small'
-                  onClick={() => handleButtonClick('work')}
-                  sx={{
-                    minWidth: 0,
-                    // '&:hover': {
-                    //   backgroundColor: 'rgba(255, 255, 255, 0.1)',
-                    //   color: '#cfe9df',
-                    // },
-                    borderRadius: '12px',
-                    bgcolor:
-                      activeButton === 'work' ? '#cfe9df' : 'transparent',
-                  }}
-                >
-                  <Typography
-                    variant='subtitle1'
-                    color={activeButton === 'work' ? '#000' : '#cfe9df'}
+              {['work', 'blogs', 'about', 'article', 'contact'].map((page) => (
+                <Link key={page} href={`/${page}`} passHref>
+                  <Button
+                    variant={getActiveButton() === page ? 'contained' : 'text'}
+                    color='inherit'
+                    size='small'
                     sx={{
-                      textTransform: 'capitalize',
-                      fontSize: '0.9rem',
-                      fontFamily: 'sans-serif',
+                      minWidth: 0,
+                      borderRadius: '12px',
+                      bgcolor:
+                        getActiveButton() === page ? '#cfe9df' : 'transparent',
                     }}
                   >
-                    Work
-                  </Typography>
-                </Button>
-              </Link>
-
-              <Link href='/blogs' passHref>
-                <Button
-                  variant={activeButton === 'blogs' ? 'contained' : 'text'}
-                  color='inherit'
-                  size='small'
-                  onClick={() => handleButtonClick('blogs')}
-                  sx={{
-                    minWidth: 0,
-                    // '&:hover': {
-                    //   bgcolor: 'rgba(255, 255, 255, 0.1)',
-                    //   color: '#cfe9df',
-                    // },
-                    borderRadius: '12px',
-                  }}
-                >
-                  <Typography
-                    variant='subtitle1'
-                    color={activeButton === 'blogs' ? '#000' : '#cfe9df'}
-                    sx={{
-                      textTransform: 'capitalize',
-                      fontSize: '0.9rem',
-                      fontFamily: 'sans-serif',
-                    }}
-                  >
-                    Blogs
-                  </Typography>
-                </Button>
-              </Link>
-              <Link href='about' passHref>
-                <Button
-                  variant={activeButton === 'about' ? 'contained' : 'text'}
-                  color='inherit'
-                  size='small'
-                  onClick={() => handleButtonClick('about')}
-                  sx={{
-                    minWidth: 0,
-                    // '&:hover': {
-                    //   bgcolor: 'rgba(255, 255, 255, 0.1)',
-                    //   color: '#cfe9df',
-                    // },
-                    borderRadius: '12px',
-                  }}
-                >
-                  <Typography
-                    variant='subtitle1'
-                    color={activeButton === 'about' ? '#000' : '#cfe9df'}
-                    sx={{
-                      textTransform: 'capitalize',
-                      fontSize: '0.9rem',
-                      fontFamily: 'sans-serif',
-                    }}
-                  >
-                    About
-                  </Typography>
-                </Button>
-              </Link>
-              <Button
-                variant={activeButton === 'article' ? 'contained' : 'text'}
-                color='inherit'
-                size='small'
-                onClick={() => handleButtonClick('article')}
-                sx={{
-                  minWidth: 0,
-                  // '&:hover': {
-                  //   bgcolor: 'rgba(255, 255, 255, 0.1)',
-                  //   color: '#cfe9df',
-                  // },
-                  borderRadius: '12px',
-                }}
-              >
-                <Typography
-                  variant='subtitle1'
-                  color={activeButton === 'article' ? '#000' : '#cfe9df'}
-                  sx={{
-                    textTransform: 'capitalize',
-                    fontSize: '0.9rem',
-                    fontFamily: 'sans-serif',
-                  }}
-                >
-                  Article
-                </Typography>
-              </Button>
-              <Button
-                variant={activeButton === 'contact' ? 'contained' : 'text'}
-                color='inherit'
-                size='small'
-                onClick={() => handleButtonClick('contact')}
-                sx={{
-                  minWidth: 0,
-                  // '&:hover': {
-                  //   bgcolor: 'rgba(255, 255, 255, 0.1)',
-                  //   color: '#cfe9df',
-                  // },
-                  borderRadius: '12px',
-                }}
-              >
-                <Typography
-                  variant='subtitle1'
-                  color={activeButton === 'contact' ? '#000' : '#cfe9df'}
-                  sx={{
-                    textTransform: 'capitalize',
-                    fontSize: '0.9rem',
-                    fontFamily: 'sans-serif',
-                  }}
-                >
-                  Contact
-                </Typography>
-              </Button>
+                    <Typography
+                      variant='subtitle1'
+                      color={getActiveButton() === page ? textColor : '#cfe9df'}
+                      sx={{
+                        textTransform: 'capitalize',
+                        fontSize: '0.8rem',
+                        fontFamily: 'sans-serif',
+                      }}
+                    >
+                      {page.charAt(0).toUpperCase() + page.slice(1)}
+                    </Typography>
+                  </Button>
+                </Link>
+              ))}
             </Box>
           </Box>
         </Container>
