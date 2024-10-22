@@ -41,8 +41,8 @@ const AppNavBar: React.FC = () => {
     }
   }
 
-  // Define your page text color
-  const textColor = '#000' // You can change this to match your page's text color
+  
+  const textColor = '#000'; 
 
   return (
     <nav>

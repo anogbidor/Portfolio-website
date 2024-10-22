@@ -11,6 +11,9 @@ module.exports = {
         'custom-green': '#345150',
         'custom-light-green': '#e5fbf4',
       },
+      // backgroundImage: {
+      //   'custom-linear': '#345150',
+      // },
     },
   },
   plugins: [require('@tailwindcss/line-clamp')],
