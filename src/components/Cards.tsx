@@ -2,7 +2,7 @@ import * as React from 'react'
 import { Box, Paper, Typography } from '@mui/material'
 import Grid from '@mui/material/Grid'
 import { styled } from '@mui/system'
-import Articles from './Articles'
+
 
 // Styled component for the cards
 const Item = styled(Paper)(({ theme }) => ({

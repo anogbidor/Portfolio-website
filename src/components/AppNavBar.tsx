@@ -79,7 +79,7 @@ const AppNavBar: React.FC = () => {
                 WebkitBackdropFilter: showBackground ? 'blur(2px)' : 'none',
               }}
             >
-              {['work', 'blogs', 'about', 'article', 'contact'].map((page) => (
+              {['work', 'blogs', 'about', 'contact'].map((page) => (
                 <Link key={page} href={`/${page}`} passHref>
                   <Button
                     variant={getActiveButton() === page ? 'contained' : 'text'}

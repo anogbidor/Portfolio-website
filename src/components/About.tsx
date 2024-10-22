@@ -58,8 +58,6 @@ const About = () => {
           </TextContent>
         </ContentWrapper>
       </GradientBackground>
-
-      {/* Collaborate Section */}
       <CollaborateSection />
     </Box>
   )

@@ -22,7 +22,7 @@ const Blogs: React.FC = () => {
               className='flex max-w-xl flex-col items-start justify-between'
             >
               <div className='flex items-center gap-x-4 text-xs'>
-                <time dateTime={post.datetime} className='text-white'>
+                <time dateTime={post.datetime} className='text-custom-text'>
                   {post.date}
                 </time>
                 <a
@@ -33,13 +33,13 @@ const Blogs: React.FC = () => {
                 </a>
               </div>
               <div className='group relative'>
-                <h3 className='mt-3 text-lg font-semibold leading-6 text-white group-hover:text-gray-400'>
+                <h3 className='mt-3 text-lg font-semibold leading-6 text-custom-text group-hover:text-gray-400'>
                   <a href={post.href}>
                     <span className='absolute inset-0' />
                     {post.title}
                   </a>
                 </h3>
-                <p className='mt-5 line-clamp-3 text-sm leading-6 text-white'>
+                <p className='mt-5 line-clamp-3 text-sm leading-6 text-custom-text'>
                   {post.description}
                 </p>
               </div>
@@ -50,13 +50,13 @@ const Blogs: React.FC = () => {
                   className='h-10 w-10 rounded-full bg-black'
                 />
                 <div className='text-sm leading-6'>
-                  <p className='font-semibold text-white'>
+                  <p className='font-semibold text-custom-text'>
                     <a href={post.author.href}>
                       <span className='absolute inset-0' />
                       {post.author.name}
                     </a>
                   </p>
-                  <p className='text-white'>{post.author.role}</p>
+                  <p className='text-custom-text'>{post.author.role}</p>
                 </div>
               </div>
             </article>
