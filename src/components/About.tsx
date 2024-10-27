@@ -17,10 +17,9 @@ const About = () => {
         }}
       >
         <ContentWrapper>
-          
           <ProfileImageWrapper>
             <img
-              src='/path/to/your/image.jpg'
+              src='/images/1676537092382.jpg'
               alt='Profile'
               className='profile-img'
             />
@@ -49,8 +48,8 @@ const About = () => {
                 textAlign: { xs: 'center', md: 'left' },
               }}
             >
-              Over the past 2 years,i have developed responsive and interactive web
-              applications using HTML, CSS, Bootstrap, Tailwind, Material UI
+              Over the past 2 years,i have developed responsive and interactive
+              web applications using HTML, CSS, Bootstrap, Tailwind, Material UI
               (MUI) and JavaScript frameworks and libraries like React, Redux
               (Redux Toolkit) to develop features for both mobile and desktop
               platforms. I’m proud to have won a few hats
