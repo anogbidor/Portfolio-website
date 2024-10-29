@@ -8,12 +8,11 @@ module.exports = {
     extend: {
       colors: {
         'custom-text': '#cfe9df',
-        'custom-green': '#345150',
         'custom-light-green': '#e5fbf4',
       },
-      // backgroundImage: {
-      //   'custom-linear': '#345150',
-      // },
+      backgroundImage: {
+        'custom-green': 'linear-gradient(135deg, #546E51, #394C36, #1C261B)',
+      },
     },
   },
   plugins: [require('@tailwindcss/line-clamp')],

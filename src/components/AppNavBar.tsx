@@ -26,8 +26,8 @@ const AppNavBar: React.FC = () => {
 
   const getActiveButton = () => {
     switch (router.pathname) {
-      case '/work':
-        return 'work'
+      case '/projects':
+        return 'projects'
       case '/blogs':
         return 'blogs'
       case '/about':
@@ -37,7 +37,7 @@ const AppNavBar: React.FC = () => {
       case '/contact':
         return 'contact'
       default:
-        return 'work'
+        return 'projects'
     }
   }
 
@@ -79,7 +79,7 @@ const AppNavBar: React.FC = () => {
                 WebkitBackdropFilter: showBackground ? 'blur(2px)' : 'none',
               }}
             >
-              {['work', 'blogs', 'about', 'contact'].map((page) => (
+              {['projects', 'blogs', 'about', 'contact'].map((page) => (
                 <Link key={page} href={`/${page}`} passHref>
                   <Button
                     variant={getActiveButton() === page ? 'contained' : 'text'}
@@ -97,7 +97,7 @@ const AppNavBar: React.FC = () => {
                       color={getActiveButton() === page ? textColor : '#cfe9df'}
                       sx={{
                         textTransform: 'capitalize',
-                        fontSize: '0.8rem',
+                        fontSize: '1rem',
                         fontFamily: 'sans-serif',
                       }}
                     >

@@ -27,27 +27,47 @@ const Item = styled(Paper)(({ theme }) => ({
 const Layout: React.FC = () => {
   const cardsData = [
     {
-      image: '/images/Screenshot 2024-10-27 at 21.45.18.png',
+      image: '/images/langify.png',
       title: 'Langify',
       backgroundColor: '#a3dbd4',
       githubUrl: 'https://github.com/your-repo', // Replace with your GitHub URL
       mediumUrl: 'https://medium.com/@your-profile', // Replace with your Medium URL
     },
     {
-      image: 'https://picsum.photos/id/1015/400/200',
+      image: '/images/projectListing.png',
       title: 'Sample Title 2',
       backgroundColor: '#b3c7f1',
       githubUrl: 'https://github.com/your-repo', // Replace with your GitHub URL
       mediumUrl: 'https://medium.com/@your-profile', // Replace with your Medium URL
     },
     {
-      image: 'https://picsum.photos/id/1025/400/200',
+      image: '/images/digitalFrame-project.png',
       title: 'Rectangle-like Card',
       backgroundColor: '#dbd4a3',
       githubUrl: 'https://github.com/your-repo', // Replace with your GitHub URL
       mediumUrl: 'https://medium.com/@your-profile', // Replace with your Medium URL
     },
-    // Removed the fourth card
+    {
+      image: '/images/Task Manager.png',
+      title: 'Rectangle-like Card',
+      backgroundColor: '#ffff',
+      githubUrl: 'https://github.com/your-repo', // Replace with your GitHub URL
+      mediumUrl: 'https://medium.com/@your-profile', // Replace with your Medium URL
+    },
+    {
+      image: '/images/GitHub-user-project.png',
+      title: 'Rectangle-like Card',
+      backgroundColor: '#d094e5',
+      githubUrl: 'https://github.com/your-repo', // Replace with your GitHub URL
+      mediumUrl: 'https://medium.com/@your-profile', // Replace with your Medium URL
+    },
+    {
+      image: '/images/pokemonLibrary.png',
+      title: 'Rectangle-like Card',
+      backgroundColor: '#e7b89c',
+      githubUrl: 'https://github.com/your-repo', // Replace with your GitHub URL
+      mediumUrl: 'https://medium.com/@your-profile', // Replace with your Medium URL
+    },
   ]
 
   return (
@@ -93,9 +113,9 @@ const Layout: React.FC = () => {
                     onClick={() => window.open(card.mediumUrl, '_blank')}
                   >
                     <img
-                      src='/images/medium.png' // Reference to the image in the public folder
+                      src='/images/medium.png' 
                       alt='Medium Logo'
-                      style={{ width: '24px', height: 'auto' }} // Adjust size as needed
+                      style={{ width: '24px', height: 'auto' }} 
                     />
                   </IconButton>
                 </CardActions>
