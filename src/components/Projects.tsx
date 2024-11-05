@@ -14,7 +14,7 @@ const Projects: React.FC = () => {
         backgroundImage: 'linear-gradient(135deg, #546E51, #394C36, #1C261B)',
         // background:' ',
         backgroundRepeat: 'repeat',
-        color: '#8fdbc2',
+        color: '#d4f3d9',
         display: 'flex',
         flexDirection: 'column',
         justifyContent: 'center',
@@ -25,14 +25,13 @@ const Projects: React.FC = () => {
         pt: '64px',
       }}
     >
-     
       <AppNavBar />
-      
+
       <Typography
         variant='h1'
         sx={{
           fontWeight: 'bold',
-          fontSize: { xs: '2.5rem', md: '4rem' }, 
+          fontSize: { xs: '2.5rem', md: '4rem' },
           lineHeight: '1.2',
           mb: 2,
           mt: 8,
@@ -44,11 +43,11 @@ const Projects: React.FC = () => {
         variant='h2'
         sx={{
           fontWeight: 'bold',
-          fontSize: { xs: '2rem', md: '4rem' }, 
+          fontSize: { xs: '2rem', md: '4rem' },
           mb: 4,
         }}
       >
-        A Frontend Developer.
+        A Developer.
       </Typography>
 
       <Typography

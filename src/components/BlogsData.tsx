@@ -12,33 +12,39 @@ interface Post {
 export const posts: Post[] = [
   {
     id: 1,
-    title: 'Boost your conversion rate',
-    href: '#',
+    title: 'How to Do a Market Research for a Startup: A Complete Guide',
+    href: 'https://www.semrush.com/blog/market-research-for-startups/',
     description:
-      'Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.',
-    date: 'Mar 16, 2020',
+      'Learn how to perform market research that can ensure your startup’s success with our detailed guide..',
+    date: 'Oct 18, 2024',
     datetime: '2020-03-16',
-    category: { title: 'Marketing', href: '#' },
+    category: {
+      title: ' General Marketing',
+      href: 'https://www.semrush.com/blog/category/marketing/general-marketing/',
+    },
     author: {
-      name: 'Michael Foster',
-      role: 'Co-Founder / CTO',
-      href: '#',
+      name: 'Boris Mustapic',
+      role: 'Head of Content AT Weflow',
+      href: 'https://www.semrush.com/blog/user/boris-mustapic/',
       imageUrl:
-        'https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
+        'https://images.unsplash.com/photo-1599566150163-29194dcaad36?ixlib=rb-1.2.1&ixid=MnwzNjUyOXwwfDF8c2VhcmNofDJ8fHdvbWFufGVufDB8fHx8MTY3Njc4Mzg2Mg&auto=format&fit=crop&w=256&h=256&q=80',
     },
   },
   {
     id: 2,
-    title: 'How to use SEO to drive traffic to your site',
-    href: '#',
+    title: 'SEO Strategy: How to Create an Effective Plan',
+    href: 'https://backlinko.com/seo-strategy ',
     description:
-      'Quia soluta id aperiam. Repudiandae placeat quo voluptas ea officia. Accusantium deleniti culpa delectus nam. Doloribus aliquid iure veritatis. Aperiam voluptate quam similique deleniti.',
-    date: 'Apr 20, 2021',
+      'An SEO strategy is a plan to create, optimize, and promote content to improve its visibility in search engine results, attracting more organic traffic to a website. It involves a variety of techniques, such as keyword research, on-page optimization, technical SEO, and link building.',
+    date: 'Oct 24, 2024',
     datetime: '2021-04-20',
-    category: { title: 'SEO', href: '#' },
+    category: {
+      title: 'SEO Strategy',
+      href: 'https://backlinko.com/seo-strategy',
+    },
     author: {
-      name: 'Olivia Rhye',
-      role: 'Head of Marketing',
+      name: 'Brian Dean',
+      role: 'Founder of Backlinko',
       href: '#',
       imageUrl:
         'https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=256&ixid=MnwzNjUyOXwwfDF8c2VhcmNofDF8fHdvbWFufGVufDB8fHx8MTY3Njc4Mzg2Mg&ixlib=rb-1.2.1&q=80&w=256',
@@ -46,19 +52,22 @@ export const posts: Post[] = [
   },
   {
     id: 3,
-    title: 'Improve your customer experience',
-    href: '#',
+    title: 'Benefits of Understanding Execution Context in JavaScript',
+    href: 'https://medium.com/@abrahamogbidor/benefits-of-understanding-execution-context-in-javascript-18b98f93c0d4?source=your_stories_page-------------------------------------',
     description:
-      'Dolor quos voluptatem nobis ut dolores. Provident sint enim ducimus quibusdam cum voluptas. Eos iure delectus ullam amet placeat aliquam aut. Quia iure sit repellendus temporibus.',
-    date: 'Jun 30, 2021',
+      'An execution context is a fundamental concept in the JavaScript programming language that helps to determine how a piece of code is executed..',
+    date: 'Apr 22, 2023',
     datetime: '2021-06-30',
-    category: { title: 'Customer Support', href: '#' },
+    category: {
+      title: 'Frontend Engineer',
+      href: 'https://www.linkedin.com/in/abraham-ogbidor',
+    },
     author: {
-      name: 'Jackson Lee',
-      role: 'Customer Success Manager',
-      href: '#',
+      name: 'Abraham Ogbidor',
+      role: 'Ethusiatic Frontend Developer & Blogger',
+      href: 'https://github.com/anogbidor',
       imageUrl:
-        'https://images.unsplash.com/photo-1550525811-e5869dd03032?ixid=MnwzNjUyOXwwfDF8c2VhcmNofDEyfHxjdXN0b21lciUyMHN1cHBvcnR8ZW58MHx8fHwxNjc2NzgzODYy&ixlib=rb-1.2.1&auto=format&fit=crop&w=256&h=256&q=80',
+        'https://avatars.githubusercontent.com/u/105780279?s=400&u=f4613604e168df077d3552517781030960890b7e&v=4',
     },
   },
   {
@@ -66,33 +75,36 @@ export const posts: Post[] = [
     title: 'A guide to building an effective team',
     href: '#',
     description:
-      'Nemo facilis harum quos asperiores. Rerum itaque reiciendis et accusantium ullam quo. Minima laborum architecto voluptates eum tempore eaque molestias aut eveniet.',
+      "Many organizations are moving to flatter team-oriented structures, so it's essential to understand what makes teams cohesive, productive, and thus effective. What do we mean by an effective team?",
     date: 'Jan 5, 2022',
     datetime: '2022-01-05',
-    category: { title: 'Leadership', href: '#' },
+    category: { title: 'Leadership and Employee Development', href: '#' },
     author: {
-      name: 'Sophia Walker',
-      role: 'CEO & Founder',
+      name: 'Chloe Hamman',
+      role: 'Director of People Science, Product, Culture Amp',
       href: '#',
       imageUrl:
-        'https://images.unsplash.com/photo-1599566150163-29194dcaad36?ixlib=rb-1.2.1&ixid=MnwzNjUyOXwwfDF8c2VhcmNofDJ8fHdvbWFufGVufDB8fHx8MTY3Njc4Mzg2Mg&auto=format&fit=crop&w=256&h=256&q=80',
+        'https://images.unsplash.com/photo-1564564295391-7f24f26f568b?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=256&ixid=MnwzNjUyOXwwfDF8c2VhcmNofDEyfHxidXNpbmVzc3xlbnwwfHx8fDE2NzcxNjgwMzM&ixlib=rb-1.2.1&q=80&w=256',
     },
   },
   {
     id: 5,
     title: 'The power of networking in business',
-    href: '#',
+    href: 'https://wearebrain.com/blog/the-power-of-networking/',
     description:
-      'Totam qui doloremque asperiores pariatur ipsam. Voluptas sit fugiat officiis voluptatem. Rerum reiciendis repudiandae eligendi laborum omnis accusamus.',
-    date: 'Feb 14, 2022',
+      'Networking – it’s a term we’ve all heard countless times, often associated with mingling at events, exchanging business cards, and sending LinkedIn connection requests. But its true essence lies beyond these surface-level interactions.',
+    date: 'May 21, 2024',
     datetime: '2022-02-14',
-    category: { title: 'Networking', href: '#' },
+    category: {
+      title: 'Entrepreneurship Insights',
+      href: 'https://wearebrain.com/insights/entrepreneurship/',
+    },
     author: {
-      name: 'Benjamin Lewis',
-      role: 'Business Development Manager',
+      name: 'Elvire Jaspers',
+      role: "WeAreBrain's CEO",
       href: '#',
       imageUrl:
-        'https://images.unsplash.com/photo-1564564295391-7f24f26f568b?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=256&ixid=MnwzNjUyOXwwfDF8c2VhcmNofDEyfHxidXNpbmVzc3xlbnwwfHx8fDE2NzcxNjgwMzM&ixlib=rb-1.2.1&q=80&w=256',
+        'https://images.unsplash.com/photo-1550525811-e5869dd03032?ixid=MnwzNjUyOXwwfDF8c2VhcmNofDEyfHxjdXN0b21lciUyMHN1cHBvcnR8ZW58MHx8fHwxNjc2NzgzODYy&ixlib=rb-1.2.1&auto=format&fit=crop&w=256&h=256&q=80',
     },
   },
 ]
