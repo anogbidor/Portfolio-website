@@ -12,14 +12,25 @@ exports.id = "pages/index";
 exports.ids = ["pages/index"];
 exports.modules = {
 
+/***/ "__barrel_optimize__?names=Box,Card,CardActions,CardMedia,Grid,IconButton,Paper!=!./node_modules/@mui/material/index.js":
+/*!******************************************************************************************************************************!*\
+  !*** __barrel_optimize__?names=Box,Card,CardActions,CardMedia,Grid,IconButton,Paper!=!./node_modules/@mui/material/index.js ***!
+  \******************************************************************************************************************************/
+/***/ ((module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.a(module, async (__webpack_handle_async_dependencies__, __webpack_async_result__) => { try {\n__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   Box: () => (/* reexport safe */ _Box_index_js__WEBPACK_IMPORTED_MODULE_0__[\"default\"]),\n/* harmony export */   Card: () => (/* reexport safe */ _Card_index_js__WEBPACK_IMPORTED_MODULE_1__[\"default\"]),\n/* harmony export */   CardActions: () => (/* reexport safe */ _CardActions_index_js__WEBPACK_IMPORTED_MODULE_2__[\"default\"]),\n/* harmony export */   CardMedia: () => (/* reexport safe */ _CardMedia_index_js__WEBPACK_IMPORTED_MODULE_3__[\"default\"]),\n/* harmony export */   Grid: () => (/* reexport safe */ _Grid_index_js__WEBPACK_IMPORTED_MODULE_4__[\"default\"]),\n/* harmony export */   IconButton: () => (/* reexport safe */ _IconButton_index_js__WEBPACK_IMPORTED_MODULE_5__[\"default\"]),\n/* harmony export */   Paper: () => (/* reexport safe */ _Paper_index_js__WEBPACK_IMPORTED_MODULE_6__[\"default\"])\n/* harmony export */ });\n/* harmony import */ var _Box_index_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Box/index.js */ \"./node_modules/@mui/material/Box/index.js\");\n/* harmony import */ var _Card_index_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Card/index.js */ \"./node_modules/@mui/material/Card/index.js\");\n/* harmony import */ var _CardActions_index_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./CardActions/index.js */ \"./node_modules/@mui/material/CardActions/index.js\");\n/* harmony import */ var _CardMedia_index_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./CardMedia/index.js */ \"./node_modules/@mui/material/CardMedia/index.js\");\n/* harmony import */ var _Grid_index_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./Grid/index.js */ \"./node_modules/@mui/material/Grid/index.js\");\n/* harmony import */ var _IconButton_index_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./IconButton/index.js */ \"./node_modules/@mui/material/IconButton/index.js\");\n/* harmony import */ var _Paper_index_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./Paper/index.js */ \"./node_modules/@mui/material/Paper/index.js\");\nvar __webpack_async_dependencies__ = __webpack_handle_async_dependencies__([_Card_index_js__WEBPACK_IMPORTED_MODULE_1__, _CardActions_index_js__WEBPACK_IMPORTED_MODULE_2__, _CardMedia_index_js__WEBPACK_IMPORTED_MODULE_3__, _Grid_index_js__WEBPACK_IMPORTED_MODULE_4__, _IconButton_index_js__WEBPACK_IMPORTED_MODULE_5__, _Paper_index_js__WEBPACK_IMPORTED_MODULE_6__]);\n([_Card_index_js__WEBPACK_IMPORTED_MODULE_1__, _CardActions_index_js__WEBPACK_IMPORTED_MODULE_2__, _CardMedia_index_js__WEBPACK_IMPORTED_MODULE_3__, _Grid_index_js__WEBPACK_IMPORTED_MODULE_4__, _IconButton_index_js__WEBPACK_IMPORTED_MODULE_5__, _Paper_index_js__WEBPACK_IMPORTED_MODULE_6__] = __webpack_async_dependencies__.then ? (await __webpack_async_dependencies__)() : __webpack_async_dependencies__);\n\n\n\n\n\n\n\n\n__webpack_async_result__();\n} catch(e) { __webpack_async_result__(e); } });//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiX19iYXJyZWxfb3B0aW1pemVfXz9uYW1lcz1Cb3gsQ2FyZCxDYXJkQWN0aW9ucyxDYXJkTWVkaWEsR3JpZCxJY29uQnV0dG9uLFBhcGVyIT0hLi9ub2RlX21vZHVsZXMvQG11aS9tYXRlcmlhbC9pbmRleC5qcyIsIm1hcHBpbmdzIjoiOzs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7QUFDK0M7QUFDRTtBQUNjO0FBQ0o7QUFDVjtBQUNZIiwic291cmNlcyI6WyJ3ZWJwYWNrOi8vbGVhcm5pbmctam91cm5hbC8uL25vZGVfbW9kdWxlcy9AbXVpL21hdGVyaWFsL2luZGV4LmpzPzE0NmUiXSwic291cmNlc0NvbnRlbnQiOlsiXG5leHBvcnQgeyBkZWZhdWx0IGFzIEJveCB9IGZyb20gXCIuL0JveC9pbmRleC5qc1wiXG5leHBvcnQgeyBkZWZhdWx0IGFzIENhcmQgfSBmcm9tIFwiLi9DYXJkL2luZGV4LmpzXCJcbmV4cG9ydCB7IGRlZmF1bHQgYXMgQ2FyZEFjdGlvbnMgfSBmcm9tIFwiLi9DYXJkQWN0aW9ucy9pbmRleC5qc1wiXG5leHBvcnQgeyBkZWZhdWx0IGFzIENhcmRNZWRpYSB9IGZyb20gXCIuL0NhcmRNZWRpYS9pbmRleC5qc1wiXG5leHBvcnQgeyBkZWZhdWx0IGFzIEdyaWQgfSBmcm9tIFwiLi9HcmlkL2luZGV4LmpzXCJcbmV4cG9ydCB7IGRlZmF1bHQgYXMgSWNvbkJ1dHRvbiB9IGZyb20gXCIuL0ljb25CdXR0b24vaW5kZXguanNcIlxuZXhwb3J0IHsgZGVmYXVsdCBhcyBQYXBlciB9IGZyb20gXCIuL1BhcGVyL2luZGV4LmpzXCIiXSwibmFtZXMiOltdLCJzb3VyY2VSb290IjoiIn0=\n//# sourceURL=webpack-internal:///__barrel_optimize__?names=Box,Card,CardActions,CardMedia,Grid,IconButton,Paper!=!./node_modules/@mui/material/index.js\n");
+
+/***/ }),
+
 /***/ "./node_modules/next/dist/build/webpack/loaders/next-route-loader/index.js?kind=PAGES&page=%2F&preferredRegion=&absolutePagePath=.%2Fsrc%2Fpages%2Findex.tsx&absoluteAppPath=private-next-pages%2F_app&absoluteDocumentPath=private-next-pages%2F_document&middlewareConfigBase64=e30%3D!":
 /*!************************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/next/dist/build/webpack/loaders/next-route-loader/index.js?kind=PAGES&page=%2F&preferredRegion=&absolutePagePath=.%2Fsrc%2Fpages%2Findex.tsx&absoluteAppPath=private-next-pages%2F_app&absoluteDocumentPath=private-next-pages%2F_document&middlewareConfigBase64=e30%3D! ***!
   \************************************************************************************************************************************************************************************************************************************************************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+/***/ ((module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   config: () => (/* binding */ config),\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__),\n/* harmony export */   getServerSideProps: () => (/* binding */ getServerSideProps),\n/* harmony export */   getStaticPaths: () => (/* binding */ getStaticPaths),\n/* harmony export */   getStaticProps: () => (/* binding */ getStaticProps),\n/* harmony export */   reportWebVitals: () => (/* binding */ reportWebVitals),\n/* harmony export */   routeModule: () => (/* binding */ routeModule),\n/* harmony export */   unstable_getServerProps: () => (/* binding */ unstable_getServerProps),\n/* harmony export */   unstable_getServerSideProps: () => (/* binding */ unstable_getServerSideProps),\n/* harmony export */   unstable_getStaticParams: () => (/* binding */ unstable_getStaticParams),\n/* harmony export */   unstable_getStaticPaths: () => (/* binding */ unstable_getStaticPaths),\n/* harmony export */   unstable_getStaticProps: () => (/* binding */ unstable_getStaticProps)\n/* harmony export */ });\n/* harmony import */ var next_dist_server_future_route_modules_pages_module_compiled__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! next/dist/server/future/route-modules/pages/module.compiled */ \"./node_modules/next/dist/server/future/route-modules/pages/module.compiled.js\");\n/* harmony import */ var next_dist_server_future_route_modules_pages_module_compiled__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(next_dist_server_future_route_modules_pages_module_compiled__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var next_dist_server_future_route_kind__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! next/dist/server/future/route-kind */ \"./node_modules/next/dist/server/future/route-kind.js\");\n/* harmony import */ var next_dist_build_templates_helpers__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! next/dist/build/templates/helpers */ \"./node_modules/next/dist/build/templates/helpers.js\");\n/* harmony import */ var private_next_pages_document__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! private-next-pages/_document */ \"./node_modules/next/dist/pages/_document.js\");\n/* harmony import */ var private_next_pages_document__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(private_next_pages_document__WEBPACK_IMPORTED_MODULE_3__);\n/* harmony import */ var private_next_pages_app__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! private-next-pages/_app */ \"./src/pages/_app.tsx\");\n/* harmony import */ var _src_pages_index_tsx__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./src/pages/index.tsx */ \"./src/pages/index.tsx\");\n\n\n\n// Import the app and document modules.\n\n\n// Import the userland code.\n\n// Re-export the component (should be the default export).\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ((0,next_dist_build_templates_helpers__WEBPACK_IMPORTED_MODULE_2__.hoist)(_src_pages_index_tsx__WEBPACK_IMPORTED_MODULE_5__, \"default\"));\n// Re-export methods.\nconst getStaticProps = (0,next_dist_build_templates_helpers__WEBPACK_IMPORTED_MODULE_2__.hoist)(_src_pages_index_tsx__WEBPACK_IMPORTED_MODULE_5__, \"getStaticProps\");\nconst getStaticPaths = (0,next_dist_build_templates_helpers__WEBPACK_IMPORTED_MODULE_2__.hoist)(_src_pages_index_tsx__WEBPACK_IMPORTED_MODULE_5__, \"getStaticPaths\");\nconst getServerSideProps = (0,next_dist_build_templates_helpers__WEBPACK_IMPORTED_MODULE_2__.hoist)(_src_pages_index_tsx__WEBPACK_IMPORTED_MODULE_5__, \"getServerSideProps\");\nconst config = (0,next_dist_build_templates_helpers__WEBPACK_IMPORTED_MODULE_2__.hoist)(_src_pages_index_tsx__WEBPACK_IMPORTED_MODULE_5__, \"config\");\nconst reportWebVitals = (0,next_dist_build_templates_helpers__WEBPACK_IMPORTED_MODULE_2__.hoist)(_src_pages_index_tsx__WEBPACK_IMPORTED_MODULE_5__, \"reportWebVitals\");\n// Re-export legacy methods.\nconst unstable_getStaticProps = (0,next_dist_build_templates_helpers__WEBPACK_IMPORTED_MODULE_2__.hoist)(_src_pages_index_tsx__WEBPACK_IMPORTED_MODULE_5__, \"unstable_getStaticProps\");\nconst unstable_getStaticPaths = (0,next_dist_build_templates_helpers__WEBPACK_IMPORTED_MODULE_2__.hoist)(_src_pages_index_tsx__WEBPACK_IMPORTED_MODULE_5__, \"unstable_getStaticPaths\");\nconst unstable_getStaticParams = (0,next_dist_build_templates_helpers__WEBPACK_IMPORTED_MODULE_2__.hoist)(_src_pages_index_tsx__WEBPACK_IMPORTED_MODULE_5__, \"unstable_getStaticParams\");\nconst unstable_getServerProps = (0,next_dist_build_templates_helpers__WEBPACK_IMPORTED_MODULE_2__.hoist)(_src_pages_index_tsx__WEBPACK_IMPORTED_MODULE_5__, \"unstable_getServerProps\");\nconst unstable_getServerSideProps = (0,next_dist_build_templates_helpers__WEBPACK_IMPORTED_MODULE_2__.hoist)(_src_pages_index_tsx__WEBPACK_IMPORTED_MODULE_5__, \"unstable_getServerSideProps\");\n// Create and export the route module that will be consumed.\nconst routeModule = new next_dist_server_future_route_modules_pages_module_compiled__WEBPACK_IMPORTED_MODULE_0__.PagesRouteModule({\n    definition: {\n        kind: next_dist_server_future_route_kind__WEBPACK_IMPORTED_MODULE_1__.RouteKind.PAGES,\n        page: \"/index\",\n        pathname: \"/\",\n        // The following aren't used in production.\n        bundlePath: \"\",\n        filename: \"\"\n    },\n    components: {\n        App: private_next_pages_app__WEBPACK_IMPORTED_MODULE_4__[\"default\"],\n        Document: (private_next_pages_document__WEBPACK_IMPORTED_MODULE_3___default())\n    },\n    userland: _src_pages_index_tsx__WEBPACK_IMPORTED_MODULE_5__\n});\n\n//# sourceMappingURL=pages.js.map//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9ub2RlX21vZHVsZXMvbmV4dC9kaXN0L2J1aWxkL3dlYnBhY2svbG9hZGVycy9uZXh0LXJvdXRlLWxvYWRlci9pbmRleC5qcz9raW5kPVBBR0VTJnBhZ2U9JTJGJnByZWZlcnJlZFJlZ2lvbj0mYWJzb2x1dGVQYWdlUGF0aD0uJTJGc3JjJTJGcGFnZXMlMkZpbmRleC50c3gmYWJzb2x1dGVBcHBQYXRoPXByaXZhdGUtbmV4dC1wYWdlcyUyRl9hcHAmYWJzb2x1dGVEb2N1bWVudFBhdGg9cHJpdmF0ZS1uZXh0LXBhZ2VzJTJGX2RvY3VtZW50Jm1pZGRsZXdhcmVDb25maWdCYXNlNjQ9ZTMwJTNEISIsIm1hcHBpbmdzIjoiOzs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7OztBQUErRjtBQUNoQztBQUNMO0FBQzFEO0FBQ29EO0FBQ1Y7QUFDMUM7QUFDa0Q7QUFDbEQ7QUFDQSxpRUFBZSx3RUFBSyxDQUFDLGlEQUFRLFlBQVksRUFBQztBQUMxQztBQUNPLHVCQUF1Qix3RUFBSyxDQUFDLGlEQUFRO0FBQ3JDLHVCQUF1Qix3RUFBSyxDQUFDLGlEQUFRO0FBQ3JDLDJCQUEyQix3RUFBSyxDQUFDLGlEQUFRO0FBQ3pDLGVBQWUsd0VBQUssQ0FBQyxpREFBUTtBQUM3Qix3QkFBd0Isd0VBQUssQ0FBQyxpREFBUTtBQUM3QztBQUNPLGdDQUFnQyx3RUFBSyxDQUFDLGlEQUFRO0FBQzlDLGdDQUFnQyx3RUFBSyxDQUFDLGlEQUFRO0FBQzlDLGlDQUFpQyx3RUFBSyxDQUFDLGlEQUFRO0FBQy9DLGdDQUFnQyx3RUFBSyxDQUFDLGlEQUFRO0FBQzlDLG9DQUFvQyx3RUFBSyxDQUFDLGlEQUFRO0FBQ3pEO0FBQ08sd0JBQXdCLHlHQUFnQjtBQUMvQztBQUNBLGNBQWMseUVBQVM7QUFDdkI7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBLEtBQUs7QUFDTDtBQUNBLFdBQVc7QUFDWCxnQkFBZ0I7QUFDaEIsS0FBSztBQUNMLFlBQVk7QUFDWixDQUFDOztBQUVEIiwic291cmNlcyI6WyJ3ZWJwYWNrOi8vbGVhcm5pbmctam91cm5hbC8/NDUyOSJdLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgeyBQYWdlc1JvdXRlTW9kdWxlIH0gZnJvbSBcIm5leHQvZGlzdC9zZXJ2ZXIvZnV0dXJlL3JvdXRlLW1vZHVsZXMvcGFnZXMvbW9kdWxlLmNvbXBpbGVkXCI7XG5pbXBvcnQgeyBSb3V0ZUtpbmQgfSBmcm9tIFwibmV4dC9kaXN0L3NlcnZlci9mdXR1cmUvcm91dGUta2luZFwiO1xuaW1wb3J0IHsgaG9pc3QgfSBmcm9tIFwibmV4dC9kaXN0L2J1aWxkL3RlbXBsYXRlcy9oZWxwZXJzXCI7XG4vLyBJbXBvcnQgdGhlIGFwcCBhbmQgZG9jdW1lbnQgbW9kdWxlcy5cbmltcG9ydCBEb2N1bWVudCBmcm9tIFwicHJpdmF0ZS1uZXh0LXBhZ2VzL19kb2N1bWVudFwiO1xuaW1wb3J0IEFwcCBmcm9tIFwicHJpdmF0ZS1uZXh0LXBhZ2VzL19hcHBcIjtcbi8vIEltcG9ydCB0aGUgdXNlcmxhbmQgY29kZS5cbmltcG9ydCAqIGFzIHVzZXJsYW5kIGZyb20gXCIuL3NyYy9wYWdlcy9pbmRleC50c3hcIjtcbi8vIFJlLWV4cG9ydCB0aGUgY29tcG9uZW50IChzaG91bGQgYmUgdGhlIGRlZmF1bHQgZXhwb3J0KS5cbmV4cG9ydCBkZWZhdWx0IGhvaXN0KHVzZXJsYW5kLCBcImRlZmF1bHRcIik7XG4vLyBSZS1leHBvcnQgbWV0aG9kcy5cbmV4cG9ydCBjb25zdCBnZXRTdGF0aWNQcm9wcyA9IGhvaXN0KHVzZXJsYW5kLCBcImdldFN0YXRpY1Byb3BzXCIpO1xuZXhwb3J0IGNvbnN0IGdldFN0YXRpY1BhdGhzID0gaG9pc3QodXNlcmxhbmQsIFwiZ2V0U3RhdGljUGF0aHNcIik7XG5leHBvcnQgY29uc3QgZ2V0U2VydmVyU2lkZVByb3BzID0gaG9pc3QodXNlcmxhbmQsIFwiZ2V0U2VydmVyU2lkZVByb3BzXCIpO1xuZXhwb3J0IGNvbnN0IGNvbmZpZyA9IGhvaXN0KHVzZXJsYW5kLCBcImNvbmZpZ1wiKTtcbmV4cG9ydCBjb25zdCByZXBvcnRXZWJWaXRhbHMgPSBob2lzdCh1c2VybGFuZCwgXCJyZXBvcnRXZWJWaXRhbHNcIik7XG4vLyBSZS1leHBvcnQgbGVnYWN5IG1ldGhvZHMuXG5leHBvcnQgY29uc3QgdW5zdGFibGVfZ2V0U3RhdGljUHJvcHMgPSBob2lzdCh1c2VybGFuZCwgXCJ1bnN0YWJsZV9nZXRTdGF0aWNQcm9wc1wiKTtcbmV4cG9ydCBjb25zdCB1bnN0YWJsZV9nZXRTdGF0aWNQYXRocyA9IGhvaXN0KHVzZXJsYW5kLCBcInVuc3RhYmxlX2dldFN0YXRpY1BhdGhzXCIpO1xuZXhwb3J0IGNvbnN0IHVuc3RhYmxlX2dldFN0YXRpY1BhcmFtcyA9IGhvaXN0KHVzZXJsYW5kLCBcInVuc3RhYmxlX2dldFN0YXRpY1BhcmFtc1wiKTtcbmV4cG9ydCBjb25zdCB1bnN0YWJsZV9nZXRTZXJ2ZXJQcm9wcyA9IGhvaXN0KHVzZXJsYW5kLCBcInVuc3RhYmxlX2dldFNlcnZlclByb3BzXCIpO1xuZXhwb3J0IGNvbnN0IHVuc3RhYmxlX2dldFNlcnZlclNpZGVQcm9wcyA9IGhvaXN0KHVzZXJsYW5kLCBcInVuc3RhYmxlX2dldFNlcnZlclNpZGVQcm9wc1wiKTtcbi8vIENyZWF0ZSBhbmQgZXhwb3J0IHRoZSByb3V0ZSBtb2R1bGUgdGhhdCB3aWxsIGJlIGNvbnN1bWVkLlxuZXhwb3J0IGNvbnN0IHJvdXRlTW9kdWxlID0gbmV3IFBhZ2VzUm91dGVNb2R1bGUoe1xuICAgIGRlZmluaXRpb246IHtcbiAgICAgICAga2luZDogUm91dGVLaW5kLlBBR0VTLFxuICAgICAgICBwYWdlOiBcIi9pbmRleFwiLFxuICAgICAgICBwYXRobmFtZTogXCIvXCIsXG4gICAgICAgIC8vIFRoZSBmb2xsb3dpbmcgYXJlbid0IHVzZWQgaW4gcHJvZHVjdGlvbi5cbiAgICAgICAgYnVuZGxlUGF0aDogXCJcIixcbiAgICAgICAgZmlsZW5hbWU6IFwiXCJcbiAgICB9LFxuICAgIGNvbXBvbmVudHM6IHtcbiAgICAgICAgQXBwLFxuICAgICAgICBEb2N1bWVudFxuICAgIH0sXG4gICAgdXNlcmxhbmRcbn0pO1xuXG4vLyMgc291cmNlTWFwcGluZ1VSTD1wYWdlcy5qcy5tYXAiXSwibmFtZXMiOltdLCJzb3VyY2VSb290IjoiIn0=\n//# sourceURL=webpack-internal:///./node_modules/next/dist/build/webpack/loaders/next-route-loader/index.js?kind=PAGES&page=%2F&preferredRegion=&absolutePagePath=.%2Fsrc%2Fpages%2Findex.tsx&absoluteAppPath=private-next-pages%2F_app&absoluteDocumentPath=private-next-pages%2F_document&middlewareConfigBase64=e30%3D!\n");
+eval("__webpack_require__.a(module, async (__webpack_handle_async_dependencies__, __webpack_async_result__) => { try {\n__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   config: () => (/* binding */ config),\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__),\n/* harmony export */   getServerSideProps: () => (/* binding */ getServerSideProps),\n/* harmony export */   getStaticPaths: () => (/* binding */ getStaticPaths),\n/* harmony export */   getStaticProps: () => (/* binding */ getStaticProps),\n/* harmony export */   reportWebVitals: () => (/* binding */ reportWebVitals),\n/* harmony export */   routeModule: () => (/* binding */ routeModule),\n/* harmony export */   unstable_getServerProps: () => (/* binding */ unstable_getServerProps),\n/* harmony export */   unstable_getServerSideProps: () => (/* binding */ unstable_getServerSideProps),\n/* harmony export */   unstable_getStaticParams: () => (/* binding */ unstable_getStaticParams),\n/* harmony export */   unstable_getStaticPaths: () => (/* binding */ unstable_getStaticPaths),\n/* harmony export */   unstable_getStaticProps: () => (/* binding */ unstable_getStaticProps)\n/* harmony export */ });\n/* harmony import */ var next_dist_server_future_route_modules_pages_module_compiled__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! next/dist/server/future/route-modules/pages/module.compiled */ \"./node_modules/next/dist/server/future/route-modules/pages/module.compiled.js\");\n/* harmony import */ var next_dist_server_future_route_modules_pages_module_compiled__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(next_dist_server_future_route_modules_pages_module_compiled__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var next_dist_server_future_route_kind__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! next/dist/server/future/route-kind */ \"./node_modules/next/dist/server/future/route-kind.js\");\n/* harmony import */ var next_dist_build_templates_helpers__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! next/dist/build/templates/helpers */ \"./node_modules/next/dist/build/templates/helpers.js\");\n/* harmony import */ var private_next_pages_document__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! private-next-pages/_document */ \"./node_modules/next/dist/pages/_document.js\");\n/* harmony import */ var private_next_pages_document__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(private_next_pages_document__WEBPACK_IMPORTED_MODULE_3__);\n/* harmony import */ var private_next_pages_app__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! private-next-pages/_app */ \"./src/pages/_app.tsx\");\n/* harmony import */ var _src_pages_index_tsx__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./src/pages/index.tsx */ \"./src/pages/index.tsx\");\nvar __webpack_async_dependencies__ = __webpack_handle_async_dependencies__([_src_pages_index_tsx__WEBPACK_IMPORTED_MODULE_5__]);\n_src_pages_index_tsx__WEBPACK_IMPORTED_MODULE_5__ = (__webpack_async_dependencies__.then ? (await __webpack_async_dependencies__)() : __webpack_async_dependencies__)[0];\n\n\n\n// Import the app and document modules.\n\n\n// Import the userland code.\n\n// Re-export the component (should be the default export).\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ((0,next_dist_build_templates_helpers__WEBPACK_IMPORTED_MODULE_2__.hoist)(_src_pages_index_tsx__WEBPACK_IMPORTED_MODULE_5__, \"default\"));\n// Re-export methods.\nconst getStaticProps = (0,next_dist_build_templates_helpers__WEBPACK_IMPORTED_MODULE_2__.hoist)(_src_pages_index_tsx__WEBPACK_IMPORTED_MODULE_5__, \"getStaticProps\");\nconst getStaticPaths = (0,next_dist_build_templates_helpers__WEBPACK_IMPORTED_MODULE_2__.hoist)(_src_pages_index_tsx__WEBPACK_IMPORTED_MODULE_5__, \"getStaticPaths\");\nconst getServerSideProps = (0,next_dist_build_templates_helpers__WEBPACK_IMPORTED_MODULE_2__.hoist)(_src_pages_index_tsx__WEBPACK_IMPORTED_MODULE_5__, \"getServerSideProps\");\nconst config = (0,next_dist_build_templates_helpers__WEBPACK_IMPORTED_MODULE_2__.hoist)(_src_pages_index_tsx__WEBPACK_IMPORTED_MODULE_5__, \"config\");\nconst reportWebVitals = (0,next_dist_build_templates_helpers__WEBPACK_IMPORTED_MODULE_2__.hoist)(_src_pages_index_tsx__WEBPACK_IMPORTED_MODULE_5__, \"reportWebVitals\");\n// Re-export legacy methods.\nconst unstable_getStaticProps = (0,next_dist_build_templates_helpers__WEBPACK_IMPORTED_MODULE_2__.hoist)(_src_pages_index_tsx__WEBPACK_IMPORTED_MODULE_5__, \"unstable_getStaticProps\");\nconst unstable_getStaticPaths = (0,next_dist_build_templates_helpers__WEBPACK_IMPORTED_MODULE_2__.hoist)(_src_pages_index_tsx__WEBPACK_IMPORTED_MODULE_5__, \"unstable_getStaticPaths\");\nconst unstable_getStaticParams = (0,next_dist_build_templates_helpers__WEBPACK_IMPORTED_MODULE_2__.hoist)(_src_pages_index_tsx__WEBPACK_IMPORTED_MODULE_5__, \"unstable_getStaticParams\");\nconst unstable_getServerProps = (0,next_dist_build_templates_helpers__WEBPACK_IMPORTED_MODULE_2__.hoist)(_src_pages_index_tsx__WEBPACK_IMPORTED_MODULE_5__, \"unstable_getServerProps\");\nconst unstable_getServerSideProps = (0,next_dist_build_templates_helpers__WEBPACK_IMPORTED_MODULE_2__.hoist)(_src_pages_index_tsx__WEBPACK_IMPORTED_MODULE_5__, \"unstable_getServerSideProps\");\n// Create and export the route module that will be consumed.\nconst routeModule = new next_dist_server_future_route_modules_pages_module_compiled__WEBPACK_IMPORTED_MODULE_0__.PagesRouteModule({\n    definition: {\n        kind: next_dist_server_future_route_kind__WEBPACK_IMPORTED_MODULE_1__.RouteKind.PAGES,\n        page: \"/index\",\n        pathname: \"/\",\n        // The following aren't used in production.\n        bundlePath: \"\",\n        filename: \"\"\n    },\n    components: {\n        App: private_next_pages_app__WEBPACK_IMPORTED_MODULE_4__[\"default\"],\n        Document: (private_next_pages_document__WEBPACK_IMPORTED_MODULE_3___default())\n    },\n    userland: _src_pages_index_tsx__WEBPACK_IMPORTED_MODULE_5__\n});\n\n//# sourceMappingURL=pages.js.map\n__webpack_async_result__();\n} catch(e) { __webpack_async_result__(e); } });//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9ub2RlX21vZHVsZXMvbmV4dC9kaXN0L2J1aWxkL3dlYnBhY2svbG9hZGVycy9uZXh0LXJvdXRlLWxvYWRlci9pbmRleC5qcz9raW5kPVBBR0VTJnBhZ2U9JTJGJnByZWZlcnJlZFJlZ2lvbj0mYWJzb2x1dGVQYWdlUGF0aD0uJTJGc3JjJTJGcGFnZXMlMkZpbmRleC50c3gmYWJzb2x1dGVBcHBQYXRoPXByaXZhdGUtbmV4dC1wYWdlcyUyRl9hcHAmYWJzb2x1dGVEb2N1bWVudFBhdGg9cHJpdmF0ZS1uZXh0LXBhZ2VzJTJGX2RvY3VtZW50Jm1pZGRsZXdhcmVDb25maWdCYXNlNjQ9ZTMwJTNEISIsIm1hcHBpbmdzIjoiOzs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7OztBQUErRjtBQUNoQztBQUNMO0FBQzFEO0FBQ29EO0FBQ1Y7QUFDMUM7QUFDa0Q7QUFDbEQ7QUFDQSxpRUFBZSx3RUFBSyxDQUFDLGlEQUFRLFlBQVksRUFBQztBQUMxQztBQUNPLHVCQUF1Qix3RUFBSyxDQUFDLGlEQUFRO0FBQ3JDLHVCQUF1Qix3RUFBSyxDQUFDLGlEQUFRO0FBQ3JDLDJCQUEyQix3RUFBSyxDQUFDLGlEQUFRO0FBQ3pDLGVBQWUsd0VBQUssQ0FBQyxpREFBUTtBQUM3Qix3QkFBd0Isd0VBQUssQ0FBQyxpREFBUTtBQUM3QztBQUNPLGdDQUFnQyx3RUFBSyxDQUFDLGlEQUFRO0FBQzlDLGdDQUFnQyx3RUFBSyxDQUFDLGlEQUFRO0FBQzlDLGlDQUFpQyx3RUFBSyxDQUFDLGlEQUFRO0FBQy9DLGdDQUFnQyx3RUFBSyxDQUFDLGlEQUFRO0FBQzlDLG9DQUFvQyx3RUFBSyxDQUFDLGlEQUFRO0FBQ3pEO0FBQ08sd0JBQXdCLHlHQUFnQjtBQUMvQztBQUNBLGNBQWMseUVBQVM7QUFDdkI7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBLEtBQUs7QUFDTDtBQUNBLFdBQVc7QUFDWCxnQkFBZ0I7QUFDaEIsS0FBSztBQUNMLFlBQVk7QUFDWixDQUFDOztBQUVELGlDIiwic291cmNlcyI6WyJ3ZWJwYWNrOi8vbGVhcm5pbmctam91cm5hbC8/NDUyOSJdLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgeyBQYWdlc1JvdXRlTW9kdWxlIH0gZnJvbSBcIm5leHQvZGlzdC9zZXJ2ZXIvZnV0dXJlL3JvdXRlLW1vZHVsZXMvcGFnZXMvbW9kdWxlLmNvbXBpbGVkXCI7XG5pbXBvcnQgeyBSb3V0ZUtpbmQgfSBmcm9tIFwibmV4dC9kaXN0L3NlcnZlci9mdXR1cmUvcm91dGUta2luZFwiO1xuaW1wb3J0IHsgaG9pc3QgfSBmcm9tIFwibmV4dC9kaXN0L2J1aWxkL3RlbXBsYXRlcy9oZWxwZXJzXCI7XG4vLyBJbXBvcnQgdGhlIGFwcCBhbmQgZG9jdW1lbnQgbW9kdWxlcy5cbmltcG9ydCBEb2N1bWVudCBmcm9tIFwicHJpdmF0ZS1uZXh0LXBhZ2VzL19kb2N1bWVudFwiO1xuaW1wb3J0IEFwcCBmcm9tIFwicHJpdmF0ZS1uZXh0LXBhZ2VzL19hcHBcIjtcbi8vIEltcG9ydCB0aGUgdXNlcmxhbmQgY29kZS5cbmltcG9ydCAqIGFzIHVzZXJsYW5kIGZyb20gXCIuL3NyYy9wYWdlcy9pbmRleC50c3hcIjtcbi8vIFJlLWV4cG9ydCB0aGUgY29tcG9uZW50IChzaG91bGQgYmUgdGhlIGRlZmF1bHQgZXhwb3J0KS5cbmV4cG9ydCBkZWZhdWx0IGhvaXN0KHVzZXJsYW5kLCBcImRlZmF1bHRcIik7XG4vLyBSZS1leHBvcnQgbWV0aG9kcy5cbmV4cG9ydCBjb25zdCBnZXRTdGF0aWNQcm9wcyA9IGhvaXN0KHVzZXJsYW5kLCBcImdldFN0YXRpY1Byb3BzXCIpO1xuZXhwb3J0IGNvbnN0IGdldFN0YXRpY1BhdGhzID0gaG9pc3QodXNlcmxhbmQsIFwiZ2V0U3RhdGljUGF0aHNcIik7XG5leHBvcnQgY29uc3QgZ2V0U2VydmVyU2lkZVByb3BzID0gaG9pc3QodXNlcmxhbmQsIFwiZ2V0U2VydmVyU2lkZVByb3BzXCIpO1xuZXhwb3J0IGNvbnN0IGNvbmZpZyA9IGhvaXN0KHVzZXJsYW5kLCBcImNvbmZpZ1wiKTtcbmV4cG9ydCBjb25zdCByZXBvcnRXZWJWaXRhbHMgPSBob2lzdCh1c2VybGFuZCwgXCJyZXBvcnRXZWJWaXRhbHNcIik7XG4vLyBSZS1leHBvcnQgbGVnYWN5IG1ldGhvZHMuXG5leHBvcnQgY29uc3QgdW5zdGFibGVfZ2V0U3RhdGljUHJvcHMgPSBob2lzdCh1c2VybGFuZCwgXCJ1bnN0YWJsZV9nZXRTdGF0aWNQcm9wc1wiKTtcbmV4cG9ydCBjb25zdCB1bnN0YWJsZV9nZXRTdGF0aWNQYXRocyA9IGhvaXN0KHVzZXJsYW5kLCBcInVuc3RhYmxlX2dldFN0YXRpY1BhdGhzXCIpO1xuZXhwb3J0IGNvbnN0IHVuc3RhYmxlX2dldFN0YXRpY1BhcmFtcyA9IGhvaXN0KHVzZXJsYW5kLCBcInVuc3RhYmxlX2dldFN0YXRpY1BhcmFtc1wiKTtcbmV4cG9ydCBjb25zdCB1bnN0YWJsZV9nZXRTZXJ2ZXJQcm9wcyA9IGhvaXN0KHVzZXJsYW5kLCBcInVuc3RhYmxlX2dldFNlcnZlclByb3BzXCIpO1xuZXhwb3J0IGNvbnN0IHVuc3RhYmxlX2dldFNlcnZlclNpZGVQcm9wcyA9IGhvaXN0KHVzZXJsYW5kLCBcInVuc3RhYmxlX2dldFNlcnZlclNpZGVQcm9wc1wiKTtcbi8vIENyZWF0ZSBhbmQgZXhwb3J0IHRoZSByb3V0ZSBtb2R1bGUgdGhhdCB3aWxsIGJlIGNvbnN1bWVkLlxuZXhwb3J0IGNvbnN0IHJvdXRlTW9kdWxlID0gbmV3IFBhZ2VzUm91dGVNb2R1bGUoe1xuICAgIGRlZmluaXRpb246IHtcbiAgICAgICAga2luZDogUm91dGVLaW5kLlBBR0VTLFxuICAgICAgICBwYWdlOiBcIi9pbmRleFwiLFxuICAgICAgICBwYXRobmFtZTogXCIvXCIsXG4gICAgICAgIC8vIFRoZSBmb2xsb3dpbmcgYXJlbid0IHVzZWQgaW4gcHJvZHVjdGlvbi5cbiAgICAgICAgYnVuZGxlUGF0aDogXCJcIixcbiAgICAgICAgZmlsZW5hbWU6IFwiXCJcbiAgICB9LFxuICAgIGNvbXBvbmVudHM6IHtcbiAgICAgICAgQXBwLFxuICAgICAgICBEb2N1bWVudFxuICAgIH0sXG4gICAgdXNlcmxhbmRcbn0pO1xuXG4vLyMgc291cmNlTWFwcGluZ1VSTD1wYWdlcy5qcy5tYXAiXSwibmFtZXMiOltdLCJzb3VyY2VSb290IjoiIn0=\n//# sourceURL=webpack-internal:///./node_modules/next/dist/build/webpack/loaders/next-route-loader/index.js?kind=PAGES&page=%2F&preferredRegion=&absolutePagePath=.%2Fsrc%2Fpages%2Findex.tsx&absoluteAppPath=private-next-pages%2F_app&absoluteDocumentPath=private-next-pages%2F_document&middlewareConfigBase64=e30%3D!\n");
 
 /***/ }),
 
@@ -34,14 +45,25 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 
 /***/ }),
 
-/***/ "./src/components/Test.tsx":
-/*!*********************************!*\
-  !*** ./src/components/Test.tsx ***!
-  \*********************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+/***/ "./src/components/Cards.tsx":
+/*!**********************************!*\
+  !*** ./src/components/Cards.tsx ***!
+  \**********************************/
+/***/ ((module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react/jsx-dev-runtime */ \"react/jsx-dev-runtime\");\n/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__);\n\nconst Test = ()=>{\n    return /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"div\", {\n        className: \"bg-red-500 text-white p-4\",\n        children: \"Tailwind is working!\"\n    }, void 0, false, {\n        fileName: \"/Users/abrahamic/Desktop/learning-journal/src/components/Test.tsx\",\n        lineNumber: 2,\n        columnNumber: 10\n    }, undefined);\n};\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Test);\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9zcmMvY29tcG9uZW50cy9UZXN0LnRzeCIsIm1hcHBpbmdzIjoiOzs7Ozs7O0FBQUEsTUFBTUEsT0FBaUI7SUFDckIscUJBQU8sOERBQUNDO1FBQUlDLFdBQVU7a0JBQTRCOzs7Ozs7QUFDcEQ7QUFFQSxpRUFBZUYsSUFBSUEsRUFBQSIsInNvdXJjZXMiOlsid2VicGFjazovL2xlYXJuaW5nLWpvdXJuYWwvLi9zcmMvY29tcG9uZW50cy9UZXN0LnRzeD83YmM4Il0sInNvdXJjZXNDb250ZW50IjpbImNvbnN0IFRlc3Q6IFJlYWN0LkZDID0gKCkgPT4ge1xuICByZXR1cm4gPGRpdiBjbGFzc05hbWU9J2JnLXJlZC01MDAgdGV4dC13aGl0ZSBwLTQnPlRhaWx3aW5kIGlzIHdvcmtpbmchPC9kaXY+XG59XG5cbmV4cG9ydCBkZWZhdWx0IFRlc3RcbiJdLCJuYW1lcyI6WyJUZXN0IiwiZGl2IiwiY2xhc3NOYW1lIl0sInNvdXJjZVJvb3QiOiIifQ==\n//# sourceURL=webpack-internal:///./src/components/Test.tsx\n");
+eval("__webpack_require__.a(module, async (__webpack_handle_async_dependencies__, __webpack_async_result__) => { try {\n__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react/jsx-dev-runtime */ \"react/jsx-dev-runtime\");\n/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ \"react\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var _barrel_optimize_names_Box_Card_CardActions_CardMedia_Grid_IconButton_Paper_mui_material__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! __barrel_optimize__?names=Box,Card,CardActions,CardMedia,Grid,IconButton,Paper!=!@mui/material */ \"__barrel_optimize__?names=Box,Card,CardActions,CardMedia,Grid,IconButton,Paper!=!./node_modules/@mui/material/index.js\");\n/* harmony import */ var _mui_system__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @mui/system */ \"@mui/system\");\n/* harmony import */ var _mui_system__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_mui_system__WEBPACK_IMPORTED_MODULE_2__);\n/* harmony import */ var _mui_icons_material_GitHub__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @mui/icons-material/GitHub */ \"@mui/icons-material/GitHub\");\n/* harmony import */ var _mui_icons_material_GitHub__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_mui_icons_material_GitHub__WEBPACK_IMPORTED_MODULE_3__);\nvar __webpack_async_dependencies__ = __webpack_handle_async_dependencies__([_barrel_optimize_names_Box_Card_CardActions_CardMedia_Grid_IconButton_Paper_mui_material__WEBPACK_IMPORTED_MODULE_4__]);\n_barrel_optimize_names_Box_Card_CardActions_CardMedia_Grid_IconButton_Paper_mui_material__WEBPACK_IMPORTED_MODULE_4__ = (__webpack_async_dependencies__.then ? (await __webpack_async_dependencies__)() : __webpack_async_dependencies__)[0];\n\n\n\n\n // Import GitHub Icon\nconst Item = (0,_mui_system__WEBPACK_IMPORTED_MODULE_2__.styled)(_barrel_optimize_names_Box_Card_CardActions_CardMedia_Grid_IconButton_Paper_mui_material__WEBPACK_IMPORTED_MODULE_4__.Paper)(({ theme })=>({\n        padding: theme.spacing(2),\n        textAlign: \"center\",\n        color: theme.palette.text.secondary,\n        borderRadius: theme.shape.borderRadius * 2,\n        display: \"flex\",\n        flexDirection: \"column\",\n        alignItems: \"center\",\n        justifyContent: \"center\"\n    }));\nconst Layout = ()=>{\n    const cardsData = [\n        {\n            image: \"/images/langify.png\",\n            title: \"Langify\",\n            backgroundColor: \"#a3dbd4\",\n            githubUrl: \"https://github.com/your-repo\",\n            mediumUrl: \"https://medium.com/@your-profile\"\n        },\n        {\n            image: \"/images/projectListing.png\",\n            title: \"Sample Title 2\",\n            backgroundColor: \"#b3c7f1\",\n            githubUrl: \"https://github.com/anogbidor/Product-listing-page\",\n            mediumUrl: \"https://medium.com/@your-profile\"\n        },\n        {\n            image: \"/images/digitalFrame-project.png\",\n            title: \"Rectangle-like Card\",\n            backgroundColor: \"#dbd4a3\",\n            githubUrl: \"https://github.com/your-repo\",\n            mediumUrl: \"https://medium.com/@your-profile\"\n        },\n        {\n            image: \"/images/Task Manager.png\",\n            title: \"Rectangle-like Card\",\n            backgroundColor: \"#ffff\",\n            githubUrl: \"https://github.com/your-repo\",\n            mediumUrl: \"https://medium.com/@your-profile\"\n        },\n        {\n            image: \"/images/GitHub-user-project.png\",\n            title: \"Rectangle-like Card\",\n            backgroundColor: \"#d094e5\",\n            githubUrl: \"https://github.com/your-repo\",\n            mediumUrl: \"https://medium.com/@your-profile\"\n        },\n        {\n            image: \"/images/pokemonLibrary.png\",\n            title: \"Rectangle-like Card\",\n            backgroundColor: \"#e7b89c\",\n            githubUrl: \"https://github.com/your-repo\",\n            mediumUrl: \"https://medium.com/@your-profile\"\n        }\n    ];\n    return /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(_barrel_optimize_names_Box_Card_CardActions_CardMedia_Grid_IconButton_Paper_mui_material__WEBPACK_IMPORTED_MODULE_4__.Box, {\n        sx: {\n            flexGrow: 1,\n            padding: 4\n        },\n        children: /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(_barrel_optimize_names_Box_Card_CardActions_CardMedia_Grid_IconButton_Paper_mui_material__WEBPACK_IMPORTED_MODULE_4__.Grid, {\n            container: true,\n            spacing: 4,\n            children: cardsData.map((card, index)=>/*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(_barrel_optimize_names_Box_Card_CardActions_CardMedia_Grid_IconButton_Paper_mui_material__WEBPACK_IMPORTED_MODULE_4__.Grid, {\n                    item: true,\n                    xs: 12,\n                    sm: 6,\n                    md: 4,\n                    children: /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(Item, {\n                        sx: {\n                            backgroundColor: card.backgroundColor\n                        },\n                        children: /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(_barrel_optimize_names_Box_Card_CardActions_CardMedia_Grid_IconButton_Paper_mui_material__WEBPACK_IMPORTED_MODULE_4__.Card, {\n                            sx: {\n                                width: \"100%\",\n                                backgroundColor: card.backgroundColor,\n                                display: \"flex\",\n                                flexDirection: \"column\"\n                            },\n                            children: [\n                                /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(_barrel_optimize_names_Box_Card_CardActions_CardMedia_Grid_IconButton_Paper_mui_material__WEBPACK_IMPORTED_MODULE_4__.CardMedia, {\n                                    component: \"img\",\n                                    sx: {\n                                        width: \"100%\",\n                                        height: \"auto\",\n                                        objectFit: \"cover\"\n                                    },\n                                    image: card.image,\n                                    title: card.title,\n                                    onError: (e)=>{\n                                        e.currentTarget.src = \"/images/default-image.png\" // Fallback image\n                                        ;\n                                    }\n                                }, void 0, false, {\n                                    fileName: \"/Users/abrahamic/Desktop/learning-journal/src/components/Cards.tsx\",\n                                    lineNumber: 86,\n                                    columnNumber: 17\n                                }, undefined),\n                                /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(_barrel_optimize_names_Box_Card_CardActions_CardMedia_Grid_IconButton_Paper_mui_material__WEBPACK_IMPORTED_MODULE_4__.CardActions, {\n                                    sx: {\n                                        justifyContent: \"space-between\"\n                                    },\n                                    children: [\n                                        /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(_barrel_optimize_names_Box_Card_CardActions_CardMedia_Grid_IconButton_Paper_mui_material__WEBPACK_IMPORTED_MODULE_4__.IconButton, {\n                                            size: \"small\",\n                                            sx: {\n                                                color: \"black\"\n                                            },\n                                            onClick: ()=>window.open(card.githubUrl, \"_blank\"),\n                                            children: /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)((_mui_icons_material_GitHub__WEBPACK_IMPORTED_MODULE_3___default()), {}, void 0, false, {\n                                                fileName: \"/Users/abrahamic/Desktop/learning-journal/src/components/Cards.tsx\",\n                                                lineNumber: 106,\n                                                columnNumber: 21\n                                            }, undefined)\n                                        }, void 0, false, {\n                                            fileName: \"/Users/abrahamic/Desktop/learning-journal/src/components/Cards.tsx\",\n                                            lineNumber: 101,\n                                            columnNumber: 19\n                                        }, undefined),\n                                        /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(_barrel_optimize_names_Box_Card_CardActions_CardMedia_Grid_IconButton_Paper_mui_material__WEBPACK_IMPORTED_MODULE_4__.IconButton, {\n                                            size: \"small\",\n                                            sx: {\n                                                color: \"primary.main\"\n                                            },\n                                            onClick: ()=>window.open(card.mediumUrl, \"_blank\"),\n                                            children: /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"img\", {\n                                                src: \"/images/medium.png\",\n                                                alt: \"Medium Logo\",\n                                                style: {\n                                                    width: \"24px\",\n                                                    height: \"auto\"\n                                                }\n                                            }, void 0, false, {\n                                                fileName: \"/Users/abrahamic/Desktop/learning-journal/src/components/Cards.tsx\",\n                                                lineNumber: 113,\n                                                columnNumber: 21\n                                            }, undefined)\n                                        }, void 0, false, {\n                                            fileName: \"/Users/abrahamic/Desktop/learning-journal/src/components/Cards.tsx\",\n                                            lineNumber: 108,\n                                            columnNumber: 19\n                                        }, undefined)\n                                    ]\n                                }, void 0, true, {\n                                    fileName: \"/Users/abrahamic/Desktop/learning-journal/src/components/Cards.tsx\",\n                                    lineNumber: 100,\n                                    columnNumber: 17\n                                }, undefined)\n                            ]\n                        }, void 0, true, {\n                            fileName: \"/Users/abrahamic/Desktop/learning-journal/src/components/Cards.tsx\",\n                            lineNumber: 78,\n                            columnNumber: 15\n                        }, undefined)\n                    }, void 0, false, {\n                        fileName: \"/Users/abrahamic/Desktop/learning-journal/src/components/Cards.tsx\",\n                        lineNumber: 77,\n                        columnNumber: 13\n                    }, undefined)\n                }, index, false, {\n                    fileName: \"/Users/abrahamic/Desktop/learning-journal/src/components/Cards.tsx\",\n                    lineNumber: 75,\n                    columnNumber: 11\n                }, undefined))\n        }, void 0, false, {\n            fileName: \"/Users/abrahamic/Desktop/learning-journal/src/components/Cards.tsx\",\n            lineNumber: 73,\n            columnNumber: 7\n        }, undefined)\n    }, void 0, false, {\n        fileName: \"/Users/abrahamic/Desktop/learning-journal/src/components/Cards.tsx\",\n        lineNumber: 72,\n        columnNumber: 5\n    }, undefined);\n};\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Layout);\n\n__webpack_async_result__();\n} catch(e) { __webpack_async_result__(e); } });//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9zcmMvY29tcG9uZW50cy9DYXJkcy50c3giLCJtYXBwaW5ncyI6Ijs7Ozs7Ozs7Ozs7Ozs7Ozs7QUFBOEI7QUFTUjtBQUNjO0FBQ2UsQ0FBQyxxQkFBcUI7QUFFekUsTUFBTVUsT0FBT0YsbURBQU1BLENBQUNELDJIQUFLQSxFQUFFLENBQUMsRUFBRUksS0FBSyxFQUFFLEdBQU07UUFDekNDLFNBQVNELE1BQU1FLE9BQU8sQ0FBQztRQUN2QkMsV0FBVztRQUNYQyxPQUFPSixNQUFNSyxPQUFPLENBQUNDLElBQUksQ0FBQ0MsU0FBUztRQUNuQ0MsY0FBY1IsTUFBTVMsS0FBSyxDQUFDRCxZQUFZLEdBQUc7UUFDekNFLFNBQVM7UUFDVEMsZUFBZTtRQUNmQyxZQUFZO1FBQ1pDLGdCQUFnQjtJQUNsQjtBQUVBLE1BQU1DLFNBQW1CO0lBQ3ZCLE1BQU1DLFlBQVk7UUFDaEI7WUFDRUMsT0FBTztZQUNQQyxPQUFPO1lBQ1BDLGlCQUFpQjtZQUNqQkMsV0FBVztZQUNYQyxXQUFXO1FBQ2I7UUFDQTtZQUNFSixPQUFPO1lBQ1BDLE9BQU87WUFDUEMsaUJBQWlCO1lBQ2pCQyxXQUFXO1lBQ1hDLFdBQVc7UUFDYjtRQUNBO1lBQ0VKLE9BQU87WUFDUEMsT0FBTztZQUNQQyxpQkFBaUI7WUFDakJDLFdBQVc7WUFDWEMsV0FBVztRQUNiO1FBQ0E7WUFDRUosT0FBTztZQUNQQyxPQUFPO1lBQ1BDLGlCQUFpQjtZQUNqQkMsV0FBVztZQUNYQyxXQUFXO1FBQ2I7UUFDQTtZQUNFSixPQUFPO1lBQ1BDLE9BQU87WUFDUEMsaUJBQWlCO1lBQ2pCQyxXQUFXO1lBQ1hDLFdBQVc7UUFDYjtRQUNBO1lBQ0VKLE9BQU87WUFDUEMsT0FBTztZQUNQQyxpQkFBaUI7WUFDakJDLFdBQVc7WUFDWEMsV0FBVztRQUNiO0tBQ0Q7SUFFRCxxQkFDRSw4REFBQzlCLHlIQUFHQTtRQUFDK0IsSUFBSTtZQUFFQyxVQUFVO1lBQUdyQixTQUFTO1FBQUU7a0JBQ2pDLDRFQUFDTiwwSEFBSUE7WUFBQzRCLFNBQVM7WUFBQ3JCLFNBQVM7c0JBQ3RCYSxVQUFVUyxHQUFHLENBQUMsQ0FBQ0MsTUFBTUMsc0JBQ3BCLDhEQUFDL0IsMEhBQUlBO29CQUFDZ0MsSUFBSTtvQkFBQ0MsSUFBSTtvQkFBSUMsSUFBSTtvQkFBR0MsSUFBSTs4QkFFNUIsNEVBQUMvQjt3QkFBS3NCLElBQUk7NEJBQUVILGlCQUFpQk8sS0FBS1AsZUFBZTt3QkFBQztrQ0FDaEQsNEVBQUMzQiwwSEFBSUE7NEJBQ0g4QixJQUFJO2dDQUNGVSxPQUFPO2dDQUNQYixpQkFBaUJPLEtBQUtQLGVBQWU7Z0NBQ3JDUixTQUFTO2dDQUNUQyxlQUFlOzRCQUNqQjs7OENBRUEsOERBQUNsQiwrSEFBU0E7b0NBQ1J1QyxXQUFVO29DQUNWWCxJQUFJO3dDQUNGVSxPQUFPO3dDQUNQRSxRQUFRO3dDQUNSQyxXQUFXO29DQUNiO29DQUNBbEIsT0FBT1MsS0FBS1QsS0FBSztvQ0FDakJDLE9BQU9RLEtBQUtSLEtBQUs7b0NBQ2pCa0IsU0FBUyxDQUFDQzt3Q0FDUkEsRUFBRUMsYUFBYSxDQUFDQyxHQUFHLEdBQUcsNEJBQTRCLGlCQUFpQjs7b0NBQ3JFOzs7Ozs7OENBR0YsOERBQUM5QyxpSUFBV0E7b0NBQUM2QixJQUFJO3dDQUFFUixnQkFBZ0I7b0NBQWdCOztzREFDakQsOERBQUNuQixnSUFBVUE7NENBQ1Q2QyxNQUFLOzRDQUNMbEIsSUFBSTtnREFBRWpCLE9BQU87NENBQVE7NENBQ3JCb0MsU0FBUyxJQUFNQyxPQUFPQyxJQUFJLENBQUNqQixLQUFLTixTQUFTLEVBQUU7c0RBRTNDLDRFQUFDckIsbUVBQVVBOzs7Ozs7Ozs7O3NEQUViLDhEQUFDSixnSUFBVUE7NENBQ1Q2QyxNQUFLOzRDQUNMbEIsSUFBSTtnREFBRWpCLE9BQU87NENBQWU7NENBQzVCb0MsU0FBUyxJQUFNQyxPQUFPQyxJQUFJLENBQUNqQixLQUFLTCxTQUFTLEVBQUU7c0RBRTNDLDRFQUFDdUI7Z0RBQ0NMLEtBQUk7Z0RBQ0pNLEtBQUk7Z0RBQ0pDLE9BQU87b0RBQUVkLE9BQU87b0RBQVFFLFFBQVE7Z0RBQU87Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7bUJBekNiUDs7Ozs7Ozs7Ozs7Ozs7O0FBb0RoRDtBQUVBLGlFQUFlWixNQUFNQSxFQUFBIiwic291cmNlcyI6WyJ3ZWJwYWNrOi8vbGVhcm5pbmctam91cm5hbC8uL3NyYy9jb21wb25lbnRzL0NhcmRzLnRzeD9mMGVlIl0sInNvdXJjZXNDb250ZW50IjpbImltcG9ydCAqIGFzIFJlYWN0IGZyb20gJ3JlYWN0J1xuaW1wb3J0IHtcbiAgQm94LFxuICBDYXJkLFxuICBDYXJkQWN0aW9ucyxcbiAgQ2FyZE1lZGlhLFxuICBJY29uQnV0dG9uLFxuICBHcmlkLFxuICBQYXBlcixcbn0gZnJvbSAnQG11aS9tYXRlcmlhbCdcbmltcG9ydCB7IHN0eWxlZCB9IGZyb20gJ0BtdWkvc3lzdGVtJ1xuaW1wb3J0IEdpdEh1Ykljb24gZnJvbSAnQG11aS9pY29ucy1tYXRlcmlhbC9HaXRIdWInIC8vIEltcG9ydCBHaXRIdWIgSWNvblxuXG5jb25zdCBJdGVtID0gc3R5bGVkKFBhcGVyKSgoeyB0aGVtZSB9KSA9PiAoe1xuICBwYWRkaW5nOiB0aGVtZS5zcGFjaW5nKDIpLFxuICB0ZXh0QWxpZ246ICdjZW50ZXInLFxuICBjb2xvcjogdGhlbWUucGFsZXR0ZS50ZXh0LnNlY29uZGFyeSxcbiAgYm9yZGVyUmFkaXVzOiB0aGVtZS5zaGFwZS5ib3JkZXJSYWRpdXMgKiAyLFxuICBkaXNwbGF5OiAnZmxleCcsXG4gIGZsZXhEaXJlY3Rpb246ICdjb2x1bW4nLFxuICBhbGlnbkl0ZW1zOiAnY2VudGVyJyxcbiAganVzdGlmeUNvbnRlbnQ6ICdjZW50ZXInLFxufSkpXG5cbmNvbnN0IExheW91dDogUmVhY3QuRkMgPSAoKSA9PiB7XG4gIGNvbnN0IGNhcmRzRGF0YSA9IFtcbiAgICB7XG4gICAgICBpbWFnZTogJy9pbWFnZXMvbGFuZ2lmeS5wbmcnLFxuICAgICAgdGl0bGU6ICdMYW5naWZ5JyxcbiAgICAgIGJhY2tncm91bmRDb2xvcjogJyNhM2RiZDQnLFxuICAgICAgZ2l0aHViVXJsOiAnaHR0cHM6Ly9naXRodWIuY29tL3lvdXItcmVwbycsIC8vIFJlcGxhY2Ugd2l0aCB5b3VyIEdpdEh1YiBVUkxcbiAgICAgIG1lZGl1bVVybDogJ2h0dHBzOi8vbWVkaXVtLmNvbS9AeW91ci1wcm9maWxlJywgLy8gUmVwbGFjZSB3aXRoIHlvdXIgTWVkaXVtIFVSTFxuICAgIH0sXG4gICAge1xuICAgICAgaW1hZ2U6ICcvaW1hZ2VzL3Byb2plY3RMaXN0aW5nLnBuZycsXG4gICAgICB0aXRsZTogJ1NhbXBsZSBUaXRsZSAyJyxcbiAgICAgIGJhY2tncm91bmRDb2xvcjogJyNiM2M3ZjEnLFxuICAgICAgZ2l0aHViVXJsOiAnaHR0cHM6Ly9naXRodWIuY29tL2Fub2diaWRvci9Qcm9kdWN0LWxpc3RpbmctcGFnZScsIC8vIFJlcGxhY2Ugd2l0aCB5b3VyIEdpdEh1YiBVUkxcbiAgICAgIG1lZGl1bVVybDogJ2h0dHBzOi8vbWVkaXVtLmNvbS9AeW91ci1wcm9maWxlJywgLy8gUmVwbGFjZSB3aXRoIHlvdXIgTWVkaXVtIFVSTFxuICAgIH0sXG4gICAge1xuICAgICAgaW1hZ2U6ICcvaW1hZ2VzL2RpZ2l0YWxGcmFtZS1wcm9qZWN0LnBuZycsXG4gICAgICB0aXRsZTogJ1JlY3RhbmdsZS1saWtlIENhcmQnLFxuICAgICAgYmFja2dyb3VuZENvbG9yOiAnI2RiZDRhMycsXG4gICAgICBnaXRodWJVcmw6ICdodHRwczovL2dpdGh1Yi5jb20veW91ci1yZXBvJywgLy8gUmVwbGFjZSB3aXRoIHlvdXIgR2l0SHViIFVSTFxuICAgICAgbWVkaXVtVXJsOiAnaHR0cHM6Ly9tZWRpdW0uY29tL0B5b3VyLXByb2ZpbGUnLCAvLyBSZXBsYWNlIHdpdGggeW91ciBNZWRpdW0gVVJMXG4gICAgfSxcbiAgICB7XG4gICAgICBpbWFnZTogJy9pbWFnZXMvVGFzayBNYW5hZ2VyLnBuZycsXG4gICAgICB0aXRsZTogJ1JlY3RhbmdsZS1saWtlIENhcmQnLFxuICAgICAgYmFja2dyb3VuZENvbG9yOiAnI2ZmZmYnLFxuICAgICAgZ2l0aHViVXJsOiAnaHR0cHM6Ly9naXRodWIuY29tL3lvdXItcmVwbycsIC8vIFJlcGxhY2Ugd2l0aCB5b3VyIEdpdEh1YiBVUkxcbiAgICAgIG1lZGl1bVVybDogJ2h0dHBzOi8vbWVkaXVtLmNvbS9AeW91ci1wcm9maWxlJywgLy8gUmVwbGFjZSB3aXRoIHlvdXIgTWVkaXVtIFVSTFxuICAgIH0sXG4gICAge1xuICAgICAgaW1hZ2U6ICcvaW1hZ2VzL0dpdEh1Yi11c2VyLXByb2plY3QucG5nJyxcbiAgICAgIHRpdGxlOiAnUmVjdGFuZ2xlLWxpa2UgQ2FyZCcsXG4gICAgICBiYWNrZ3JvdW5kQ29sb3I6ICcjZDA5NGU1JyxcbiAgICAgIGdpdGh1YlVybDogJ2h0dHBzOi8vZ2l0aHViLmNvbS95b3VyLXJlcG8nLCAvLyBSZXBsYWNlIHdpdGggeW91ciBHaXRIdWIgVVJMXG4gICAgICBtZWRpdW1Vcmw6ICdodHRwczovL21lZGl1bS5jb20vQHlvdXItcHJvZmlsZScsIC8vIFJlcGxhY2Ugd2l0aCB5b3VyIE1lZGl1bSBVUkxcbiAgICB9LFxuICAgIHtcbiAgICAgIGltYWdlOiAnL2ltYWdlcy9wb2tlbW9uTGlicmFyeS5wbmcnLFxuICAgICAgdGl0bGU6ICdSZWN0YW5nbGUtbGlrZSBDYXJkJyxcbiAgICAgIGJhY2tncm91bmRDb2xvcjogJyNlN2I4OWMnLFxuICAgICAgZ2l0aHViVXJsOiAnaHR0cHM6Ly9naXRodWIuY29tL3lvdXItcmVwbycsIC8vIFJlcGxhY2Ugd2l0aCB5b3VyIEdpdEh1YiBVUkxcbiAgICAgIG1lZGl1bVVybDogJ2h0dHBzOi8vbWVkaXVtLmNvbS9AeW91ci1wcm9maWxlJywgLy8gUmVwbGFjZSB3aXRoIHlvdXIgTWVkaXVtIFVSTFxuICAgIH0sXG4gIF1cblxuICByZXR1cm4gKFxuICAgIDxCb3ggc3g9e3sgZmxleEdyb3c6IDEsIHBhZGRpbmc6IDQgfX0+XG4gICAgICA8R3JpZCBjb250YWluZXIgc3BhY2luZz17NH0+XG4gICAgICAgIHtjYXJkc0RhdGEubWFwKChjYXJkLCBpbmRleCkgPT4gKFxuICAgICAgICAgIDxHcmlkIGl0ZW0geHM9ezEyfSBzbT17Nn0gbWQ9ezR9IGtleT17aW5kZXh9PlxuICAgICAgICAgICAgXG4gICAgICAgICAgICA8SXRlbSBzeD17eyBiYWNrZ3JvdW5kQ29sb3I6IGNhcmQuYmFja2dyb3VuZENvbG9yIH19PlxuICAgICAgICAgICAgICA8Q2FyZFxuICAgICAgICAgICAgICAgIHN4PXt7XG4gICAgICAgICAgICAgICAgICB3aWR0aDogJzEwMCUnLFxuICAgICAgICAgICAgICAgICAgYmFja2dyb3VuZENvbG9yOiBjYXJkLmJhY2tncm91bmRDb2xvcixcbiAgICAgICAgICAgICAgICAgIGRpc3BsYXk6ICdmbGV4JyxcbiAgICAgICAgICAgICAgICAgIGZsZXhEaXJlY3Rpb246ICdjb2x1bW4nLFxuICAgICAgICAgICAgICAgIH19XG4gICAgICAgICAgICAgID5cbiAgICAgICAgICAgICAgICA8Q2FyZE1lZGlhXG4gICAgICAgICAgICAgICAgICBjb21wb25lbnQ9J2ltZydcbiAgICAgICAgICAgICAgICAgIHN4PXt7XG4gICAgICAgICAgICAgICAgICAgIHdpZHRoOiAnMTAwJScsXG4gICAgICAgICAgICAgICAgICAgIGhlaWdodDogJ2F1dG8nLFxuICAgICAgICAgICAgICAgICAgICBvYmplY3RGaXQ6ICdjb3ZlcicsXG4gICAgICAgICAgICAgICAgICB9fVxuICAgICAgICAgICAgICAgICAgaW1hZ2U9e2NhcmQuaW1hZ2V9XG4gICAgICAgICAgICAgICAgICB0aXRsZT17Y2FyZC50aXRsZX1cbiAgICAgICAgICAgICAgICAgIG9uRXJyb3I9eyhlKSA9PiB7XG4gICAgICAgICAgICAgICAgICAgIGUuY3VycmVudFRhcmdldC5zcmMgPSAnL2ltYWdlcy9kZWZhdWx0LWltYWdlLnBuZycgLy8gRmFsbGJhY2sgaW1hZ2VcbiAgICAgICAgICAgICAgICAgIH19XG4gICAgICAgICAgICAgICAgLz5cbiAgICAgICAgICAgICAgXG4gICAgICAgICAgICAgICAgPENhcmRBY3Rpb25zIHN4PXt7IGp1c3RpZnlDb250ZW50OiAnc3BhY2UtYmV0d2VlbicgfX0+XG4gICAgICAgICAgICAgICAgICA8SWNvbkJ1dHRvblxuICAgICAgICAgICAgICAgICAgICBzaXplPSdzbWFsbCdcbiAgICAgICAgICAgICAgICAgICAgc3g9e3sgY29sb3I6ICdibGFjaycgfX1cbiAgICAgICAgICAgICAgICAgICAgb25DbGljaz17KCkgPT4gd2luZG93Lm9wZW4oY2FyZC5naXRodWJVcmwsICdfYmxhbmsnKX1cbiAgICAgICAgICAgICAgICAgID5cbiAgICAgICAgICAgICAgICAgICAgPEdpdEh1Ykljb24gLz5cbiAgICAgICAgICAgICAgICAgIDwvSWNvbkJ1dHRvbj5cbiAgICAgICAgICAgICAgICAgIDxJY29uQnV0dG9uXG4gICAgICAgICAgICAgICAgICAgIHNpemU9J3NtYWxsJ1xuICAgICAgICAgICAgICAgICAgICBzeD17eyBjb2xvcjogJ3ByaW1hcnkubWFpbicgfX1cbiAgICAgICAgICAgICAgICAgICAgb25DbGljaz17KCkgPT4gd2luZG93Lm9wZW4oY2FyZC5tZWRpdW1VcmwsICdfYmxhbmsnKX1cbiAgICAgICAgICAgICAgICAgID5cbiAgICAgICAgICAgICAgICAgICAgPGltZ1xuICAgICAgICAgICAgICAgICAgICAgIHNyYz0nL2ltYWdlcy9tZWRpdW0ucG5nJyBcbiAgICAgICAgICAgICAgICAgICAgICBhbHQ9J01lZGl1bSBMb2dvJ1xuICAgICAgICAgICAgICAgICAgICAgIHN0eWxlPXt7IHdpZHRoOiAnMjRweCcsIGhlaWdodDogJ2F1dG8nIH19IFxuICAgICAgICAgICAgICAgICAgICAvPlxuICAgICAgICAgICAgICAgICAgPC9JY29uQnV0dG9uPlxuICAgICAgICAgICAgICAgIDwvQ2FyZEFjdGlvbnM+XG4gICAgICAgICAgICAgIDwvQ2FyZD5cbiAgICAgICAgICAgIDwvSXRlbT5cbiAgICAgICAgICA8L0dyaWQ+XG4gICAgICAgICkpfVxuICAgICAgPC9HcmlkPlxuICAgIDwvQm94PlxuICApXG59XG5cbmV4cG9ydCBkZWZhdWx0IExheW91dFxuIl0sIm5hbWVzIjpbIlJlYWN0IiwiQm94IiwiQ2FyZCIsIkNhcmRBY3Rpb25zIiwiQ2FyZE1lZGlhIiwiSWNvbkJ1dHRvbiIsIkdyaWQiLCJQYXBlciIsInN0eWxlZCIsIkdpdEh1Ykljb24iLCJJdGVtIiwidGhlbWUiLCJwYWRkaW5nIiwic3BhY2luZyIsInRleHRBbGlnbiIsImNvbG9yIiwicGFsZXR0ZSIsInRleHQiLCJzZWNvbmRhcnkiLCJib3JkZXJSYWRpdXMiLCJzaGFwZSIsImRpc3BsYXkiLCJmbGV4RGlyZWN0aW9uIiwiYWxpZ25JdGVtcyIsImp1c3RpZnlDb250ZW50IiwiTGF5b3V0IiwiY2FyZHNEYXRhIiwiaW1hZ2UiLCJ0aXRsZSIsImJhY2tncm91bmRDb2xvciIsImdpdGh1YlVybCIsIm1lZGl1bVVybCIsInN4IiwiZmxleEdyb3ciLCJjb250YWluZXIiLCJtYXAiLCJjYXJkIiwiaW5kZXgiLCJpdGVtIiwieHMiLCJzbSIsIm1kIiwid2lkdGgiLCJjb21wb25lbnQiLCJoZWlnaHQiLCJvYmplY3RGaXQiLCJvbkVycm9yIiwiZSIsImN1cnJlbnRUYXJnZXQiLCJzcmMiLCJzaXplIiwib25DbGljayIsIndpbmRvdyIsIm9wZW4iLCJpbWciLCJhbHQiLCJzdHlsZSJdLCJzb3VyY2VSb290IjoiIn0=\n//# sourceURL=webpack-internal:///./src/components/Cards.tsx\n");
+
+/***/ }),
+
+/***/ "./src/components/Projects.tsx":
+/*!*************************************!*\
+  !*** ./src/components/Projects.tsx ***!
+  \*************************************/
+/***/ ((module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.a(module, async (__webpack_handle_async_dependencies__, __webpack_async_result__) => { try {\n__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react/jsx-dev-runtime */ \"react/jsx-dev-runtime\");\n/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ \"react\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var _mui_material_Box__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @mui/material/Box */ \"@mui/material/Box\");\n/* harmony import */ var _mui_material_Box__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_mui_material_Box__WEBPACK_IMPORTED_MODULE_2__);\n/* harmony import */ var _mui_material_Typography__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @mui/material/Typography */ \"@mui/material/Typography\");\n/* harmony import */ var _mui_material_Typography__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_mui_material_Typography__WEBPACK_IMPORTED_MODULE_3__);\n/* harmony import */ var _Cards__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./Cards */ \"./src/components/Cards.tsx\");\n/* harmony import */ var _AppNavBar__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./AppNavBar */ \"./src/components/AppNavBar.tsx\");\nvar __webpack_async_dependencies__ = __webpack_handle_async_dependencies__([_Cards__WEBPACK_IMPORTED_MODULE_4__]);\n_Cards__WEBPACK_IMPORTED_MODULE_4__ = (__webpack_async_dependencies__.then ? (await __webpack_async_dependencies__)() : __webpack_async_dependencies__)[0];\n\n\n\n\n\n\nconst Projects = ()=>{\n    return /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)((_mui_material_Box__WEBPACK_IMPORTED_MODULE_2___default()), {\n        sx: {\n            width: \"100vw\",\n            minHeight: \"100vh\",\n            backgroundImage: \"linear-gradient(135deg, #546E51, #394C36, #1C261B)\",\n            // background:' ',\n            backgroundRepeat: \"repeat\",\n            color: \"#d4f3d9\",\n            display: \"flex\",\n            flexDirection: \"column\",\n            justifyContent: \"center\",\n            alignItems: \"center\",\n            textAlign: \"center\",\n            p: 3,\n            position: \"relative\",\n            pt: \"64px\"\n        },\n        children: [\n            /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(_AppNavBar__WEBPACK_IMPORTED_MODULE_5__[\"default\"], {}, void 0, false, {\n                fileName: \"/Users/abrahamic/Desktop/learning-journal/src/components/Projects.tsx\",\n                lineNumber: 28,\n                columnNumber: 7\n            }, undefined),\n            /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)((_mui_material_Typography__WEBPACK_IMPORTED_MODULE_3___default()), {\n                variant: \"h1\",\n                sx: {\n                    fontWeight: \"bold\",\n                    fontSize: {\n                        xs: \"2.5rem\",\n                        md: \"4rem\"\n                    },\n                    lineHeight: \"1.2\",\n                    mb: 2,\n                    mt: 8\n                },\n                children: \"Hi. I'm Abraham.\"\n            }, void 0, false, {\n                fileName: \"/Users/abrahamic/Desktop/learning-journal/src/components/Projects.tsx\",\n                lineNumber: 30,\n                columnNumber: 7\n            }, undefined),\n            /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)((_mui_material_Typography__WEBPACK_IMPORTED_MODULE_3___default()), {\n                variant: \"h2\",\n                sx: {\n                    fontWeight: \"bold\",\n                    fontSize: {\n                        xs: \"2rem\",\n                        md: \"4rem\"\n                    },\n                    mb: 4\n                },\n                children: \"A Developer.\"\n            }, void 0, false, {\n                fileName: \"/Users/abrahamic/Desktop/learning-journal/src/components/Projects.tsx\",\n                lineNumber: 42,\n                columnNumber: 7\n            }, undefined),\n            /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)((_mui_material_Typography__WEBPACK_IMPORTED_MODULE_3___default()), {\n                variant: \"subtitle1\",\n                sx: {\n                    fontSize: \"1.4rem\",\n                    color: \"#cfe9df\",\n                    mb: \"20px\"\n                },\n                children: \"I'm passionate about crafting experiences that are engaging, accessible, and user-centric.\"\n            }, void 0, false, {\n                fileName: \"/Users/abrahamic/Desktop/learning-journal/src/components/Projects.tsx\",\n                lineNumber: 53,\n                columnNumber: 7\n            }, undefined),\n            /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(_Cards__WEBPACK_IMPORTED_MODULE_4__[\"default\"], {}, void 0, false, {\n                fileName: \"/Users/abrahamic/Desktop/learning-journal/src/components/Projects.tsx\",\n                lineNumber: 61,\n                columnNumber: 7\n            }, undefined)\n        ]\n    }, void 0, true, {\n        fileName: \"/Users/abrahamic/Desktop/learning-journal/src/components/Projects.tsx\",\n        lineNumber: 10,\n        columnNumber: 5\n    }, undefined);\n};\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Projects);\n\n__webpack_async_result__();\n} catch(e) { __webpack_async_result__(e); } });//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9zcmMvY29tcG9uZW50cy9Qcm9qZWN0cy50c3giLCJtYXBwaW5ncyI6Ijs7Ozs7Ozs7Ozs7Ozs7Ozs7O0FBQThCO0FBQ0s7QUFDYztBQUN0QjtBQUNRO0FBR25DLE1BQU1LLFdBQXFCO0lBQ3pCLHFCQUNFLDhEQUFDSiwwREFBR0E7UUFDRkssSUFBSTtZQUNGQyxPQUFPO1lBQ1BDLFdBQVc7WUFDWEMsaUJBQWlCO1lBQ2pCLGtCQUFrQjtZQUNsQkMsa0JBQWtCO1lBQ2xCQyxPQUFPO1lBQ1BDLFNBQVM7WUFDVEMsZUFBZTtZQUNmQyxnQkFBZ0I7WUFDaEJDLFlBQVk7WUFDWkMsV0FBVztZQUNYQyxHQUFHO1lBQ0hDLFVBQVU7WUFDVkMsSUFBSTtRQUNOOzswQkFFQSw4REFBQ2Ysa0RBQVNBOzs7OzswQkFFViw4REFBQ0YsaUVBQVVBO2dCQUNUa0IsU0FBUTtnQkFDUmQsSUFBSTtvQkFDRmUsWUFBWTtvQkFDWkMsVUFBVTt3QkFBRUMsSUFBSTt3QkFBVUMsSUFBSTtvQkFBTztvQkFDckNDLFlBQVk7b0JBQ1pDLElBQUk7b0JBQ0pDLElBQUk7Z0JBQ047MEJBQ0Q7Ozs7OzswQkFHRCw4REFBQ3pCLGlFQUFVQTtnQkFDVGtCLFNBQVE7Z0JBQ1JkLElBQUk7b0JBQ0ZlLFlBQVk7b0JBQ1pDLFVBQVU7d0JBQUVDLElBQUk7d0JBQVFDLElBQUk7b0JBQU87b0JBQ25DRSxJQUFJO2dCQUNOOzBCQUNEOzs7Ozs7MEJBSUQsOERBQUN4QixpRUFBVUE7Z0JBQ1RrQixTQUFRO2dCQUNSZCxJQUFJO29CQUFFZ0IsVUFBVTtvQkFBVVgsT0FBTztvQkFBV2UsSUFBSTtnQkFBTzswQkFDeEQ7Ozs7OzswQkFLRCw4REFBQ3ZCLDhDQUFLQTs7Ozs7Ozs7Ozs7QUFHWjtBQUVBLGlFQUFlRSxRQUFRQSxFQUFBIiwic291cmNlcyI6WyJ3ZWJwYWNrOi8vbGVhcm5pbmctam91cm5hbC8uL3NyYy9jb21wb25lbnRzL1Byb2plY3RzLnRzeD85MjY1Il0sInNvdXJjZXNDb250ZW50IjpbImltcG9ydCAqIGFzIFJlYWN0IGZyb20gJ3JlYWN0J1xuaW1wb3J0IEJveCBmcm9tICdAbXVpL21hdGVyaWFsL0JveCdcbmltcG9ydCBUeXBvZ3JhcGh5IGZyb20gJ0BtdWkvbWF0ZXJpYWwvVHlwb2dyYXBoeSdcbmltcG9ydCBDYXJkcyBmcm9tICcuL0NhcmRzJ1xuaW1wb3J0IEFwcE5hdkJhciBmcm9tICcuL0FwcE5hdkJhcidcblxuXG5jb25zdCBQcm9qZWN0czogUmVhY3QuRkMgPSAoKSA9PiB7XG4gIHJldHVybiAoXG4gICAgPEJveFxuICAgICAgc3g9e3tcbiAgICAgICAgd2lkdGg6ICcxMDB2dycsXG4gICAgICAgIG1pbkhlaWdodDogJzEwMHZoJyxcbiAgICAgICAgYmFja2dyb3VuZEltYWdlOiAnbGluZWFyLWdyYWRpZW50KDEzNWRlZywgIzU0NkU1MSwgIzM5NEMzNiwgIzFDMjYxQiknLFxuICAgICAgICAvLyBiYWNrZ3JvdW5kOicgJyxcbiAgICAgICAgYmFja2dyb3VuZFJlcGVhdDogJ3JlcGVhdCcsXG4gICAgICAgIGNvbG9yOiAnI2Q0ZjNkOScsXG4gICAgICAgIGRpc3BsYXk6ICdmbGV4JyxcbiAgICAgICAgZmxleERpcmVjdGlvbjogJ2NvbHVtbicsXG4gICAgICAgIGp1c3RpZnlDb250ZW50OiAnY2VudGVyJyxcbiAgICAgICAgYWxpZ25JdGVtczogJ2NlbnRlcicsXG4gICAgICAgIHRleHRBbGlnbjogJ2NlbnRlcicsXG4gICAgICAgIHA6IDMsXG4gICAgICAgIHBvc2l0aW9uOiAncmVsYXRpdmUnLFxuICAgICAgICBwdDogJzY0cHgnLFxuICAgICAgfX1cbiAgICA+XG4gICAgICA8QXBwTmF2QmFyIC8+XG5cbiAgICAgIDxUeXBvZ3JhcGh5XG4gICAgICAgIHZhcmlhbnQ9J2gxJ1xuICAgICAgICBzeD17e1xuICAgICAgICAgIGZvbnRXZWlnaHQ6ICdib2xkJyxcbiAgICAgICAgICBmb250U2l6ZTogeyB4czogJzIuNXJlbScsIG1kOiAnNHJlbScgfSxcbiAgICAgICAgICBsaW5lSGVpZ2h0OiAnMS4yJyxcbiAgICAgICAgICBtYjogMixcbiAgICAgICAgICBtdDogOCxcbiAgICAgICAgfX1cbiAgICAgID5cbiAgICAgICAgSGkuIEknbSBBYnJhaGFtLlxuICAgICAgPC9UeXBvZ3JhcGh5PlxuICAgICAgPFR5cG9ncmFwaHlcbiAgICAgICAgdmFyaWFudD0naDInXG4gICAgICAgIHN4PXt7XG4gICAgICAgICAgZm9udFdlaWdodDogJ2JvbGQnLFxuICAgICAgICAgIGZvbnRTaXplOiB7IHhzOiAnMnJlbScsIG1kOiAnNHJlbScgfSxcbiAgICAgICAgICBtYjogNCxcbiAgICAgICAgfX1cbiAgICAgID5cbiAgICAgICAgQSBEZXZlbG9wZXIuXG4gICAgICA8L1R5cG9ncmFwaHk+XG5cbiAgICAgIDxUeXBvZ3JhcGh5XG4gICAgICAgIHZhcmlhbnQ9J3N1YnRpdGxlMSdcbiAgICAgICAgc3g9e3sgZm9udFNpemU6ICcxLjRyZW0nLCBjb2xvcjogJyNjZmU5ZGYnLCBtYjogJzIwcHgnIH19XG4gICAgICA+XG4gICAgICAgIEknbSBwYXNzaW9uYXRlIGFib3V0IGNyYWZ0aW5nIGV4cGVyaWVuY2VzIHRoYXQgYXJlIGVuZ2FnaW5nLCBhY2Nlc3NpYmxlLFxuICAgICAgICBhbmQgdXNlci1jZW50cmljLlxuICAgICAgPC9UeXBvZ3JhcGh5PlxuXG4gICAgICA8Q2FyZHMgLz5cbiAgICA8L0JveD5cbiAgKVxufVxuXG5leHBvcnQgZGVmYXVsdCBQcm9qZWN0c1xuIl0sIm5hbWVzIjpbIlJlYWN0IiwiQm94IiwiVHlwb2dyYXBoeSIsIkNhcmRzIiwiQXBwTmF2QmFyIiwiUHJvamVjdHMiLCJzeCIsIndpZHRoIiwibWluSGVpZ2h0IiwiYmFja2dyb3VuZEltYWdlIiwiYmFja2dyb3VuZFJlcGVhdCIsImNvbG9yIiwiZGlzcGxheSIsImZsZXhEaXJlY3Rpb24iLCJqdXN0aWZ5Q29udGVudCIsImFsaWduSXRlbXMiLCJ0ZXh0QWxpZ24iLCJwIiwicG9zaXRpb24iLCJwdCIsInZhcmlhbnQiLCJmb250V2VpZ2h0IiwiZm9udFNpemUiLCJ4cyIsIm1kIiwibGluZUhlaWdodCIsIm1iIiwibXQiXSwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///./src/components/Projects.tsx\n");
 
 /***/ }),
 
@@ -60,10 +82,10 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /*!*****************************!*\
   !*** ./src/pages/index.tsx ***!
   \*****************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+/***/ ((module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react/jsx-dev-runtime */ \"react/jsx-dev-runtime\");\n/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ \"react\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var _components_Test__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../components/Test */ \"./src/components/Test.tsx\");\n// src/pages/index.tsx\n\n\n\nconst HomePage = ()=>{\n    return /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"div\", {\n        children: [\n            /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"h1\", {\n                children: \"Welcome to the Learning Journal\"\n            }, void 0, false, {\n                fileName: \"/Users/abrahamic/Desktop/learning-journal/src/pages/index.tsx\",\n                lineNumber: 8,\n                columnNumber: 5\n            }, undefined),\n            /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(_components_Test__WEBPACK_IMPORTED_MODULE_2__[\"default\"], {}, void 0, false, {\n                fileName: \"/Users/abrahamic/Desktop/learning-journal/src/pages/index.tsx\",\n                lineNumber: 9,\n                columnNumber: 5\n            }, undefined)\n        ]\n    }, void 0, true, {\n        fileName: \"/Users/abrahamic/Desktop/learning-journal/src/pages/index.tsx\",\n        lineNumber: 7,\n        columnNumber: 5\n    }, undefined);\n};\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (HomePage);\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9zcmMvcGFnZXMvaW5kZXgudHN4IiwibWFwcGluZ3MiOiI7Ozs7Ozs7OztBQUFBLHNCQUFzQjs7QUFDRztBQUNZO0FBRXJDLE1BQU1FLFdBQXFCO0lBQ3pCLHFCQUNFLDhEQUFDQzs7MEJBQ0QsOERBQUNDOzBCQUFHOzs7Ozs7MEJBQ0osOERBQUNILHdEQUFJQTs7Ozs7Ozs7Ozs7QUFHVDtBQUVBLGlFQUFlQyxRQUFRQSxFQUFBIiwic291cmNlcyI6WyJ3ZWJwYWNrOi8vbGVhcm5pbmctam91cm5hbC8uL3NyYy9wYWdlcy9pbmRleC50c3g/MTlhMCJdLCJzb3VyY2VzQ29udGVudCI6WyIvLyBzcmMvcGFnZXMvaW5kZXgudHN4XG5pbXBvcnQgUmVhY3QgZnJvbSAncmVhY3QnXG5pbXBvcnQgVGVzdCBmcm9tICcuLi9jb21wb25lbnRzL1Rlc3QnXG5cbmNvbnN0IEhvbWVQYWdlOiBSZWFjdC5GQyA9ICgpID0+IHtcbiAgcmV0dXJuIChcbiAgICA8ZGl2PlxuICAgIDxoMT5XZWxjb21lIHRvIHRoZSBMZWFybmluZyBKb3VybmFsPC9oMT5cbiAgICA8VGVzdC8+XG4gICAgPC9kaXY+XG4gIClcbn1cblxuZXhwb3J0IGRlZmF1bHQgSG9tZVBhZ2VcbiJdLCJuYW1lcyI6WyJSZWFjdCIsIlRlc3QiLCJIb21lUGFnZSIsImRpdiIsImgxIl0sInNvdXJjZVJvb3QiOiIifQ==\n//# sourceURL=webpack-internal:///./src/pages/index.tsx\n");
+eval("__webpack_require__.a(module, async (__webpack_handle_async_dependencies__, __webpack_async_result__) => { try {\n__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react/jsx-dev-runtime */ \"react/jsx-dev-runtime\");\n/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ \"react\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var _components_Projects__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../components/Projects */ \"./src/components/Projects.tsx\");\nvar __webpack_async_dependencies__ = __webpack_handle_async_dependencies__([_components_Projects__WEBPACK_IMPORTED_MODULE_2__]);\n_components_Projects__WEBPACK_IMPORTED_MODULE_2__ = (__webpack_async_dependencies__.then ? (await __webpack_async_dependencies__)() : __webpack_async_dependencies__)[0];\n// src/pages/index.tsx\n\n\n\nconst HomePage = ()=>{\n    return /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(_components_Projects__WEBPACK_IMPORTED_MODULE_2__[\"default\"], {}, void 0, false, {\n        fileName: \"/Users/abrahamic/Desktop/learning-journal/src/pages/index.tsx\",\n        lineNumber: 8,\n        columnNumber: 5\n    }, undefined);\n};\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (HomePage);\n\n__webpack_async_result__();\n} catch(e) { __webpack_async_result__(e); } });//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9zcmMvcGFnZXMvaW5kZXgudHN4IiwibWFwcGluZ3MiOiI7Ozs7Ozs7Ozs7OztBQUFBLHNCQUFzQjs7QUFDRztBQUNvQjtBQUU3QyxNQUFNRSxXQUFxQjtJQUN6QixxQkFFRSw4REFBQ0QsNERBQVFBOzs7OztBQUViO0FBRUEsaUVBQWVDLFFBQVFBLEVBQUEiLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly9sZWFybmluZy1qb3VybmFsLy4vc3JjL3BhZ2VzL2luZGV4LnRzeD8xOWEwIl0sInNvdXJjZXNDb250ZW50IjpbIi8vIHNyYy9wYWdlcy9pbmRleC50c3hcbmltcG9ydCBSZWFjdCBmcm9tICdyZWFjdCdcbmltcG9ydCBQcm9qZWN0cyBmcm9tICcuLi9jb21wb25lbnRzL1Byb2plY3RzJ1xuXG5jb25zdCBIb21lUGFnZTogUmVhY3QuRkMgPSAoKSA9PiB7XG4gIHJldHVybiAoXG5cbiAgICA8UHJvamVjdHMvPlxuICApXG59XG5cbmV4cG9ydCBkZWZhdWx0IEhvbWVQYWdlXG4iXSwibmFtZXMiOlsiUmVhY3QiLCJQcm9qZWN0cyIsIkhvbWVQYWdlIl0sInNvdXJjZVJvb3QiOiIifQ==\n//# sourceURL=webpack-internal:///./src/pages/index.tsx\n");
 
 /***/ }),
 
@@ -85,6 +107,17 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /***/ (() => {
 
 
+
+/***/ }),
+
+/***/ "@mui/icons-material/GitHub":
+/*!*********************************************!*\
+  !*** external "@mui/icons-material/GitHub" ***!
+  \*********************************************/
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("@mui/icons-material/GitHub");
 
 /***/ }),
 
@@ -154,6 +187,314 @@ module.exports = require("@mui/material/styles");
 
 /***/ }),
 
+/***/ "@mui/system":
+/*!******************************!*\
+  !*** external "@mui/system" ***!
+  \******************************/
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("@mui/system");
+
+/***/ }),
+
+/***/ "@mui/system/DefaultPropsProvider":
+/*!***************************************************!*\
+  !*** external "@mui/system/DefaultPropsProvider" ***!
+  \***************************************************/
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("@mui/system/DefaultPropsProvider");
+
+/***/ }),
+
+/***/ "@mui/system/InitColorSchemeScript":
+/*!****************************************************!*\
+  !*** external "@mui/system/InitColorSchemeScript" ***!
+  \****************************************************/
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("@mui/system/InitColorSchemeScript");
+
+/***/ }),
+
+/***/ "@mui/system/colorManipulator":
+/*!***********************************************!*\
+  !*** external "@mui/system/colorManipulator" ***!
+  \***********************************************/
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("@mui/system/colorManipulator");
+
+/***/ }),
+
+/***/ "@mui/system/createBreakpoints":
+/*!************************************************!*\
+  !*** external "@mui/system/createBreakpoints" ***!
+  \************************************************/
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("@mui/system/createBreakpoints");
+
+/***/ }),
+
+/***/ "@mui/system/createStyled":
+/*!*******************************************!*\
+  !*** external "@mui/system/createStyled" ***!
+  \*******************************************/
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("@mui/system/createStyled");
+
+/***/ }),
+
+/***/ "@mui/system/createTheme":
+/*!******************************************!*\
+  !*** external "@mui/system/createTheme" ***!
+  \******************************************/
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("@mui/system/createTheme");
+
+/***/ }),
+
+/***/ "@mui/system/cssVars":
+/*!**************************************!*\
+  !*** external "@mui/system/cssVars" ***!
+  \**************************************/
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("@mui/system/cssVars");
+
+/***/ }),
+
+/***/ "@mui/system/spacing":
+/*!**************************************!*\
+  !*** external "@mui/system/spacing" ***!
+  \**************************************/
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("@mui/system/spacing");
+
+/***/ }),
+
+/***/ "@mui/system/styleFunctionSx":
+/*!**********************************************!*\
+  !*** external "@mui/system/styleFunctionSx" ***!
+  \**********************************************/
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("@mui/system/styleFunctionSx");
+
+/***/ }),
+
+/***/ "@mui/system/useThemeProps":
+/*!********************************************!*\
+  !*** external "@mui/system/useThemeProps" ***!
+  \********************************************/
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("@mui/system/useThemeProps");
+
+/***/ }),
+
+/***/ "@mui/utils":
+/*!*****************************!*\
+  !*** external "@mui/utils" ***!
+  \*****************************/
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("@mui/utils");
+
+/***/ }),
+
+/***/ "@mui/utils/capitalize":
+/*!****************************************!*\
+  !*** external "@mui/utils/capitalize" ***!
+  \****************************************/
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("@mui/utils/capitalize");
+
+/***/ }),
+
+/***/ "@mui/utils/chainPropTypes":
+/*!********************************************!*\
+  !*** external "@mui/utils/chainPropTypes" ***!
+  \********************************************/
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("@mui/utils/chainPropTypes");
+
+/***/ }),
+
+/***/ "@mui/utils/composeClasses":
+/*!********************************************!*\
+  !*** external "@mui/utils/composeClasses" ***!
+  \********************************************/
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("@mui/utils/composeClasses");
+
+/***/ }),
+
+/***/ "@mui/utils/deepmerge":
+/*!***************************************!*\
+  !*** external "@mui/utils/deepmerge" ***!
+  \***************************************/
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("@mui/utils/deepmerge");
+
+/***/ }),
+
+/***/ "@mui/utils/elementTypeAcceptingRef":
+/*!*****************************************************!*\
+  !*** external "@mui/utils/elementTypeAcceptingRef" ***!
+  \*****************************************************/
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("@mui/utils/elementTypeAcceptingRef");
+
+/***/ }),
+
+/***/ "@mui/utils/formatMuiErrorMessage":
+/*!***************************************************!*\
+  !*** external "@mui/utils/formatMuiErrorMessage" ***!
+  \***************************************************/
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("@mui/utils/formatMuiErrorMessage");
+
+/***/ }),
+
+/***/ "@mui/utils/generateUtilityClass":
+/*!**************************************************!*\
+  !*** external "@mui/utils/generateUtilityClass" ***!
+  \**************************************************/
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("@mui/utils/generateUtilityClass");
+
+/***/ }),
+
+/***/ "@mui/utils/generateUtilityClasses":
+/*!****************************************************!*\
+  !*** external "@mui/utils/generateUtilityClasses" ***!
+  \****************************************************/
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("@mui/utils/generateUtilityClasses");
+
+/***/ }),
+
+/***/ "@mui/utils/integerPropType":
+/*!*********************************************!*\
+  !*** external "@mui/utils/integerPropType" ***!
+  \*********************************************/
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("@mui/utils/integerPropType");
+
+/***/ }),
+
+/***/ "@mui/utils/isFocusVisible":
+/*!********************************************!*\
+  !*** external "@mui/utils/isFocusVisible" ***!
+  \********************************************/
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("@mui/utils/isFocusVisible");
+
+/***/ }),
+
+/***/ "@mui/utils/refType":
+/*!*************************************!*\
+  !*** external "@mui/utils/refType" ***!
+  \*************************************/
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("@mui/utils/refType");
+
+/***/ }),
+
+/***/ "@mui/utils/requirePropFactory":
+/*!************************************************!*\
+  !*** external "@mui/utils/requirePropFactory" ***!
+  \************************************************/
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("@mui/utils/requirePropFactory");
+
+/***/ }),
+
+/***/ "@mui/utils/useEventCallback":
+/*!**********************************************!*\
+  !*** external "@mui/utils/useEventCallback" ***!
+  \**********************************************/
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("@mui/utils/useEventCallback");
+
+/***/ }),
+
+/***/ "@mui/utils/useForkRef":
+/*!****************************************!*\
+  !*** external "@mui/utils/useForkRef" ***!
+  \****************************************/
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("@mui/utils/useForkRef");
+
+/***/ }),
+
+/***/ "@mui/utils/useLazyRef":
+/*!****************************************!*\
+  !*** external "@mui/utils/useLazyRef" ***!
+  \****************************************/
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("@mui/utils/useLazyRef");
+
+/***/ }),
+
+/***/ "@mui/utils/useTimeout":
+/*!****************************************!*\
+  !*** external "@mui/utils/useTimeout" ***!
+  \****************************************/
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("@mui/utils/useTimeout");
+
+/***/ }),
+
 /***/ "next/dist/compiled/next-server/pages.runtime.dev.js":
 /*!**********************************************************************!*\
   !*** external "next/dist/compiled/next-server/pages.runtime.dev.js" ***!
@@ -162,6 +503,17 @@ module.exports = require("@mui/material/styles");
 
 "use strict";
 module.exports = require("next/dist/compiled/next-server/pages.runtime.dev.js");
+
+/***/ }),
+
+/***/ "prop-types":
+/*!*****************************!*\
+  !*** external "prop-types" ***!
+  \*****************************/
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("prop-types");
 
 /***/ }),
 
@@ -184,6 +536,17 @@ module.exports = require("react");
 
 "use strict";
 module.exports = require("react-dom");
+
+/***/ }),
+
+/***/ "react-transition-group":
+/*!*****************************************!*\
+  !*** external "react-transition-group" ***!
+  \*****************************************/
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("react-transition-group");
 
 /***/ }),
 
@@ -251,6 +614,17 @@ module.exports = require("stream");
 "use strict";
 module.exports = require("zlib");
 
+/***/ }),
+
+/***/ "clsx":
+/*!***********************!*\
+  !*** external "clsx" ***!
+  \***********************/
+/***/ ((module) => {
+
+"use strict";
+module.exports = import("clsx");;
+
 /***/ })
 
 };
@@ -260,7 +634,7 @@ module.exports = require("zlib");
 var __webpack_require__ = require("../webpack-runtime.js");
 __webpack_require__.C(exports);
 var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
-var __webpack_exports__ = __webpack_require__.X(0, ["vendor-chunks/next","vendor-chunks/@swc"], () => (__webpack_exec__("./node_modules/next/dist/build/webpack/loaders/next-route-loader/index.js?kind=PAGES&page=%2F&preferredRegion=&absolutePagePath=.%2Fsrc%2Fpages%2Findex.tsx&absoluteAppPath=private-next-pages%2F_app&absoluteDocumentPath=private-next-pages%2F_document&middlewareConfigBase64=e30%3D!")));
+var __webpack_exports__ = __webpack_require__.X(0, ["vendor-chunks/next","vendor-chunks/@swc","vendor-chunks/@mui"], () => (__webpack_exec__("./node_modules/next/dist/build/webpack/loaders/next-route-loader/index.js?kind=PAGES&page=%2F&preferredRegion=&absolutePagePath=.%2Fsrc%2Fpages%2Findex.tsx&absoluteAppPath=private-next-pages%2F_app&absoluteDocumentPath=private-next-pages%2F_document&middlewareConfigBase64=e30%3D!")));
 module.exports = __webpack_exports__;
 
 })();

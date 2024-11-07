@@ -3,10 +3,8 @@ import {
   Box,
   Card,
   CardActions,
-  CardContent,
   CardMedia,
   IconButton,
-  Typography,
   Grid,
   Paper,
 } from '@mui/material'
@@ -37,7 +35,7 @@ const Layout: React.FC = () => {
       image: '/images/projectListing.png',
       title: 'Sample Title 2',
       backgroundColor: '#b3c7f1',
-      githubUrl: 'https://github.com/your-repo', // Replace with your GitHub URL
+      githubUrl: 'https://github.com/anogbidor/Product-listing-page', // Replace with your GitHub URL
       mediumUrl: 'https://medium.com/@your-profile', // Replace with your Medium URL
     },
     {
