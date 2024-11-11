@@ -37,7 +37,7 @@ const AppNavBar: React.FC = () => {
       case '/contact':
         return 'contact'
       default:
-        return 'projects'
+        return 'about'
     }
   }
 

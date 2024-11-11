@@ -10,7 +10,7 @@ const MyApp: React.FC<AppProps> = ({ Component, pageProps }) => {
   return (
     <ThemeProvider theme={theme}>
       <Head>
-        <title>Keep Experimenting</title>
+        <title>Portfolio</title>
       
         <link rel='icon' href='/logo.png' />
       </Head>

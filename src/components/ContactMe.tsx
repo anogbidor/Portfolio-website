@@ -11,15 +11,13 @@ export default function Example() {
       <div
         aria-hidden='true'
         className='absolute inset-x-0 top-[-10rem] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[-20rem]'
-      >
-       
-      </div>
+      ></div>
       <div className='mx-auto max-w-2xl text-center'>
-        <h2 className='text-balance text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl'>
-          Reach Me 
+        <h2 className='text-balance text-4xl font-semibold tracking-tight text-custom-text sm:text-5xl'>
+          Get in Touch
         </h2>
-        <p className='mt-2 text-lg/8 text-gray-600'>
-          Aute magna irure deserunt veniam aliqua magna enim voluptate.
+        <p className='mt-2 text-lg/8 text-custom-text'>
+          I understand that feedback is a crucial part of growth.
         </p>
       </div>
       <form
@@ -31,7 +29,7 @@ export default function Example() {
           <div>
             <label
               htmlFor='first-name'
-              className='block text-sm/6 font-semibold text-gray-900'
+              className='block text-sm/6 font-semibold text-custom-text'
             >
               First name
             </label>
@@ -41,14 +39,14 @@ export default function Example() {
                 name='first-name'
                 type='text'
                 autoComplete='given-name'
-                className='block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm/6'
+                className='block w-full rounded-md border-0 px-3.5 py-2 text-black shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm/6'
               />
             </div>
           </div>
           <div>
             <label
               htmlFor='last-name'
-              className='block text-sm/6 font-semibold text-gray-900'
+              className='block text-sm/6 font-semibold text-custom-text'
             >
               Last name
             </label>
@@ -58,14 +56,14 @@ export default function Example() {
                 name='last-name'
                 type='text'
                 autoComplete='family-name'
-                className='block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm/6'
+                className='block w-full rounded-md border-0 px-3.5 py-2 text-custom-text shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm/6'
               />
             </div>
           </div>
           <div className='sm:col-span-2'>
             <label
               htmlFor='company'
-              className='block text-sm/6 font-semibold text-gray-900'
+              className='block text-sm/6 font-semibold text-custom-text'
             >
               Company
             </label>
@@ -75,14 +73,14 @@ export default function Example() {
                 name='company'
                 type='text'
                 autoComplete='organization'
-                className='block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm/6'
+                className='block w-full rounded-md border-0 px-3.5 py-2 text-custom-text shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm/6'
               />
             </div>
           </div>
           <div className='sm:col-span-2'>
             <label
               htmlFor='email'
-              className='block text-sm/6 font-semibold text-gray-900'
+              className='block text-sm/6 font-semibold text-custom-text'
             >
               Email
             </label>
@@ -92,14 +90,14 @@ export default function Example() {
                 name='email'
                 type='email'
                 autoComplete='email'
-                className='block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm/6'
+                className='block w-full rounded-md border-0 px-3.5 py-2 text-custom-text shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm/6'
               />
             </div>
           </div>
           <div className='sm:col-span-2'>
             <label
               htmlFor='phone-number'
-              className='block text-sm/6 font-semibold text-gray-900'
+              className='block text-sm/6 font-semibold text-custom-text'
             >
               Phone number
             </label>
@@ -111,7 +109,7 @@ export default function Example() {
                 <select
                   id='country'
                   name='country'
-                  className='h-full rounded-md border-0 bg-transparent bg-none py-0 pl-4 pr-9 text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm'
+                  className='h-full rounded-md border-0 bg-transparent bg-none py-0 pl-4 pr-9 text-gray-500 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm'
                 >
                   <option>US</option>
                   <option>CA</option>
@@ -127,14 +125,14 @@ export default function Example() {
                 name='phone-number'
                 type='tel'
                 autoComplete='tel'
-                className='block w-full rounded-md border-0 px-3.5 py-2 pl-20 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm/6'
+                className='block w-full rounded-md border-0 px-3.5 py-2 pl-20 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-500 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm/6'
               />
             </div>
           </div>
           <div className='sm:col-span-2'>
             <label
               htmlFor='message'
-              className='block text-sm/6 font-semibold text-gray-900'
+              className='block text-sm/6 font-semibold text-custom-text'
             >
               Message
             </label>
@@ -143,7 +141,7 @@ export default function Example() {
                 id='message'
                 name='message'
                 rows={4}
-                className='block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm/6'
+                className='block w-full rounded-md border-0 px-3.5 py-2 text-custom-text shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm/6'
                 defaultValue={''}
               />
             </div>
@@ -153,18 +151,18 @@ export default function Example() {
               <Switch
                 checked={agreed}
                 onChange={setAgreed}
-                className='group flex w-8 flex-none cursor-pointer rounded-full bg-gray-200 p-px ring-1 ring-inset ring-gray-900/5 transition-colors duration-200 ease-in-out focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 data-[checked]:bg-indigo-600'
+                className='group flex w-8 flex-none cursor-pointer rounded-full bg-custom-light-soft-green p-px ring-1 ring-inset ring-gray-900/5 transition-colors duration-200 ease-in-out focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 data-[checked]:bg-custom-light-soft-green'
               >
                 <span className='sr-only'>Agree to policies</span>
                 <span
                   aria-hidden='true'
-                  className='h-4 w-4 transform rounded-full bg-white shadow-sm ring-1 ring-gray-900/5 transition duration-200 ease-in-out group-data-[checked]:translate-x-3.5'
+                  className='h-4 w-4 transform rounded-full bg-green-700 shadow-sm ring-1 ring-gray-900/5 transition duration-200 ease-in-out group-data-[checked]:translate-x-3.5'
                 />
               </Switch>
             </div>
-            <Label className='text-sm/6 text-gray-600'>
+            <Label className='text-sm/6 text-custom-text'>
               By selecting this, you agree to our{' '}
-              <a href='#' className='font-semibold text-indigo-600'>
+              <a href='#' className='font-semibold text-green-700'>
                 privacy&nbsp;policy
               </a>
               .
@@ -174,7 +172,7 @@ export default function Example() {
         <div className='mt-10'>
           <button
             type='submit'
-            className='block w-full rounded-md bg-indigo-600 px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600'
+            className='block w-full rounded-md bg-custom-light-soft-green px-3.5 py-2.5 text-center text-sm font-semibold text-custom-green shadow-sm hover:bg-green-700 hover:text-custom-light-soft-green focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-custom-light-soft-green'
           >
             Let's talk
           </button>

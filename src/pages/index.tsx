@@ -1,11 +1,11 @@
 // src/pages/index.tsx
 import React from 'react'
-import Projects from '../components/Projects'
+import About from '../components/About'
 
 const HomePage: React.FC = () => {
   return (
-
-    <Projects/>
+<About/>
+    
   )
 }
 

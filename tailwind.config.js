@@ -10,6 +10,7 @@ module.exports = {
         'custom-text': '#cfe9df',
         'custom-light-green': '#e5fbf4',
         'custom-light-soft-green': '#d4f3d9',
+        'custom-green': '#1f4238',
       },
       backgroundImage: {
         'custom-green': 'linear-gradient(135deg, #546E51, #394C36, #1C261B)',
