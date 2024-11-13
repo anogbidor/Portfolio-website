@@ -1,7 +1,7 @@
 import * as React from 'react'
 import Box from '@mui/material/Box'
 import Typography from '@mui/material/Typography'
-import Cards from './Cards'
+import CardGrid from './CardGrid'
 import AppNavBar from './AppNavBar'
 
 
@@ -58,7 +58,7 @@ const Projects: React.FC = () => {
         and user-centric.
       </Typography>
 
-      <Cards />
+      <CardGrid />
     </Box>
   )
 }
