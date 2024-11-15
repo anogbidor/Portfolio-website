@@ -1,4 +1,3 @@
-// components/Card.tsx
 import React from 'react'
 
 interface CardProps {
@@ -18,7 +17,7 @@ const Card: React.FC<CardProps> = ({
 }) => {
   return (
     <div
-      className='flex flex-col items-center rounded-lg p-4 shadow-md w-72'
+      className='flex flex-col items-center rounded-lg p-4 shadow-md w-72 h-full'
       style={{ backgroundColor }}
     >
       {/* Card Image */}
@@ -31,22 +30,27 @@ const Card: React.FC<CardProps> = ({
         }}
       />
 
-      {/* Card Text - Add your description here */}
-      {description && (
-        <p className='text-center text-custom-green my-2 px-2'>{description}</p>
-      )}
+      {/* Content Wrapper */}
+      <div className='flex flex-col flex-grow justify-between w-full'>
+        {/* Card Text - Add your description here */}
+        {description && (
+          <p className='text-center text-custom-green my-2 px-2'>
+            {description}
+          </p>
+        )}
 
-      {/* Medium Link Text */}
-      <p className='text-center text-custom-link no-underline mb-2 hover:text-purple-800'>
-        <a href={mediumUrl} target='_blank' rel='noopener noreferrer'>
-          Continue reading on Medium
-        </a>
-      </p>
+        {/* Medium Link Text */}
+        <p className='text-center text-custom-link no-underline mb-2 hover:text-purple-800'>
+          <a href={mediumUrl} target='_blank' rel='noopener noreferrer'>
+            Continue reading on Medium
+          </a>
+        </p>
+      </div>
 
       {/* GitHub Button */}
       <button
         onClick={() => window.open(githubUrl, '_blank')}
-        className='mt-2 py-2 px-4 bg-custom-link text-white rounded-md hover:bg-custom-light-soft-green hover:text-purple-800  transition duration-300'
+        className='mt-2 py-2 px-4 bg-custom-link text-white rounded-md hover:bg-custom-light-soft-green hover:text-purple-800 transition duration-300'
       >
         View on GitHub
       </button>

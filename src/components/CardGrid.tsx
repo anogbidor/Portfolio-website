@@ -1,4 +1,3 @@
-// components/CardGrid.tsx
 import React from 'react'
 import Card from './Card'
 
@@ -10,7 +9,7 @@ const CardGrid: React.FC = () => {
       githubUrl: 'https://github.com/your-repo',
       mediumUrl: 'https://medium.com/@your-profile',
       description:
-        'A tool for language learning and practice, leveraging spaced repetition and gamification.',
+        'A tool for language learning and practice, leveraging spaced repetition and gamification...',
     },
     {
       image: '/images/projectListing.png',
@@ -18,7 +17,7 @@ const CardGrid: React.FC = () => {
       githubUrl: 'https://github.com/anogbidor/Product-listing-page',
       mediumUrl: 'https://medium.com/@your-profile',
       description:
-        'A clean, responsive product listing page with filtering and sorting features.',
+        'A clean, responsive product listing page with filtering and sorting features...',
     },
     {
       image: '/images/digitalFrame-project.png',
@@ -26,7 +25,7 @@ const CardGrid: React.FC = () => {
       githubUrl: 'https://github.com/your-repo',
       mediumUrl: 'https://medium.com/@your-profile',
       description:
-        'A customizable digital photo frame project to showcase your favorite moments.',
+        'A customizable digital photo frame project to showcase your favorite moments...',
     },
     {
       image: '/images/Task Manager.png',
@@ -34,7 +33,7 @@ const CardGrid: React.FC = () => {
       githubUrl: 'https://github.com/your-repo',
       mediumUrl: 'https://medium.com/@your-profile',
       description:
-        'A task manager app to help you organize and prioritize your to-do list efficiently.',
+        'A task manager app to help you organize and prioritize your to-do list efficiently...',
     },
     {
       image: '/images/GitHub-user-project.png',
@@ -42,7 +41,7 @@ const CardGrid: React.FC = () => {
       githubUrl: 'https://github.com/your-repo',
       mediumUrl: 'https://medium.com/@your-profile',
       description:
-        'A GitHub user search tool that lets you view user profiles and repositories.',
+        'A GitHub user search tool that lets you view user profiles and repositories...',
     },
     {
       image: '/images/pokemonLibrary.png',
@@ -50,7 +49,7 @@ const CardGrid: React.FC = () => {
       githubUrl: 'https://github.com/your-repo',
       mediumUrl: 'https://medium.com/@your-profile',
       description:
-        'An extensive library of Pokémon data with filters and detailed information.',
+        'An extensive library of Pokémon data with filters and detailed information...',
     },
   ]
 
