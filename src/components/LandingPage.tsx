@@ -7,7 +7,6 @@ import AppNavBar from '../components/AppNavBar'
 import HeroSection from '../components/HeroSection'
 import ProjectSection from '../components/ProjectSection'
 import SkillSection from '../components/SkillSection'
-import AboutSection from '../components/AboutSection'
 import Footer from '../components/Footer'
 
 const LandingPage: React.FC = () => {
@@ -23,7 +22,7 @@ const LandingPage: React.FC = () => {
         <Container maxWidth='lg'>
           <ProjectSection />
           <SkillSection />
-          <AboutSection />
+         
         </Container>
       </Box>
 

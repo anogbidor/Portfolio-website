@@ -3,8 +3,7 @@ import Box from '@mui/material/Box'
 import Typography from '@mui/material/Typography'
 import Button from '@mui/material/Button'
 import { LinkedIn, GitHub, Email } from '@mui/icons-material'
-import { useTheme } from '@mui/material/styles'
-import useMediaQuery from '@mui/material/useMediaQuery'
+
 
 interface HeroSectionProps {
   isMobile: boolean
@@ -50,8 +49,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({ isMobile }) => {
           position: 'absolute',
           width: '150vw',
           height: '150vw',
-          background:
-            'radial-gradient(circle, rgba(168,230,207,0.2) 0%, transparent 70%)',
+          background: 'radial-gradient(circle, rgba(168,230,207,0.2) 0%, transparent 70%)',
           zIndex: 1,
           animation: 'orbit 20s linear infinite',
           '@keyframes orbit': {
@@ -131,8 +129,8 @@ const HeroSection: React.FC<HeroSectionProps> = ({ isMobile }) => {
             px: 2,
           }}
         >
-          I specialize in crafting beautiful, accessible, and performant digital
-          experiences.
+          I specialize in crafting beautiful, accessible, and performant
+          digital experiences.
         </Typography>
 
         <Box sx={{ display: 'flex', gap: 2, mb: 8 }}>
@@ -169,9 +167,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({ isMobile }) => {
         </Box>
 
         <Box sx={{ display: 'flex', gap: 3 }}>
-          <LinkedIn
-            sx={{ fontSize: 32, color: '#dcedc1', cursor: 'pointer' }}
-          />
+          <LinkedIn sx={{ fontSize: 32, color: '#dcedc1', cursor: 'pointer' }} />
           <GitHub sx={{ fontSize: 32, color: '#dcedc1', cursor: 'pointer' }} />
           <Email sx={{ fontSize: 32, color: '#dcedc1', cursor: 'pointer' }} />
         </Box>
@@ -183,8 +179,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({ isMobile }) => {
           position: 'absolute',
           width: '100vw',
           height: '100vh',
-          background:
-            'radial-gradient(circle at 70% 30%, rgba(220,237,193,0.05) 0%, transparent 50%)',
+          background: 'radial-gradient(circle at 70% 30%, rgba(220,237,193,0.05) 0%, transparent 50%)',
           zIndex: 1,
           animation: 'pulse 15s ease infinite alternate',
           '@keyframes pulse': {
