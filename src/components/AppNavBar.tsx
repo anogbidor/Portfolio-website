@@ -72,7 +72,7 @@ const AppNavBar: React.FC = () => {
               color: '#ffffff',
             }}
           >
-            northvolt
+            Logox
           </Typography>
 
           {/* Desktop Navigation Links */}
