@@ -6,111 +6,188 @@ import Container from '@mui/material/Container'
 import Typography from '@mui/material/Typography'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
+import Menu from '@mui/material/Menu'
+import MenuItem from '@mui/material/MenuItem'
+import IconButton from '@mui/material/IconButton'
+import MenuIcon from '@mui/icons-material/Menu'
+import Breadcrumbs from '@mui/material/Breadcrumbs'
 
 const AppNavBar: React.FC = () => {
   const router = useRouter()
-  const [showBackground, setShowBackground] = React.useState(false)
+  const [scrolled, setScrolled] = React.useState(false)
+  const [mobileMenuAnchor, setMobileMenuAnchor] =
+    React.useState<null | HTMLElement>(null)
 
-  // Handle scroll event
   const handleScroll = () => {
-    setShowBackground(window.scrollY > 50)
+    setScrolled(window.scrollY > 10)
   }
 
   React.useEffect(() => {
     window.addEventListener('scroll', handleScroll)
-
-    return () => {
-      window.removeEventListener('scroll', handleScroll)
-    }
+    return () => window.removeEventListener('scroll', handleScroll)
   }, [])
 
-  const getActiveButton = () => {
-    switch (router.pathname) {
-      case '/projects':
-        return 'projects'
-      case '/blogs':
-        return 'blogs'
-      case '/about':
-        return 'about'
-      case '/article':
-        return 'article'
-      case '/contact':
-        return 'contact'
-      default:
-        return 'about'
-    }
+  const handleMobileMenuOpen = (event: React.MouseEvent<HTMLElement>) => {
+    setMobileMenuAnchor(event.currentTarget)
   }
 
-  
-  const textColor = '#000'; 
+  const handleMobileMenuClose = () => {
+    setMobileMenuAnchor(null)
+  }
+
+  const navItems = [
+    { name: 'Home', path: '/projects' },
+    { name: 'Blogs', path: '/blogs' },
+    { name: 'About', path: '/about' },
+    { name: 'Contact', path: '/contact' },
+  ]
 
   return (
-    <nav>
-      <AppBar
-        position='fixed'
-        sx={{
-          boxShadow: 0,
-          backgroundColor: 'transparent',
-          top: 0,
-        }}
-      >
-        <Container maxWidth='lg'>
-          <Box
+    <AppBar
+      position='fixed'
+      elevation={0}
+      sx={{
+        backgroundColor: scrolled ? 'rgba(0, 0, 0, 0.16)' : 'transparent',
+        backdropFilter: scrolled ? 'blur(8px)' : 'none',
+        transition: 'all 0.3s ease',
+      }}
+    >
+      <Container maxWidth='lg' sx={{ px: { xs: 2, md: 4 } }}>
+        <Box
+          sx={{
+            display: 'flex',
+            justifyContent: 'space-between',
+            alignItems: 'center',
+            py: 2,
+          }}
+        >
+          {/* Logo */}
+          <Typography
+            variant='h6'
+            component='div'
             sx={{
-              flexGrow: 1,
-              display: 'flex',
-              justifyContent: 'center',
-              alignItems: 'center',
-              px: 0,
-              py: 2,
+              fontWeight: 700,
+              fontSize: '1.5rem',
+              letterSpacing: '-0.5px',
+              color: '#ffffff',
             }}
           >
-            <Box
-              sx={{
-                display: { xs: 'none', md: 'flex' },
-                gap: 2,
-                bgcolor: showBackground
-                  ? 'rgba(62, 107, 98, 0.7)'
-                  : 'transparent',
-                transition: 'background-color 0.3s ease',
-                padding: '2px',
-                borderRadius: '12px',
-                backdropFilter: showBackground ? 'blur(2px)' : 'none',
-                WebkitBackdropFilter: showBackground ? 'blur(2px)' : 'none',
-              }}
-            >
-              {['projects', 'blogs', 'about', 'contact'].map((page) => (
-                <Link key={page} href={`/${page}`} passHref>
-                  <Button
-                    variant={getActiveButton() === page ? 'contained' : 'text'}
-                    color='inherit'
-                    size='small'
-                    sx={{
-                      minWidth: 0,
-                      borderRadius: '12px',
-                      bgcolor:
-                        getActiveButton() === page ? '#cfe9df' : 'transparent',
-                    }}
-                  >
-                    <Typography
-                      variant='subtitle1'
-                      color={getActiveButton() === page ? textColor : '#cfe9df'}
-                      sx={{
-                        textTransform: 'capitalize',
-                        fontSize: '1rem',
-                        fontFamily: 'sans-serif',
-                      }}
-                    >
-                      {page.charAt(0).toUpperCase() + page.slice(1)}
-                    </Typography>
-                  </Button>
-                </Link>
-              ))}
-            </Box>
+            northvolt
+          </Typography>
+
+          {/* Desktop Navigation Links */}
+          <Box sx={{ display: { xs: 'none', md: 'flex' }, gap: 4 }}>
+            {navItems.map((item) => (
+              <Link key={item.name} href={item.path} passHref>
+                <Button
+                  disableRipple
+                  sx={{
+                    color: '#ffffff',
+                    fontWeight: router.pathname === item.path ? 600 : 400,
+                    fontSize: '1rem',
+                    textTransform: 'none',
+                    position: 'relative',
+                    px: 0,
+                    minWidth: 0,
+                    '&:after': {
+                      content: '""',
+                      position: 'absolute',
+                      bottom: -4,
+                      left: 0,
+                      width: router.pathname === item.path ? '100%' : '0%',
+                      height: '2px',
+                      backgroundColor: '#ffffff',
+                      transition: 'width 0.3s ease',
+                    },
+                    '&:hover:after': {
+                      width: '100%',
+                    },
+                    '&:hover': {
+                      backgroundColor: 'transparent',
+                    },
+                  }}
+                >
+                  {item.name}
+                </Button>
+              </Link>
+            ))}
           </Box>
-        </Container>
-      </AppBar>
-    </nav>
+
+          {/* Mobile Menu Button */}
+          <Box sx={{ display: { xs: 'flex', md: 'none' } }}>
+            <IconButton
+              size='large'
+              aria-label='menu'
+              aria-controls='mobile-menu'
+              aria-haspopup='true'
+              onClick={handleMobileMenuOpen}
+              color='inherit'
+            >
+              <MenuIcon />
+            </IconButton>
+          </Box>
+        </Box>
+
+        {/* Mobile Breadcrumb (visible when scrolled) */}
+        {scrolled && (
+          <Box sx={{ display: { xs: 'block', md: 'none' }, pb: 1 }}>
+            <Breadcrumbs
+              aria-label='breadcrumb'
+              sx={{ color: 'rgba(255, 255, 255, 0.7)' }}
+            >
+              <Typography fontSize='0.8rem'>
+                {navItems.find((item) => router.pathname.startsWith(item.path))
+                  ?.name || 'Home'}
+              </Typography>
+            </Breadcrumbs>
+          </Box>
+        )}
+      </Container>
+
+      {/* Mobile Menu */}
+      <Menu
+        id='mobile-menu'
+        anchorEl={mobileMenuAnchor}
+        anchorOrigin={{
+          vertical: 'bottom',
+          horizontal: 'right',
+        }}
+        keepMounted
+        transformOrigin={{
+          vertical: 'top',
+          horizontal: 'right',
+        }}
+        open={Boolean(mobileMenuAnchor)}
+        onClose={handleMobileMenuClose}
+        sx={{
+          '& .MuiPaper-root': {
+            backgroundColor: 'rgba(0, 0, 0, 0.8)',
+            backdropFilter: 'blur(8px)',
+            color: '#ffffff',
+          },
+        }}
+      >
+        {navItems.map((item) => (
+          <MenuItem
+            key={item.name}
+            onClick={handleMobileMenuClose}
+            selected={router.pathname === item.path}
+            component={Link}
+            href={item.path}
+            sx={{
+              '&.Mui-selected': {
+                backgroundColor: 'rgba(255, 255, 255, 0.1)',
+              },
+              '&:hover': {
+                backgroundColor: 'rgba(255, 255, 255, 0.05)',
+              },
+            }}
+          >
+            {item.name}
+          </MenuItem>
+        ))}
+      </Menu>
+    </AppBar>
   )
 }
 

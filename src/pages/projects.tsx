@@ -1,5 +1,5 @@
 import * as React from 'react';
-import Work from '../components/Projects';
+import Work from '../components/LandingPage';
 
 
 const WorkPage: React.FC = () => {
