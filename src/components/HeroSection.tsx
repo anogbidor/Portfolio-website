@@ -8,7 +8,6 @@ import { LinkedIn, GitHub, Email } from '@mui/icons-material'
 interface HeroSectionProps {
   isMobile: boolean
 }
-
 const HeroSection: React.FC<HeroSectionProps> = ({ isMobile }) => {
   return (
     <Box
@@ -115,7 +114,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({ isMobile }) => {
             },
           }}
         >
-          A Full Stack Developer
+          A Frontend Developer
         </Typography>
 
         <Typography

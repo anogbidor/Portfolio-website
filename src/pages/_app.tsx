@@ -5,17 +5,20 @@ import Head from 'next/head'
 import theme from '../theme/Theme'
 import '../styles/global.css'
 import AppNavBar from '../components/AppNavBar'
+import Footer from '../components/Footer'
 
 const MyApp: React.FC<AppProps> = ({ Component, pageProps }) => {
   return (
     <ThemeProvider theme={theme}>
       <Head>
-        <title>Portfolio</title>
+        <title>Portfolio Project</title>
       
         <link rel='icon' href='/logo.png' />
       </Head>
       <AppNavBar />
+      
       <Component {...pageProps} />
+      <Footer />
     </ThemeProvider>
   )
 }

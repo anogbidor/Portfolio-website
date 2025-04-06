@@ -4,6 +4,8 @@ interface Post {
   description: string
   date: string
   datetime: string
+  readingTime: string
+  isFeatured: boolean
   href: string
   category: { title: string; href: string }
   author: { name: string; role: string; href: string; imageUrl: string }
@@ -18,6 +20,8 @@ export const posts: Post[] = [
       'Learn how to perform market research that can ensure your startup’s success with our detailed guide..',
     date: 'Oct 18, 2024',
     datetime: '2020-03-16',
+    readingTime: '8 min read',
+    isFeatured: true,
     category: {
       title: ' General Marketing',
       href: 'https://www.semrush.com/blog/category/marketing/general-marketing/',
@@ -35,9 +39,11 @@ export const posts: Post[] = [
     title: 'SEO Strategy: How to Create an Effective Plan',
     href: 'https://backlinko.com/seo-strategy ',
     description:
-      'An SEO strategy is a plan to create, optimize, and promote content to improve its visibility in search engine results, attracting more organic traffic to a website. It involves a variety of techniques, such as keyword research, on-page optimization, technical SEO, and link building.',
+      'An SEO strategy is a plan to create, optimize, and promote content to improve its visibility in search engine results...',
     date: 'Oct 24, 2024',
     datetime: '2021-04-20',
+    readingTime: '6 min read',
+    isFeatured: false,
     category: {
       title: 'SEO Strategy',
       href: 'https://backlinko.com/seo-strategy',
@@ -47,27 +53,28 @@ export const posts: Post[] = [
       role: 'Founder of Backlinko',
       href: '#',
       imageUrl:
-        'https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=256&ixid=MnwzNjUyOXwwfDF8c2VhcmNofDF8fHdvbWFufGVufDB8fHx8MTY3Njc4Mzg2Mg&ixlib=rb-1.2.1&q=80&w=256',
+        'https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?...',
     },
   },
   {
     id: 3,
     title: 'Benefits of Understanding Execution Context in JavaScript',
-    href: 'https://medium.com/@abrahamogbidor/benefits-of-understanding-execution-context-in-javascript-18b98f93c0d4?source=your_stories_page-------------------------------------',
+    href: 'https://medium.com/@abrahamogbidor/...',
     description:
-      'An execution context is a fundamental concept in the JavaScript programming language that helps to determine how a piece of code is executed..',
+      'An execution context is a fundamental concept in the JavaScript programming language...',
     date: 'Apr 22, 2023',
     datetime: '2021-06-30',
+    readingTime: '4 min read',
+    isFeatured: true,
     category: {
       title: 'Frontend Engineer',
       href: 'https://www.linkedin.com/in/abraham-ogbidor',
     },
     author: {
       name: 'Abraham Ogbidor',
-      role: 'Ethusiatic Frontend Developer & Blogger',
+      role: 'Enthusiastic Frontend Developer & Blogger',
       href: 'https://github.com/anogbidor',
-      imageUrl:
-        'https://avatars.githubusercontent.com/u/105780279?s=400&u=f4613604e168df077d3552517781030960890b7e&v=4',
+      imageUrl: 'https://avatars.githubusercontent.com/u/105780279?...',
     },
   },
   {
@@ -75,26 +82,32 @@ export const posts: Post[] = [
     title: 'A guide to building an effective team',
     href: '#',
     description:
-      "Many organizations are moving to flatter team-oriented structures, so it's essential to understand what makes teams cohesive, productive, and thus effective. What do we mean by an effective team?",
+      'Many organizations are moving to flatter team-oriented structures...',
     date: 'Jan 5, 2022',
     datetime: '2022-01-05',
-    category: { title: 'Leadership and Employee Development', href: '#' },
+    readingTime: '5 min read',
+    isFeatured: false,
+    category: {
+      title: 'Leadership & Development',
+      href: '#',
+    },
     author: {
       name: 'Chloe Hamman',
       role: 'Director of People Science, Product, Culture Amp',
       href: '#',
       imageUrl:
-        'https://images.unsplash.com/photo-1564564295391-7f24f26f568b?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=256&ixid=MnwzNjUyOXwwfDF8c2VhcmNofDEyfHxidXNpbmVzc3xlbnwwfHx8fDE2NzcxNjgwMzM&ixlib=rb-1.2.1&q=80&w=256',
+        'https://images.unsplash.com/photo-1564564295391-7f24f26f568b?...',
     },
   },
   {
     id: 5,
     title: 'The power of networking in business',
     href: 'https://wearebrain.com/blog/the-power-of-networking/',
-    description:
-      'Networking – it’s a term we’ve all heard countless times, often associated with mingling at events, exchanging business cards, and sending LinkedIn connection requests. But its true essence lies beyond these surface-level interactions.',
+    description: 'Networking – it’s a term we’ve all heard countless times...',
     date: 'May 21, 2024',
     datetime: '2022-02-14',
+    readingTime: '7 min read',
+    isFeatured: true,
     category: {
       title: 'Entrepreneurship Insights',
       href: 'https://wearebrain.com/insights/entrepreneurship/',
@@ -103,8 +116,7 @@ export const posts: Post[] = [
       name: 'Elvire Jaspers',
       role: "WeAreBrain's CEO",
       href: '#',
-      imageUrl:
-        'https://images.unsplash.com/photo-1550525811-e5869dd03032?ixid=MnwzNjUyOXwwfDF8c2VhcmNofDEyfHxjdXN0b21lciUyMHN1cHBvcnR8ZW58MHx8fHwxNjc2NzgzODYy&ixlib=rb-1.2.1&auto=format&fit=crop&w=256&h=256&q=80',
+      imageUrl: 'https://images.unsplash.com/photo-1550525811-e5869dd03032?...',
     },
   },
 ]

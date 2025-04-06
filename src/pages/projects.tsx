@@ -1,11 +1,11 @@
 import * as React from 'react';
-import Work from '../components/LandingPage';
+import LandingPage from '../components/LandingPage';
 
 
 const WorkPage: React.FC = () => {
  return (
   <div>
-   <Work />
+   <LandingPage />
   </div>
  )
 }

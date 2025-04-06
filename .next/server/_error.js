@@ -616,7 +616,7 @@ module.exports = require("@mui/utils/useTimeout");
 
 /***/ }),
 
-/***/ "clsx":
+/***/ "clsx?ce27":
 /*!***********************!*\
   !*** external "clsx" ***!
   \***********************/
