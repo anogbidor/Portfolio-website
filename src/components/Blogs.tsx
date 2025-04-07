@@ -52,6 +52,8 @@ const Blogs: React.FC = () => {
                 Learn how to grow your business with our expert advice
               </span>
             </p>
+
+            <div className='w-16 h-1 bg-white rounded mx-auto mb-10 shadow-sm mt-6' />
           </div>
 
           {/* Featured Post - now white like others */}
@@ -249,8 +251,6 @@ const Blogs: React.FC = () => {
           </div>
         </div>
       </div>
-
-      
     </div>
   )
 }

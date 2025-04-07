@@ -1,3 +1,25 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Add this to your global styles 
+body.chat-open::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(255, 255, 255, 0.9);  More opaque for better Safari fallback 
+  -webkit-backdrop-filter: blur(1px);  Safari prefix 
+  backdrop-filter: blur(1px); Reduced blur 
+  z-index: 999;
+  pointer-events: none;
+}
+
+ Fallback for older Safari versions 
+ @supports not (backdrop-filter: blur(1px)) {
+  body.chat-open::before {
+    background: rgba(255, 255, 255, 0.95);  More solid fallback 
+  }
+} */
