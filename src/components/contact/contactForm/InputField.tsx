@@ -18,7 +18,7 @@ const InputField: React.FC<InputFieldProps> = ({
   } as const
 
   return (
-    <div className={className}>
+    <div>
       <label
         htmlFor={id}
         className='block text-sm font-medium text-gray-700 mb-1'
@@ -35,7 +35,7 @@ const InputField: React.FC<InputFieldProps> = ({
           error
             ? 'border-red-300 focus:ring-red-500 focus:border-red-500'
             : 'border-gray-300 focus:ring-green-500 focus:border-green-500'
-        } shadow-sm sm:text-sm`}
+        } shadow-sm sm:text-sm ${className}`}
         {...ariaProps}
       />
       {error && (
@@ -46,4 +46,5 @@ const InputField: React.FC<InputFieldProps> = ({
     </div>
   )
 }
+
 export default InputField

@@ -4,7 +4,7 @@ import ContactHeader from './ContactHeader'
 import SuccessMessage from './SuccessMessage'
 import InputField from './InputField'
 import TextAreaField from './TextAreaField'
-import PhoneInput from './PhoneInput'
+// import PhoneInput from './PhoneInput'
 import Checkbox from './Checkbox'
 import SubmitButton from './SubmitButton'
 import { FormData, FormErrors } from './types'
@@ -18,6 +18,7 @@ const ContactForm = () => {
     phoneNumber: '',
     message: '',
     country: 'US',
+   
   })
 
   const [errors, setErrors] = useState<FormErrors>({})
@@ -41,11 +42,18 @@ const ContactForm = () => {
   const handleChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
   ) => {
-    const { name, value } = e.target
-    setFormData((prev) => ({ ...prev, [name]: value }))
-    if (errors[name]) {
-      setErrors((prev) => ({ ...prev, [name]: '' }))
-    }
+     const { name, value, type } = e.target as HTMLInputElement
+     const checked =
+       type === 'checkbox' ? (e.target as HTMLInputElement).checked : undefined
+
+     setFormData((prev) => ({
+       ...prev,
+       [name]: type === 'checkbox' ? checked : value,
+     }))
+
+     if (errors[name]) {
+       setErrors((prev) => ({ ...prev, [name]: '' }))
+     }
   }
 
   const handleSubmit = (e: React.FormEvent) => {
@@ -68,8 +76,9 @@ const ContactForm = () => {
         phoneNumber: '',
         message: '',
         country: 'US',
+        privacy: false,
       })
-      setTimeout(() => setSubmitSuccess(false), 5000)
+      setTimeout(() => setSubmitSuccess(false), 3000)
     }, 1500)
   }
 
@@ -77,7 +86,7 @@ const ContactForm = () => {
     // Changed min-h-[100vh] to min-h-[90vh] to move the form up
     // You can adjust this value further (e.g., min-h-[80vh], min-h-[70vh]) to move it higher
     // Also removed the background gradient as per your previous request
-    <div className='min-h-[90vh] flex items-start justify-center pt-20 p-4 sm:p-6'>
+    <div className='min-h-[70vh] flex items-start justify-center pt-20 p-4 sm:p-6'>
       {/* You can adjust the pt-20 value (padding-top) to move the form higher or lower */}
       {/* max-w-2xl controls the form width - adjust if needed */}
       <div className='w-full max-w-2xl bg-white rounded-xl shadow-lg border border-gray-200'>
@@ -177,6 +186,8 @@ const ContactForm = () => {
 
               <Checkbox
                 id='privacy'
+                name='privacy'
+                checked={formData.privacy || false}
                 onChange={handleChange}
                 label={
                   <>

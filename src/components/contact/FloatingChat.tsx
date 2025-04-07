@@ -41,15 +41,15 @@ const FloatingChat: React.FC = () => {
         {chatOpen && (
           <div className='absolute bottom-20 right-0 w-full h-full bg-white rounded-lg shadow-xl overflow-hidden flex flex-col border border-gray-200 z-[1000]'>
             <div className='bg-green-700 text-white p-4'>
-              <h3 className='font-semibold'>Live Chat Support</h3>
+              <h3 className='font-semibold'>Chat with Airis</h3>
               <p className='text-xs opacity-80'>
                 Typically replies in 5 minutes
               </p>
             </div>
             <div className='flex-1 p-4 overflow-y-auto'>
               <div className='bg-gray-100 rounded-lg p-3 mb-3 max-w-[80%]'>
-                <p className='text-sm'>Hello! How can we help you today?</p>
-                <p className='text-xs text-gray-500 mt-1'>Abraham • Just now</p>
+                <p className='text-sm'>Hello! I'm Airis i take care of your queries. What would you like to ask?</p>
+                <p className='text-xs text-gray-500 mt-1'>Virtual assistant • Just now</p>
               </div>
             </div>
             <div className='p-3 border-t border-gray-200'>

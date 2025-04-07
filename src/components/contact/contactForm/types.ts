@@ -6,6 +6,7 @@ export interface FormData {
   phoneNumber: string
   message: string
   country: string
+  privacy?: boolean
 }
 
 export interface FormErrors {
@@ -59,11 +60,12 @@ export interface CheckboxProps {
   required?: boolean
   className?: string
   name?: string
- checked?: boolean
- onChange?: (e: React.ChangeEvent<HTMLInputElement>) => void
+  checked?: boolean
+  onChange?: (e: React.ChangeEvent<HTMLInputElement>) => void
   checkboxClassName?: string
   labelClassName?: string
   linkClassName?: string
+ 
 }
 
 export interface SubmitButtonProps {
