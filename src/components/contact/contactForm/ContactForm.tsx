@@ -74,145 +74,127 @@ const ContactForm = () => {
   }
 
   return (
-    <div className='min-h-[70vh] flex items-center justify-center bg-gradient-to-br from-green-900 via-green-800 to-green-700 p-4 sm:p-6'>
-      <div className='w-full max-w-5xl bg-white/95 backdrop-blur-sm rounded-xl shadow-lg border border-white/20 z-0'>
-        {' '}
-        {/* Changed to z-0 */}
-        <div className='flex flex-col md:flex-row'>
-          {/* Left Content - Features */}
-          <div className='w-full md:w-1/2 p-6 sm:p-7'>
-            <h2 className='text-2xl font-bold text-gray-900 mb-4'>
-              Connect With Us
+    // Changed min-h-[100vh] to min-h-[90vh] to move the form up
+    // You can adjust this value further (e.g., min-h-[80vh], min-h-[70vh]) to move it higher
+    // Also removed the background gradient as per your previous request
+    <div className='min-h-[90vh] flex items-start justify-center pt-20 p-4 sm:p-6'>
+      {/* You can adjust the pt-20 value (padding-top) to move the form higher or lower */}
+      {/* max-w-2xl controls the form width - adjust if needed */}
+      <div className='w-full max-w-2xl bg-white rounded-xl shadow-lg border border-gray-200'>
+        <div className='p-8'>
+          {/* Uncomment this section if you want to restore the header */}
+          {/*
+          <div className='text-center mb-8'>
+            <h2 className='text-3xl font-bold text-gray-900 mb-2'>
+              Contact Us
             </h2>
-            <p className='text-gray-600 mb-6'>
-              Let's collaborate to bring your ideas to life
+            <p className='text-gray-600'>
+              Fill out the form below and we'll get back to you soon
             </p>
-
-            <div className='space-y-5'>
-              <div className='group'>
-                <h3 className='text-base font-medium text-gray-900'>
-                  Responsive Solutions
-                </h3>
-                <p className='text-gray-600 text-sm mt-1'>
-                  We deliver tailored digital experiences that adapt to your
-                  unique business needs
-                </p>
-              </div>
-
-              <div className='group'>
-                <h3 className='text-base font-medium text-gray-900'>
-                  Future-Proof Development
-                </h3>
-                <p className='text-gray-600 text-sm mt-1'>
-                  Our code is built with scalability and longevity in mind for
-                  sustainable growth
-                </p>
-              </div>
-
-              <div className='group'>
-                <h3 className='text-base font-medium text-gray-900'>
-                  Seamless Experience
-                </h3>
-                <p className='text-gray-600 text-sm mt-1'>
-                  Enjoy intuitive interfaces and frictionless interactions from
-                  concept to delivery
-                </p>
-              </div>
-
-              <div className='group'>
-                <h3 className='text-base font-medium text-gray-900'>
-                  Cutting-Edge Approach
-                </h3>
-                <p className='text-gray-600 text-sm mt-1'>
-                  Leveraging the latest technologies to create innovative
-                  digital solutions
-                </p>
-              </div>
-            </div>
           </div>
+          */}
 
-          {/* Vertical Divider */}
-          <div className='hidden md:block relative'>
-            <div className='absolute left-0 top-1/2 transform -translate-y-1/2 w-px h-3/5 bg-gray-200' />
-          </div>
-
-          {/* Right Content - Form */}
-          <div className='w-full md:w-1/2 p-6 sm:p-7'>
-            {submitSuccess ? (
-              <SuccessMessage
-                title='Message sent successfully!'
-                message="We'll be in touch shortly."
-              />
-            ) : (
-              <form onSubmit={handleSubmit} className='space-y-4'>
-                <div className='grid grid-cols-1 gap-4'>
-                  <InputField
-                    id='firstName'
-                    label='First name'
-                    name='firstName'
-                    value={formData.firstName}
-                    required
-                    onChange={handleChange}
-                    error={errors.firstName}
-                    className='border-gray-300 focus:ring-green-500 focus:border-green-500'
-                  />
-                  <InputField
-                    id='lastName'
-                    label='Last name'
-                    name='lastName'
-                    value={formData.lastName}
-                    required
-                    onChange={handleChange}
-                    error={errors.lastName}
-                    className='border-gray-300 focus:ring-green-500 focus:border-green-500'
-                  />
-                  <InputField
-                    id='email'
-                    label='Email'
-                    name='email'
-                    type='email'
-                    value={formData.email}
-                    required
-                    onChange={handleChange}
-                    error={errors.email}
-                    className='border-gray-300 focus:ring-green-500 focus:border-green-500'
-                  />
-                  <TextAreaField
-                    id='message'
-                    name='message'
-                    label='Message'
-                    value={formData.message}
-                    required
-                    onChange={handleChange}
-                    error={errors.message}
-                    className='border-gray-300 focus:ring-green-500 focus:border-green-500'
-                  />
-                </div>
-
-                <Checkbox
-                  id='privacy'
+          {submitSuccess ? (
+            <SuccessMessage
+              title='Message sent successfully!'
+              message="We'll be in touch shortly."
+            />
+          ) : (
+            <form onSubmit={handleSubmit} className='space-y-6'>
+              <div className='grid grid-cols-1 md:grid-cols-2 gap-6'>
+                <InputField
+                  id='firstName'
+                  label='First name'
+                  name='firstName'
+                  value={formData.firstName}
+                  required
                   onChange={handleChange}
-                  label={
-                    <>
-                      I agree to the{' '}
-                      <a
-                        href='#'
-                        className='text-green-600 hover:text-green-500'
-                      >
-                        privacy policy
-                      </a>
-                    </>
-                  }
+                  error={errors.firstName}
+                  className='border-gray-300 focus:ring-green-500 focus:border-green-500'
                 />
+                <InputField
+                  id='lastName'
+                  label='Last name'
+                  name='lastName'
+                  value={formData.lastName}
+                  required
+                  onChange={handleChange}
+                  error={errors.lastName}
+                  className='border-gray-300 focus:ring-green-500 focus:border-green-500'
+                />
+              </div>
 
-                <SubmitButton
-                  isSubmitting={isSubmitting}
-                  label={isSubmitting ? 'Sending...' : 'Send message'}
-                  className='w-full bg-green-700 hover:bg-green-800 focus:ring-green-500'
+              <div className='grid grid-cols-1 gap-6'>
+                <InputField
+                  id='email'
+                  label='Email'
+                  name='email'
+                  type='email'
+                  value={formData.email}
+                  required
+                  onChange={handleChange}
+                  error={errors.email}
+                  className='border-gray-300 focus:ring-green-500 focus:border-green-500'
                 />
-              </form>
-            )}
-          </div>
+                <InputField
+                  id='company'
+                  label='Company (optional)'
+                  name='company'
+                  value={formData.company}
+                  onChange={handleChange}
+                  className='border-gray-300 focus:ring-green-500 focus:border-green-500'
+                />
+                {/* Uncomment this section if you want to restore the phone input */}
+                {/*
+                <PhoneInput
+                  id='phoneNumber'
+                  label='Phone number (optional)'
+                  name='phoneNumber'
+                  value={formData.phoneNumber}
+                  country={formData.country}
+                  onChange={(value, country) => {
+                    setFormData((prev) => ({
+                      ...prev,
+                      phoneNumber: value,
+                      country: country || 'US',
+                    }))
+                  }}
+                  className='border-gray-300 focus:ring-green-500 focus:border-green-500'
+                />
+                */}
+                <TextAreaField
+                  id='message'
+                  name='message'
+                  label='Message'
+                  value={formData.message}
+                  required
+                  onChange={handleChange}
+                  error={errors.message}
+                  rows={5}
+                  className='border-gray-300 focus:ring-green-500 focus:border-green-500'
+                />
+              </div>
+
+              <Checkbox
+                id='privacy'
+                onChange={handleChange}
+                label={
+                  <>
+                    I agree to the{' '}
+                    <a href='#' className='text-green-600 hover:text-green-500'>
+                      privacy policy
+                    </a>
+                  </>
+                }
+              />
+
+              <SubmitButton
+                isSubmitting={isSubmitting}
+                label={isSubmitting ? 'Sending...' : 'Send message'}
+                className='w-full bg-green-700 hover:bg-green-800 focus:ring-green-500'
+              />
+            </form>
+          )}
         </div>
       </div>
     </div>
