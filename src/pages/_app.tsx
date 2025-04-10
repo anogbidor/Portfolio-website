@@ -6,7 +6,7 @@ import theme from '../theme/Theme'
 import '../styles/global.css'
 import AppNavBar from '../components/AppNavBar'
 import Footer from '../components/Footer'
-import FloatingChat from '../components/contact/FloatingChat'
+import FloatingChat from '../components/FloatingChat'
 
 const MyApp: React.FC<AppProps> = ({ Component, pageProps }) => {
   return (

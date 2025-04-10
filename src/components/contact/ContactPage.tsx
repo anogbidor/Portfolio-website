@@ -1,7 +1,7 @@
 // components/Contact/ContactPage.tsx
 'use client'
 import ContactForm from './contactForm/ContactForm'
-import FloatingChat from './FloatingChat'
+import FloatingChat from '../FloatingChat'
 
 const ContactPage: React.FC = () => {
   return (
