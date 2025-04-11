@@ -47,7 +47,7 @@ const AppNavBar: React.FC = () => {
   }
 
   const navItems = [
-    { name: 'Home', path: '/projects' },
+    { name: 'Home', path: '/home' },
     { name: 'Blogs', path: '/blogs' },
     { name: 'About', path: '/about' },
     { name: 'Contact', path: '/contact' },
@@ -76,7 +76,7 @@ const AppNavBar: React.FC = () => {
           <Typography
             variant='h6'
             component={Link}
-            href='/'
+            href='/home'
             sx={{
               fontWeight: 700,
               fontSize: '1.5rem',
