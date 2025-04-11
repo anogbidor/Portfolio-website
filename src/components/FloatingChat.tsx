@@ -12,7 +12,7 @@ const FloatingChat: React.FC = () => {
   const [chatOpen, setChatOpen] = useState<boolean>(false)
   const [messages, setMessages] = useState<Message[]>([
     { 
-      text: "Hello! I'm Airis, I take care of your queries. What would you like to ask?", 
+      text: "Hello! I'm Airis, I take care of your queries.", 
       sender: 'bot' 
     },
     {
