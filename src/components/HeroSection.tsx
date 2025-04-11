@@ -48,7 +48,8 @@ const HeroSection: React.FC<HeroSectionProps> = ({ isMobile }) => {
           position: 'absolute',
           width: '150vw',
           height: '150vw',
-          background: 'radial-gradient(circle, rgba(168,230,207,0.2) 0%, transparent 70%)',
+          background:
+            'radial-gradient(circle, rgba(168,230,207,0.2) 0%, transparent 70%)',
           zIndex: 1,
           animation: 'orbit 20s linear infinite',
           '@keyframes orbit': {
@@ -128,8 +129,8 @@ const HeroSection: React.FC<HeroSectionProps> = ({ isMobile }) => {
             px: 2,
           }}
         >
-          I specialize in crafting beautiful, accessible, and performant
-          digital experiences.
+          I specialize in crafting beautiful, accessible, and performant digital
+          experiences.
         </Typography>
 
         <Box sx={{ display: 'flex', gap: 2, mb: 8 }}>
@@ -166,9 +167,31 @@ const HeroSection: React.FC<HeroSectionProps> = ({ isMobile }) => {
         </Box>
 
         <Box sx={{ display: 'flex', gap: 3 }}>
-          <LinkedIn sx={{ fontSize: 32, color: '#dcedc1', cursor: 'pointer' }} />
-          <GitHub sx={{ fontSize: 32, color: '#dcedc1', cursor: 'pointer' }} />
-          <Email sx={{ fontSize: 32, color: '#dcedc1', cursor: 'pointer' }} />
+          <a
+            title='LinkedIn'
+            href='https://www.linkedin.com/in/abraham-ogbidor'
+            target='_blank'
+            rel='noopener noreferrer'
+          >
+            <LinkedIn
+              sx={{ fontSize: 32, color: '#dcedc1', cursor: 'pointer' }}
+            />
+          </a>
+          <a
+            title='GitHub'
+            href='https://github.com/anogbidor'
+            target='_blank'
+            rel='noopener noreferrer'
+          >
+            <GitHub
+              sx={{ fontSize: 32, color: '#dcedc1', cursor: 'pointer' }}
+            />
+          </a>
+          <a
+            title='Email'
+            href='mailto:homenoffice@gmail.com'>
+            <Email sx={{ fontSize: 32, color: '#dcedc1', cursor: 'pointer' }} />
+          </a>
         </Box>
       </Box>
 
@@ -178,7 +201,8 @@ const HeroSection: React.FC<HeroSectionProps> = ({ isMobile }) => {
           position: 'absolute',
           width: '100vw',
           height: '100vh',
-          background: 'radial-gradient(circle at 70% 30%, rgba(220,237,193,0.05) 0%, transparent 50%)',
+          background:
+            'radial-gradient(circle at 70% 30%, rgba(220,237,193,0.05) 0%, transparent 50%)',
           zIndex: 1,
           animation: 'pulse 15s ease infinite alternate',
           '@keyframes pulse': {
