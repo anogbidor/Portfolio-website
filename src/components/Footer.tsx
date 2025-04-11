@@ -1,55 +1,60 @@
-import * as React from 'react'
-import Box from '@mui/material/Box'
-import Typography from '@mui/material/Typography'
-import Grid from '@mui/material/Grid'
-import Divider from '@mui/material/Divider'
-import Container from '@mui/material/Container'
+import React from 'react'
 import { LinkedIn, GitHub, Email } from '@mui/icons-material'
 
 const Footer: React.FC = () => {
   return (
-    <Box sx={{ backgroundColor: '#1e4a1b', color: '#ffffff', py: 6 }}>
-      <Container maxWidth='lg'>
-        <Grid container spacing={4}>
-          <Grid item xs={12} md={4}>
-            <Typography variant='h6' sx={{ fontWeight: 700, mb: 2 }}>
-              Abraham
-            </Typography>
-            <Typography variant='body2'>
-              A Full Stack Developer creating digital experiences that matter.
-            </Typography>
-          </Grid>
-          <Grid item xs={12} md={4}>
-            <Typography variant='h6' sx={{ fontWeight: 700, mb: 2 }}>
-              Contact
-            </Typography>
-            <Typography variant='body2' sx={{ mb: 1 }}>
-              email@example.com
-            </Typography>
-            <Typography variant='body2'>+1 (123) 456-7890</Typography>
-          </Grid>
-          <Grid item xs={12} md={4}>
-            <Typography variant='h6' sx={{ fontWeight: 700, mb: 2 }}>
-              Connect
-            </Typography>
-            <Box sx={{ display: 'flex', gap: 2 }}>
-              <LinkedIn sx={{ color: '#ffffff', cursor: 'pointer' }} />
-              <GitHub sx={{ color: '#ffffff', cursor: 'pointer' }} />
-              <Email sx={{ color: '#ffffff', cursor: 'pointer' }} />
-            </Box>
-          </Grid>
-        </Grid>
-        <Divider
-          sx={{
-            my: 4,
-            backgroundColor: 'rgba(255,255,255,0.1)',
-          }}
-        />
-        <Typography variant='body2' sx={{ textAlign: 'center' }}>
+    <footer className='bg-green-900 text-white py-12'>
+      <div className='container mx-auto px-4 max-w-6xl'>
+        <div className='flex flex-col md:flex-row justify-between gap-8 mb-8'>
+          {/* About Section */}
+          <div className='flex-1'>
+            <h3 className='text-xl font-bold mb-4'>Abraham</h3>
+            <p className='text-gray-300'>
+              A passionate Full Stack Developer crafting exceptional digital
+              experiences that make an impact.
+            </p>
+          </div>
+
+          {/* Contact Section */}
+          <div className='flex-1'>
+            <h3 className='text-xl font-bold mb-4'>Contact</h3>
+            <p className='text-gray-300 mb-2 hover:text-white transition-colors'>
+              homenoffice247@gmail.com
+            </p>
+            <p className='text-gray-300 hover:text-white transition-colors'>
+              +90 (533) 161-2400
+            </p>
+          </div>
+
+          {/* Connect Section */}
+          <div className='flex-1'>
+            <h3 className='text-xl font-bold mb-4'>Connect</h3>
+            <div className='flex gap-4'>
+              <LinkedIn
+                className='text-white hover:text-green-300 cursor-pointer transition-colors'
+                fontSize='medium'
+              />
+              <GitHub
+                className='text-white hover:text-green-300 cursor-pointer transition-colors'
+                fontSize='medium'
+              />
+              <Email
+                className='text-white hover:text-green-300 cursor-pointer transition-colors'
+                fontSize='medium'
+              />
+            </div>
+          </div>
+        </div>
+
+        {/* Divider */}
+        <div className='border-t border-white border-opacity-10 my-6'></div>
+
+        {/* Copyright */}
+        <p className='text-center text-gray-400 text-sm'>
           © {new Date().getFullYear()} Abraham. All rights reserved.
-        </Typography>
-      </Container>
-    </Box>
+        </p>
+      </div>
+    </footer>
   )
 }
 

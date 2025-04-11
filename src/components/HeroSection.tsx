@@ -1,4 +1,5 @@
 import * as React from 'react'
+import Link from 'next/link'
 import Box from '@mui/material/Box'
 import Typography from '@mui/material/Typography'
 import Button from '@mui/material/Button'
@@ -135,6 +136,10 @@ const HeroSection: React.FC<HeroSectionProps> = ({ isMobile }) => {
 
         <Box sx={{ display: 'flex', gap: 2, mb: 8 }}>
           <Button
+            component='a'
+            href='https://github.com/anogbidor/Portfolio-website'
+            target='_blank'
+            rel='noopener noreferrer'
             variant='contained'
             size='large'
             sx={{
@@ -147,9 +152,12 @@ const HeroSection: React.FC<HeroSectionProps> = ({ isMobile }) => {
               },
             }}
           >
-            View My Work
+            View source code
           </Button>
+
           <Button
+            component={Link}
+            href='/contact'
             variant='outlined'
             size='large'
             sx={{
@@ -187,9 +195,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({ isMobile }) => {
               sx={{ fontSize: 32, color: '#dcedc1', cursor: 'pointer' }}
             />
           </a>
-          <a
-            title='Email'
-            href='mailto:homenoffice@gmail.com'>
+          <a title='Email' href='mailto:homenoffice247@gmail.com'>
             <Email sx={{ fontSize: 32, color: '#dcedc1', cursor: 'pointer' }} />
           </a>
         </Box>
