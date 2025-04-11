@@ -11,9 +11,13 @@ import MenuItem from '@mui/material/MenuItem'
 import IconButton from '@mui/material/IconButton'
 import MenuIcon from '@mui/icons-material/Menu'
 import Breadcrumbs from '@mui/material/Breadcrumbs'
+import useMediaQuery from '@mui/material/useMediaQuery'
+import { useTheme } from '@mui/material/styles'
 
 const AppNavBar: React.FC = () => {
   const router = useRouter()
+  const theme = useTheme()
+  const isMobile = useMediaQuery(theme.breakpoints.down('md'))
   const [scrolled, setScrolled] = React.useState(false)
   const [mobileMenuAnchor, setMobileMenuAnchor] =
     React.useState<null | HTMLElement>(null)
@@ -26,6 +30,13 @@ const AppNavBar: React.FC = () => {
     window.addEventListener('scroll', handleScroll)
     return () => window.removeEventListener('scroll', handleScroll)
   }, [])
+
+  // Close mobile menu when resizing to desktop
+  React.useEffect(() => {
+    if (!isMobile && mobileMenuAnchor) {
+      handleMobileMenuClose()
+    }
+  }, [isMobile, mobileMenuAnchor])
 
   const handleMobileMenuOpen = (event: React.MouseEvent<HTMLElement>) => {
     setMobileMenuAnchor(event.currentTarget)
@@ -64,7 +75,8 @@ const AppNavBar: React.FC = () => {
           {/* Logo */}
           <Typography
             variant='h6'
-            component='div'
+            component={Link}
+            href='/'
             sx={{
               fontWeight: 700,
               fontSize: '1.5rem',
@@ -161,9 +173,19 @@ const AppNavBar: React.FC = () => {
         onClose={handleMobileMenuClose}
         sx={{
           '& .MuiPaper-root': {
-            backgroundColor: 'rgba(0, 0, 0, 0.8)',
-            backdropFilter: 'blur(8px)',
+            backgroundColor: scrolled
+              ? 'rgba(0, 0, 0, 0.16)'
+              : 'rgba(0, 0, 0, 0.16)',
+            backdropFilter: scrolled ? 'blur(8px)' : 'blur(12px)',
             color: '#ffffff',
+            minWidth: '200px',
+            borderRadius: '8px',
+            boxShadow: '0 4px 20px rgba(0, 0, 0, 0.2)',
+            mt: 1,
+            transition: 'all 0.3s ease',
+          },
+          '& .MuiList-root': {
+            padding: 0,
           },
         }}
       >
@@ -175,11 +197,25 @@ const AppNavBar: React.FC = () => {
             component={Link}
             href={item.path}
             sx={{
+              padding: '12px 24px',
               '&.Mui-selected': {
                 backgroundColor: 'rgba(255, 255, 255, 0.1)',
+                fontWeight: 600,
               },
               '&:hover': {
                 backgroundColor: 'rgba(255, 255, 255, 0.05)',
+              },
+              position: 'relative',
+              '&:after': {
+                content: '""',
+                position: 'absolute',
+                bottom: 0,
+                left: '24px',
+                width:
+                  router.pathname === item.path ? 'calc(100% - 48px)' : '0%',
+                height: '2px',
+                backgroundColor: '#ffffff',
+                transition: 'width 0.3s ease',
               },
             }}
           >

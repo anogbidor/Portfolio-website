@@ -21,7 +21,7 @@ export const posts: Post[] = [
     date: 'Oct 18, 2024',
     datetime: '2020-03-16',
     readingTime: '8 min read',
-    isFeatured: true,
+    isFeatured: false,
     category: {
       title: ' General Marketing',
       href: 'https://www.semrush.com/blog/category/marketing/general-marketing/',

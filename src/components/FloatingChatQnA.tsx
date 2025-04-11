@@ -23,6 +23,6 @@
      {
        question: 'Where can I see your work?',
        answer:
-         'Check out my GitHub → https://github.com/anogbidor for code samples and my portfolio section for live projects.',
+         'Check out my GitHub  https://github.com/anogbidor for code samples and my portfolio section for live projects.',
      },
    ]

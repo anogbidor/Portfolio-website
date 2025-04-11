@@ -127,7 +127,7 @@ const FloatingChat: React.FC = () => {
             isPrompt: true,
           },
         ])
-      }, 8000)
+      }, 5000)
     }, 1500)
   }
 
@@ -159,7 +159,7 @@ const FloatingChat: React.FC = () => {
 
   return (
     <div
-      className={`fixed bottom-8 right-8 transition-all duration-300 z-[1000] ${
+      className={`fixed bottom-20 right-20 transition-all duration-300 z-[1000] ${
         chatOpen ? 'w-80 h-96' : 'w-16 h-16'
       }`}
     >
@@ -178,7 +178,7 @@ const FloatingChat: React.FC = () => {
       {chatOpen && (
         <div className='absolute bottom-20 right-0 w-full h-full bg-white rounded-lg shadow-xl overflow-hidden flex flex-col border border-gray-200 z-[1000]'>
           {/* 💡 Adjust the padding below to increase/decrease the header height */}
-          <div className='bg-green-700 text-white p-4'>
+          <div className='bg-green-700 text-white p-2'>
             <h3 className='font-semibold'>Chat with Airis</h3>
             <p className='text-xs opacity-80'>
               Try asking about my projects, skills, availability, or contact.
@@ -197,9 +197,7 @@ const FloatingChat: React.FC = () => {
                 <p className='text-sm break-words'>
                   {renderMessageText(message.text)}
                 </p>
-                <p className='text-xs text-gray-500 mt-1'>
-                  {message.sender === 'bot' ? 'Airis' : 'You'} • Just now
-                </p>
+
                 {message.isPrompt && (
                   <div className='mt-2 space-y-1'>
                     {suggestedPrompts.map((prompt, i) => (
@@ -214,10 +212,13 @@ const FloatingChat: React.FC = () => {
                     ))}
                   </div>
                 )}
+                <p className='text-xs text-gray-500 mt-2'>
+                  {message.sender === 'bot' ? 'Airis' : 'You'} • Just now
+                </p>
               </div>
             ))}
             {isTyping && (
-              <div className='mb-3 max-w-[80%] bg-gray-100 rounded-lg p-3'>
+              <div className='mb-3 max-w-[40%] bg-gray-100 rounded-lg p-3'>
                 <div className='flex space-x-1'>
                   <div className='w-2 h-2 rounded-full bg-gray-400 animate-bounce'></div>
                   <div

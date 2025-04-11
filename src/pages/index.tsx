@@ -1,10 +1,11 @@
 // src/pages/index.tsx
 import React from 'react'
-import About from '../components/About'
+
+import LandingPage from '../components/LandingPage'
 
 const HomePage: React.FC = () => {
   return (
-<About/>
+    <LandingPage/>
     
   )
 }

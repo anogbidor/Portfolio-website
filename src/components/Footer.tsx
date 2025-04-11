@@ -18,11 +18,11 @@ const Footer: React.FC = () => {
           {/* Contact Section */}
           <div className='flex-1'>
             <h3 className='text-xl font-bold mb-4'>Contact</h3>
-            <p className='text-gray-300 mb-2 hover:text-white transition-colors'>
+            <p className='text-gray-300 mb-2 hover:text-white transition-colors underline-none'>
               homenoffice247@gmail.com
             </p>
             <p className='text-gray-300 hover:text-white transition-colors'>
-              +90 (533) 161-2400
+              +90-123-456-789
             </p>
           </div>
 
@@ -30,23 +30,29 @@ const Footer: React.FC = () => {
           <div className='flex-1'>
             <h3 className='text-xl font-bold mb-4'>Connect</h3>
             <div className='flex gap-4'>
+              <a title='LinkedIn' href='https://www.linkedin.com/in/abraham-ogbidor/' target='_blank' rel='noopener noreferrer'>
               <LinkedIn
                 className='text-white hover:text-green-300 cursor-pointer transition-colors'
                 fontSize='medium'
-              />
-              <GitHub
-                className='text-white hover:text-green-300 cursor-pointer transition-colors'
-                fontSize='medium'
-              />
-              <Email
-                className='text-white hover:text-green-300 cursor-pointer transition-colors'
-                fontSize='medium'
-              />
+                />
+                </a>
+              <a title='GitHub' href='https://github.com/anogbidor' target='_blank' rel='noopener noreferrer'>
+                <GitHub
+                  className='text-white hover:text-green-300 cursor-pointer transition-colors'
+                  fontSize='medium'
+                />
+              </a>
+
+              <a title='Email' href='mailto:homenoffice247@gmail.com'>
+                <Email
+                  className='text-white hover:text-green-300 cursor-pointer transition-colors'
+                  fontSize='medium'
+                />
+              </a>
             </div>
           </div>
         </div>
 
-        {/* Divider */}
         <div className='border-t border-white border-opacity-10 my-6'></div>
 
         {/* Copyright */}
