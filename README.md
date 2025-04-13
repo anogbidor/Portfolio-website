@@ -1,46 +1,84 @@
-# Getting Started with Create React App
+💻 Developer Portfolio Website
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A modern, responsive developer portfolio built with React, Next.js, and TypeScript. This project showcases personal and professional work, includes a blog section, contact form, live chat widget, and themed styling with TailwindCSS.
 
-## Available Scripts
 
-In the project directory, you can run:
+🌐 Live Demo
 
-### `npm start`
+👉 https://portfolio-journal.vercel.app/home
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+src
+├── components
+│   ├── contact
+│   │   ├── contactForm
+│   │   │   ├── Checkbox.tsx
+│   │   │   ├── ContactForm.tsx
+│   │   │   ├── ContactHeader.tsx
+│   │   │   ├── InputField.tsx
+│   │   │   ├── SubmitButton.tsx
+│   │   │   ├── SuccessMessage.tsx
+│   │   │   ├── TextAreaField.tsx
+│   │   │   └── types.ts
+│   │   └── ContactPage.tsx
+│   ├── About.tsx
+│   ├── AppNavBar.tsx
+│   ├── Blogs.tsx
+│   ├── BlogsData.tsx
+│   ├── FloatingChat.tsx
+│   ├── FloatingChatQnA.tsx
+│   ├── Footer.tsx
+│   ├── HeroSection.tsx
+│   ├── LandingPage.tsx
+│   ├── ProjectSection.tsx
+│   └── SkillSection.tsx
+├── pages
+│   ├── _app.tsx
+│   ├── about.tsx
+│   ├── blogs.tsx
+│   ├── contact.tsx
+│   ├── home.tsx
+│   └── index.tsx
+├── styles
+│   └── global.css
+├── theme
+│   └── Theme.ts
+└── react-app-env.d.ts
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+🚀 Features
+	•	Landing Page with smooth scroll navigation
+	•	About, Projects, Skills, and Blogs sections
+	•	Contact Page with form validation and success messaging
+	•	Reusable Form Components (Input, TextArea, Checkbox, etc.)
+	•	Floating Chat Widget with Q&A
+	•	Theme support using a centralized theme configuration
+	•	Responsive Design using TailwindCSS
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+ 🛠️ Tech Stack
+	•	Framework:  React, Next.js (TypeScript)
+	•	Styling: TailwindCSS, MaterialUI
+	•	Forms: React Hook Form (if used)
+	•	Components: Fully modular and reusable
+	•	Deployment: Vercel (recommended)
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+ # Clone the repo
+git clone https://github.com/your-username/your-repo-name.git
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+# Navigate to project folder
+cd your-repo-name
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+# Install dependencies
+npm install
 
-## Learn More
+# Run the development server
+npm run dev
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+📬 Contact
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+For questions or feedback, feel free to reach out via the Contact Page or connect through the live chat widget.
