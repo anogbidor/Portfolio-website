@@ -6,6 +6,8 @@ interface Message {
   text: string
   sender: 'user' | 'bot'
   isPrompt?: boolean
+  timestamp: Date
+  seen?: boolean
 }
 
 const FloatingChat: React.FC = () => {
@@ -14,11 +16,15 @@ const FloatingChat: React.FC = () => {
     {
       text: "Hello! I'm Airis, I take care of your queries.",
       sender: 'bot',
+      timestamp: new Date(),
+      seen: true,
     },
     {
       text: 'Try asking me about:',
       sender: 'bot',
       isPrompt: true,
+      timestamp: new Date(),
+      seen: true,
     },
   ])
   const [inputValue, setInputValue] = useState('')
@@ -29,6 +35,11 @@ const FloatingChat: React.FC = () => {
 
   useEffect(() => {
     scrollToBottom()
+    if (messages.some((m) => !m.seen && m.sender === 'bot')) {
+      setMessages((prev) =>
+        prev.map((m) => (m.sender === 'bot' ? { ...m, seen: true } : m))
+      )
+    }
   }, [messages])
 
   const scrollToBottom = () => {
@@ -39,6 +50,7 @@ const FloatingChat: React.FC = () => {
     if (chatOpen) {
       document.body.classList.add('chat-open')
       document.body.style.overflow = 'hidden'
+      setMessages((prev) => prev.map((m) => ({ ...m, seen: true })))
     } else {
       document.body.classList.remove('chat-open')
       document.body.style.overflow = ''
@@ -50,85 +62,111 @@ const FloatingChat: React.FC = () => {
     }
   }, [chatOpen])
 
+  const formatTime = (date: Date) => {
+    return date.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })
+  }
+
+  const triggerBotResponse = (input: string) => {
+    // After 2s, show typing
+    setTimeout(() => {
+      setIsTyping(true)
+
+      // After 2 more seconds, show response
+      setTimeout(() => {
+        const foundResponse = qna.find((item) =>
+          input
+            .toLowerCase()
+            .includes(item.question.toLowerCase().split(' ')[0])
+        )
+
+        let responseText = foundResponse
+          ? foundResponse.answer
+          : "I'm not sure about that. Try asking about my projects, skills, availability, or contact information."
+
+        if (
+          input.toLowerCase().includes('time') ||
+          input.toLowerCase().includes('current time') ||
+          input.toLowerCase().includes('what time is it')
+        ) {
+          const now = new Date()
+          responseText = `The current time is ${formatTime(
+            now
+          )}. ${responseText}`
+        }
+
+        const botResponse: Message = {
+          text: responseText,
+          sender: 'bot',
+          timestamp: new Date(),
+          seen: false,
+        }
+
+        setMessages((prev) => [...prev, botResponse])
+        setIsTyping(false)
+
+        // Follow-up prompts after 5 more seconds
+        setTimeout(() => {
+          const promptMessage: Message = {
+            text: 'What else would you like to know?',
+            sender: 'bot',
+            isPrompt: true,
+            timestamp: new Date(),
+            seen: false,
+          }
+          setMessages((prev) => [...prev, promptMessage])
+        }, 5000)
+      }, 2000)
+    }, 2000)
+  }
+
   const handleSendMessage = () => {
     if (!inputValue.trim()) return
 
-    const newMessages: Message[] = [
-      ...messages,
-      { text: inputValue, sender: 'user' },
-    ]
-    setMessages(newMessages)
+    const userMessage: Message = {
+      text: inputValue,
+      sender: 'user',
+      timestamp: new Date(),
+      seen: false,
+    }
+
+    setMessages((prev) => [...prev, userMessage])
+    const input = inputValue
     setInputValue('')
-    setIsTyping(true)
 
+    // Mark as seen after 2 seconds
     setTimeout(() => {
-      const foundResponse = qna.find(
-        (item) =>
-          inputValue
-            .toLowerCase()
-            .includes(item.question.toLowerCase().split(' ')[0]) ||
-          item.question
-            .toLowerCase()
-            .includes(inputValue.toLowerCase().split(' ')[0])
+      setMessages((prev) =>
+        prev.map((m, i) =>
+          i === prev.length - 1 && m.sender === 'user'
+            ? { ...m, seen: true }
+            : m
+        )
       )
-
-      const response = foundResponse
-        ? foundResponse.answer
-        : "I'm not sure about that. Try asking about my projects, skills, availability, or contact information."
-
-      setMessages((prev) => [...prev, { text: response, sender: 'bot' }])
-      setIsTyping(false)
-
-      setTimeout(() => {
-        setMessages((prev) => [
-          ...prev,
-          {
-            text: 'What else would you like to know?',
-            sender: 'bot',
-            isPrompt: true,
-          },
-        ])
-      }, 8000)
-    }, 1500)
+      triggerBotResponse(input)
+    }, 2000)
   }
 
   const handlePromptClick = (prompt: string) => {
-    const newMessages: Message[] = [
-      ...messages,
-      { text: prompt, sender: 'user' },
-    ]
-    setMessages(newMessages)
-    setIsTyping(true)
+    const userMessage: Message = {
+      text: prompt,
+      sender: 'user',
+      timestamp: new Date(),
+      seen: false,
+    }
 
+    setMessages((prev) => [...prev, userMessage])
+
+    // Mark as seen after 2 seconds
     setTimeout(() => {
-      const foundResponse = qna.find(
-        (item) =>
-          prompt
-            .toLowerCase()
-            .includes(item.question.toLowerCase().split(' ')[0]) ||
-          item.question
-            .toLowerCase()
-            .includes(prompt.toLowerCase().split(' ')[0])
+      setMessages((prev) =>
+        prev.map((m, i) =>
+          i === prev.length - 1 && m.sender === 'user'
+            ? { ...m, seen: true }
+            : m
+        )
       )
-
-      const response = foundResponse
-        ? foundResponse.answer
-        : "I'm not sure about that. Try asking about my projects, skills, availability, or contact information."
-
-      setMessages((prev) => [...prev, { text: response, sender: 'bot' }])
-      setIsTyping(false)
-
-      setTimeout(() => {
-        setMessages((prev) => [
-          ...prev,
-          {
-            text: 'What else would you like to know?',
-            sender: 'bot',
-            isPrompt: true,
-          },
-        ])
-      }, 5000)
-    }, 1500)
+      triggerBotResponse(prompt)
+    }, 2000)
   }
 
   const renderMessageText = (text: string) => {
@@ -177,18 +215,15 @@ const FloatingChat: React.FC = () => {
 
       {chatOpen && (
         <div className='absolute bottom-20 right-0 w-full h-full bg-white rounded-lg shadow-xl overflow-hidden flex flex-col border border-gray-200 z-[1000]'>
-          {/* 💡 Adjust the padding below to increase/decrease the header height */}
           <div className='bg-green-700 text-white p-2'>
             <h3 className='font-semibold'>Chat with Airis</h3>
-            <p className='text-xs opacity-80'>
-              Try asking about my projects, skills, availability, or contact.
-            </p>
+            <p className='text-xs opacity-80'>Powered by OpenAI</p>
           </div>
           <div className='flex-1 p-4 overflow-y-auto'>
             {messages.map((message, index) => (
               <div
                 key={index}
-                className={`mb-3 max-w-[80%] break-words ${
+                className={`mb-3 max-w-[80%] break-words relative ${
                   message.sender === 'bot'
                     ? 'bg-gray-100 rounded-lg p-3'
                     : 'ml-auto bg-green-100 rounded-lg p-3'
@@ -212,9 +247,15 @@ const FloatingChat: React.FC = () => {
                     ))}
                   </div>
                 )}
-                <p className='text-xs text-gray-500 mt-2'>
-                  {message.sender === 'bot' ? 'Airis' : 'You'} • Just now
-                </p>
+
+                <div className='flex items-center justify-end mt-1 space-x-1'>
+                  <span className='text-[10px] text-gray-500'>
+                    {formatTime(message.timestamp)}
+                  </span>
+                  {message.sender === 'user' && message.seen && (
+                    <span className='text-[10px] text-gray-400'>Seen</span>
+                  )}
+                </div>
               </div>
             ))}
             {isTyping && (

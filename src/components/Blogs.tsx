@@ -85,6 +85,9 @@ const Blogs: React.FC = () => {
                       <p className='font-semibold text-gray-900'>
                         {featuredPost.author.name}
                       </p>
+                      <div className='flex items-center gap-2 text-sm text-gray-600'>
+                        <p>{featuredPost.author.role}</p>
+                      </div>
                       <div className='flex items-center gap-2 text-sm'>
                         <span className='text-gray-500'>
                           {featuredPost.date}

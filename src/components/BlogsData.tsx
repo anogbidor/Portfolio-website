@@ -58,10 +58,11 @@ export const posts: Post[] = [
   },
   {
     id: 3,
-    title: 'Benefits of Understanding Execution Context in JavaScript',
-    href: 'https://medium.com/@abrahamogbidor/...',
+    title:
+      'Lessons from building my portfolio: A developer’s journey through code, design, and problem-solving',
+    href: 'https://medium.com/@abrahamogbidor/lessons-from-building-my-portfolio-a-developers-journey-through-code-design-and-problem-solving-c82686c470ec',
     description:
-      'An execution context is a fundamental concept in the JavaScript programming language...',
+      'When I started building this portfolio, I wanted it to be more than just a showcase of my projects. I wanted it to be a learning journey — an opportunity to sharpen my technical skills and solve real-world problems...',
     date: 'Apr 22, 2023',
     datetime: '2021-06-30',
     readingTime: '4 min read',
