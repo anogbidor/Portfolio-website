@@ -82,13 +82,13 @@ const ProjectSection: React.FC = () => {
   // Sample project data - replace with your actual projects
   const projects = [
     {
-      title: 'EcoTracker App',
+      title: 'E-commerce Platform',
       description:
-        'An environmental impact tracking application with real-time analytics.',
-      imageUrl: '/images/project1-screenshot.jpg',
-      tags: ['React', 'Node.js', 'MongoDB', 'Express', 'JWT'],
-      demoUrl: '#',
-      codeUrl: '#',
+        'An e-commerce platform with shopping cart functionality, wishlist and more..',
+      imageUrl: '/images/product-listing-img.png',
+      tags: ['HTML', 'CSS', ' Vanilla JavaScript'],
+      demoUrl: 'https://shop-easy-kohl.vercel.app/',
+      codeUrl: 'https://github.com/anogbidor/Product-listing-page',
       category: 'Web Development',
     },
     {
