@@ -5,10 +5,171 @@ import Divider from '@mui/material/Divider'
 import Button from '@mui/material/Button'
 import { useTheme } from '@mui/material/styles'
 import useMediaQuery from '@mui/material/useMediaQuery'
+import Card from '@mui/material/Card'
+import CardContent from '@mui/material/CardContent'
+import CardMedia from '@mui/material/CardMedia'
+import Grid from '@mui/material/Grid'
+import Chip from '@mui/material/Chip'
+import Dialog from '@mui/material/Dialog'
+import DialogTitle from '@mui/material/DialogTitle'
+import DialogContent from '@mui/material/DialogContent'
+import IconButton from '@mui/material/IconButton'
+import CloseIcon from '@mui/icons-material/Close'
+import TextField from '@mui/material/TextField'
+import InputAdornment from '@mui/material/InputAdornment'
+import SearchIcon from '@mui/icons-material/Search'
+import Tabs from '@mui/material/Tabs'
+import Tab from '@mui/material/Tab'
 
 const ProjectSection: React.FC = () => {
   const theme = useTheme()
   const isMobile = useMediaQuery(theme.breakpoints.down('md'))
+  const [open, setOpen] = React.useState(false)
+  const [searchTerm, setSearchTerm] = React.useState('')
+  const [activeTab, setActiveTab] = React.useState(0)
+
+  // Harmonious color palette with greens and complementary colors
+  const tagColors = [
+    // Greens
+    '#e8f5e9',
+    '#c8e6c9',
+    '#a5d6a7',
+    '#81c784',
+    '#66bb6a',
+    '#4caf50',
+    '#43a047',
+    '#2e7d32',
+    '#1b5e20',
+    '#0d3b0a',
+    // Complementary colors
+    '#fff8e1',
+    '#ffecb3',
+    '#ffe082',
+    '#ffd54f',
+    '#e1f5fe',
+    '#b3e5fc',
+    '#81d4fa',
+    '#4fc3f7',
+    '#f3e5f5',
+    '#e1bee7',
+    '#ce93d8',
+    '#ba68c8',
+    '#ffebee',
+    '#ffcdd2',
+    '#ef9a9a',
+    '#e57373',
+    '#e0f7fa',
+    '#b2ebf2',
+    '#80deea',
+    '#4dd0e1',
+  ]
+
+  // Categories for filtering
+  const categories = [
+    'All',
+    'Web Development',
+    'Mobile',
+    'Full Stack',
+    'Design',
+  ]
+
+  // Function to get a random color from our palette
+  const getRandomTagColor = () => {
+    const randomIndex = Math.floor(Math.random() * tagColors.length)
+    return tagColors[randomIndex]
+  }
+
+  // Sample project data - replace with your actual projects
+  const projects = [
+    {
+      title: 'EcoTracker App',
+      description:
+        'An environmental impact tracking application with real-time analytics.',
+      imageUrl: '/images/project1-screenshot.jpg',
+      tags: ['React', 'Node.js', 'MongoDB', 'Express', 'JWT'],
+      demoUrl: '#',
+      codeUrl: '#',
+      category: 'Web Development',
+    },
+    {
+      title: 'HealthConnect Platform',
+      description:
+        'Telemedicine platform connecting patients with healthcare providers.',
+      imageUrl: '/images/project2-screenshot.jpg',
+      tags: ['TypeScript', 'GraphQL', 'Firebase', 'Redux', 'Material-UI'],
+      demoUrl: '#',
+      codeUrl: '#',
+      category: 'Full Stack',
+    },
+    {
+      title: 'SmartHome Automation',
+      description:
+        'IoT solution for home automation with voice control integration.',
+      imageUrl: '/images/project3-screenshot.jpg',
+      tags: ['Python', 'Django', 'PostgreSQL', 'Docker', 'AWS'],
+      demoUrl: '#',
+      codeUrl: '#',
+      category: 'Mobile',
+    },
+    {
+      title: 'Design System',
+      description: 'Comprehensive UI design system with reusable components.',
+      imageUrl: '/images/project4-screenshot.jpg',
+      tags: ['Vue', 'Nuxt', 'Tailwind', 'Netlify', 'Jest'],
+      demoUrl: '#',
+      codeUrl: '#',
+      category: 'Design',
+    },
+    {
+      title: 'E-commerce Dashboard',
+      description:
+        'Analytics dashboard for e-commerce businesses with real-time data.',
+      imageUrl: '/images/project5-screenshot.jpg',
+      tags: ['React', 'D3.js', 'Node.js', 'MySQL', 'Chart.js'],
+      demoUrl: '#',
+      codeUrl: '#',
+      category: 'Web Development',
+    },
+    {
+      title: 'Fitness Tracker',
+      description: 'Mobile application for tracking workouts and nutrition.',
+      imageUrl: '/images/project6-screenshot.jpg',
+      tags: ['React Native', 'Firebase', 'Redux', 'Expo', 'HealthKit'],
+      demoUrl: '#',
+      codeUrl: '#',
+      category: 'Mobile',
+    },
+  ]
+
+  const handleOpen = () => {
+    setOpen(true)
+  }
+
+  const handleClose = () => {
+    setOpen(false)
+  }
+
+  const handleSearchChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+    setSearchTerm(event.target.value)
+  }
+
+  const handleTabChange = (event: React.SyntheticEvent, newValue: number) => {
+    setActiveTab(newValue)
+  }
+
+  const filteredProjects = projects.filter((project) => {
+    const matchesSearch =
+      project.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
+      project.description.toLowerCase().includes(searchTerm.toLowerCase()) ||
+      project.tags.some((tag) =>
+        tag.toLowerCase().includes(searchTerm.toLowerCase())
+      )
+
+    const matchesCategory =
+      activeTab === 0 || project.category === categories[activeTab]
+
+    return matchesSearch && matchesCategory
+  })
 
   return (
     <Box
@@ -95,6 +256,7 @@ const ProjectSection: React.FC = () => {
         <Box sx={{ display: 'flex', justifyContent: 'center', mb: 6 }}>
           <Button
             variant='outlined'
+            onClick={handleOpen}
             sx={{
               borderColor: '#1a2e19',
               color: '#1a2e19',
@@ -104,7 +266,10 @@ const ProjectSection: React.FC = () => {
               '&:hover': {
                 backgroundColor: 'rgba(26, 46, 25, 0.05)',
                 borderColor: '#1e4a1b',
+                transform: 'translateY(-2px)',
+                boxShadow: '0 4px 8px rgba(26, 46, 25, 0.1)',
               },
+              transition: 'all 0.2s ease',
             }}
           >
             View All Projects
@@ -121,8 +286,346 @@ const ProjectSection: React.FC = () => {
             border: '1px solid rgba(220, 237, 193, 0.3)',
           }}
         >
-     
+          <Grid container spacing={4} justifyContent='center'>
+            {projects.slice(0, 4).map((project, index) => (
+              <Grid item xs={12} md={6} key={index}>
+                <Card
+                  sx={{
+                    height: '100%',
+                    display: 'flex',
+                    flexDirection: 'column',
+                    transition: 'transform 0.3s ease, box-shadow 0.3s ease',
+                    '&:hover': {
+                      transform: 'translateY(-5px)',
+                      boxShadow: '0 12px 24px rgba(26, 46, 25, 0.15)',
+                    },
+                  }}
+                >
+                  <CardMedia
+                    component='img'
+                    height='200'
+                    image={project.imageUrl}
+                    alt={project.title}
+                    sx={{
+                      objectFit: 'cover',
+                      borderTopLeftRadius: '4px',
+                      borderTopRightRadius: '4px',
+                    }}
+                  />
+                  <CardContent sx={{ flexGrow: 1 }}>
+                    <Typography
+                      gutterBottom
+                      variant='h5'
+                      component='h3'
+                      sx={{ fontWeight: 600 }}
+                    >
+                      {project.title}
+                    </Typography>
+                    <Typography
+                      variant='body2'
+                      color='text.secondary'
+                      sx={{ mb: 2 }}
+                    >
+                      {project.description}
+                    </Typography>
+                    <Box sx={{ mb: 2 }}>
+                      {project.tags.map((tag, i) => {
+                        const bgColor = getRandomTagColor()
+                        const textColor = theme.palette.getContrastText(bgColor)
+
+                        return (
+                          <Chip
+                            key={i}
+                            label={tag}
+                            size='small'
+                            sx={{
+                              mr: 1,
+                              mb: 1,
+                              backgroundColor: bgColor,
+                              color: textColor,
+                              fontWeight: 600,
+                              '&:hover': {
+                                transform: 'translateY(-2px)',
+                                boxShadow: '0 4px 6px rgba(0,0,0,0.1)',
+                              },
+                              transition: 'all 0.2s ease',
+                            }}
+                          />
+                        )
+                      })}
+                    </Box>
+                  </CardContent>
+                  <Box
+                    sx={{
+                      p: 2,
+                      display: 'flex',
+                      justifyContent: 'space-between',
+                    }}
+                  >
+                    <Button
+                      size='small'
+                      variant='outlined'
+                      sx={{
+                        borderColor: '#1a2e19',
+                        color: '#1a2e19',
+                        '&:hover': {
+                          backgroundColor: 'rgba(26, 46, 25, 0.05)',
+                        },
+                      }}
+                      href={project.demoUrl}
+                    >
+                      Live Demo
+                    </Button>
+                    <Button
+                      size='small'
+                      variant='contained'
+                      sx={{
+                        backgroundColor: '#1a2e19',
+                        '&:hover': {
+                          backgroundColor: '#1e4a1b',
+                        },
+                      }}
+                      href={project.codeUrl}
+                    >
+                      View Code
+                    </Button>
+                  </Box>
+                </Card>
+              </Grid>
+            ))}
+          </Grid>
         </Box>
+
+        {/* Projects Dialog */}
+        <Dialog
+          open={open}
+          onClose={handleClose}
+          fullWidth
+          maxWidth='lg'
+          sx={{
+            '& .MuiDialog-paper': {
+              borderRadius: 4,
+              backgroundColor: 'rgba(255, 255, 255, 0.95)',
+              backdropFilter: 'blur(12px)',
+            },
+          }}
+        >
+          <DialogTitle
+            sx={{
+              m: 0,
+              p: 3,
+              backgroundColor: '#1a2e19',
+              color: 'white',
+              display: 'flex',
+              justifyContent: 'space-between',
+              alignItems: 'center',
+            }}
+          >
+            <Typography variant='h4' sx={{ fontWeight: 700 }}>
+              All Projects
+            </Typography>
+            <IconButton
+              aria-label='close'
+              onClick={handleClose}
+              sx={{
+                color: 'white',
+                '&:hover': {
+                  backgroundColor: 'rgba(255, 255, 255, 0.1)',
+                },
+              }}
+            >
+              <CloseIcon />
+            </IconButton>
+          </DialogTitle>
+          <DialogContent sx={{ p: 0 }}>
+            <Box sx={{ p: 3, borderBottom: '1px solid rgba(0, 0, 0, 0.12)' }}>
+              <TextField
+                fullWidth
+                variant='outlined'
+                placeholder='Search projects...'
+                value={searchTerm}
+                onChange={handleSearchChange}
+                InputProps={{
+                  startAdornment: (
+                    <InputAdornment position='start'>
+                      <SearchIcon />
+                    </InputAdornment>
+                  ),
+                  sx: {
+                    borderRadius: 2,
+                    backgroundColor: 'rgba(0, 0, 0, 0.02)',
+                  },
+                }}
+              />
+              <Tabs
+                value={activeTab}
+                onChange={handleTabChange}
+                variant='scrollable'
+                scrollButtons='auto'
+                sx={{ mt: 2 }}
+              >
+                {categories.map((category, index) => (
+                  <Tab
+                    key={index}
+                    label={category}
+                    sx={{
+                      minWidth: 'unset',
+                      fontWeight: 600,
+                      '&.Mui-selected': {
+                        color: '#1a2e19',
+                      },
+                    }}
+                  />
+                ))}
+              </Tabs>
+            </Box>
+            <Box sx={{ p: 3 }}>
+              {filteredProjects.length > 0 ? (
+                <Grid container spacing={3}>
+                  {filteredProjects.map((project, index) => (
+                    <Grid item xs={12} sm={6} md={4} key={index}>
+                      <Card
+                        sx={{
+                          height: '100%',
+                          display: 'flex',
+                          flexDirection: 'column',
+                          transition:
+                            'transform 0.3s ease, box-shadow 0.3s ease',
+                          '&:hover': {
+                            transform: 'translateY(-5px)',
+                            boxShadow: '0 12px 24px rgba(26, 46, 25, 0.15)',
+                          },
+                        }}
+                      >
+                        <CardMedia
+                          component='img'
+                          height='160'
+                          image={project.imageUrl}
+                          alt={project.title}
+                          sx={{
+                            objectFit: 'cover',
+                            borderTopLeftRadius: '4px',
+                            borderTopRightRadius: '4px',
+                          }}
+                        />
+                        <CardContent sx={{ flexGrow: 1 }}>
+                          <Typography
+                            gutterBottom
+                            variant='h6'
+                            component='h3'
+                            sx={{ fontWeight: 600 }}
+                          >
+                            {project.title}
+                          </Typography>
+                          <Typography
+                            variant='body2'
+                            color='text.secondary'
+                            sx={{ mb: 2 }}
+                          >
+                            {project.description}
+                          </Typography>
+                          <Box sx={{ mb: 2 }}>
+                            {project.tags.map((tag, i) => {
+                              const bgColor = getRandomTagColor()
+                              const textColor =
+                                theme.palette.getContrastText(bgColor)
+
+                              return (
+                                <Chip
+                                  key={i}
+                                  label={tag}
+                                  size='small'
+                                  sx={{
+                                    mr: 1,
+                                    mb: 1,
+                                    backgroundColor: bgColor,
+                                    color: textColor,
+                                    fontWeight: 600,
+                                    '&:hover': {
+                                      transform: 'translateY(-2px)',
+                                      boxShadow: '0 4px 6px rgba(0,0,0,0.1)',
+                                    },
+                                    transition: 'all 0.2s ease',
+                                  }}
+                                />
+                              )
+                            })}
+                          </Box>
+                        </CardContent>
+                        <Box
+                          sx={{
+                            p: 2,
+                            display: 'flex',
+                            justifyContent: 'space-between',
+                          }}
+                        >
+                          <Button
+                            size='small'
+                            variant='outlined'
+                            sx={{
+                              borderColor: '#1a2e19',
+                              color: '#1a2e19',
+                              '&:hover': {
+                                backgroundColor: 'rgba(26, 46, 25, 0.05)',
+                              },
+                            }}
+                            href={project.demoUrl}
+                          >
+                            Demo
+                          </Button>
+                          <Button
+                            size='small'
+                            variant='contained'
+                            sx={{
+                              backgroundColor: '#1a2e19',
+                              '&:hover': {
+                                backgroundColor: '#1e4a1b',
+                              },
+                            }}
+                            href={project.codeUrl}
+                          >
+                            Code
+                          </Button>
+                        </Box>
+                      </Card>
+                    </Grid>
+                  ))}
+                </Grid>
+              ) : (
+                <Box
+                  sx={{
+                    display: 'flex',
+                    flexDirection: 'column',
+                    alignItems: 'center',
+                    justifyContent: 'center',
+                    py: 8,
+                    textAlign: 'center',
+                  }}
+                >
+                  <Typography
+                    variant='h6'
+                    sx={{ mb: 2, color: 'text.secondary' }}
+                  >
+                    No projects found matching your criteria
+                  </Typography>
+                  <Button
+                    variant='outlined'
+                    onClick={() => {
+                      setSearchTerm('')
+                      setActiveTab(0)
+                    }}
+                    sx={{
+                      borderColor: '#1a2e19',
+                      color: '#1a2e19',
+                    }}
+                  >
+                    Clear filters
+                  </Button>
+                </Box>
+              )}
+            </Box>
+          </DialogContent>
+        </Dialog>
 
         <Divider
           sx={{
