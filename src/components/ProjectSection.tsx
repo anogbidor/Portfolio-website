@@ -70,7 +70,7 @@ const ProjectSection: React.FC = () => {
     'Web Development',
     'Mobile',
     'Full Stack',
-    'Design',
+    'Utilities',
   ]
 
   // Function to get a random color from our palette
@@ -79,7 +79,7 @@ const ProjectSection: React.FC = () => {
     return tagColors[randomIndex]
   }
 
-  // Sample project data - replace with your actual projects
+  // Projects data with title, description, image URL, tags, demo URL, code URL, and category
   const projects = [
     {
       title: 'E-commerce Platform',
@@ -112,13 +112,13 @@ const ProjectSection: React.FC = () => {
       category: 'Mobile',
     },
     {
-      title: 'Design System',
-      description: 'Comprehensive UI design system with reusable components.',
-      imageUrl: '/images/project4-screenshot.jpg',
-      tags: ['Vue', 'Nuxt', 'Tailwind', 'Netlify', 'Jest'],
-      demoUrl: '#',
-      codeUrl: '#',
-      category: 'Design',
+      title: 'Scientific Calculator',
+      description: 'A scientific calculator with advanced features.',
+      imageUrl: '/images/scifi-calc.png',
+      tags: ['Vue 3', 'Tailwind', 'Vercel'],
+      demoUrl: 'https://calculator-blue-rho-13.vercel.app/',
+      codeUrl: 'https://github.com/anogbidor/scientific-calculator',
+      category: 'Utilities',
     },
     {
       title: 'E-commerce Dashboard',
