@@ -94,7 +94,7 @@ const Blogs: React.FC = () => {
                         </span>
                         <span className='text-gray-300'>•</span>
                         <span className='text-green-600 font-medium'>
-                          {featuredPost.readingTime} min read
+                          {featuredPost.readingTime} 
                         </span>
                       </div>
                     </div>

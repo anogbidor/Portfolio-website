@@ -65,7 +65,7 @@ export const posts: Post[] = [
       'When I started building this portfolio, I wanted it to be more than just a showcase of my projects. I wanted it to be a learning journey — an opportunity to sharpen my technical skills and solve real-world problems...',
     date: 'Apr 22, 2023',
     datetime: '2021-06-30',
-    readingTime: '4 min read',
+    readingTime: '4 mins read',
     isFeatured: true,
     category: {
       title: 'Frontend Engineer',
@@ -86,7 +86,7 @@ export const posts: Post[] = [
       'Many organizations are moving to flatter team-oriented structures...',
     date: 'Jan 5, 2022',
     datetime: '2022-01-05',
-    readingTime: '5 min read',
+    readingTime: '5 mins read',
     isFeatured: false,
     category: {
       title: 'Leadership & Development',
@@ -107,7 +107,7 @@ export const posts: Post[] = [
     description: 'Networking – it’s a term we’ve all heard countless times...',
     date: 'May 21, 2024',
     datetime: '2022-02-14',
-    readingTime: '7 min read',
+    readingTime: '7 mins read',
     isFeatured: true,
     category: {
       title: 'Entrepreneurship Insights',
