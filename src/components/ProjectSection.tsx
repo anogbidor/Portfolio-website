@@ -82,15 +82,26 @@ const ProjectSection: React.FC = () => {
   // Projects data with title, description, image URL, tags, demo URL, code URL, and category
   const projects = [
     {
-      title: 'E-commerce Platform',
+      title: 'Shop Easy',
       description:
         'An e-commerce platform with shopping cart functionality, wishlist and more..',
-      imageUrl: '/images/product-listing-img.png',
+      imageUrl: '/images/shop-easy-scr.png',
       tags: ['HTML', 'CSS', ' Vanilla JavaScript'],
       demoUrl: 'https://shop-easy-kohl.vercel.app/',
       codeUrl: 'https://github.com/anogbidor/Product-listing-page',
       category: 'Web Development',
     },
+    {
+      title: 'Shelf Space',
+      description:
+        'ShelfSpace is a responsive, component-based Vue 3 web app for managing a personal book collection. It allows users to add, filter, sort, and favorite books, with features like pagination, search, and a modern UI built with Tailwind CSS. The project demonstrates clean UI design, modular architecture, and dynamic form handling',
+      imageUrl: '/images/shelf-space scr.png',
+      tags: ['Vue 3', 'Vite', 'Tailwind', 'Vercel'],
+      demoUrl: 'https://shelf-space-jade.vercel.app/',
+      codeUrl: 'https://github.com/anogbidor/ShelfSpace',
+      category: 'Web Development',
+    },
+
     {
       title: 'HealthConnect Platform',
       description:
