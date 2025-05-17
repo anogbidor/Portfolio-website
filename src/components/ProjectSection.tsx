@@ -84,7 +84,7 @@ const ProjectSection: React.FC = () => {
     {
       title: 'Shop Easy',
       description:
-        'An e-commerce platform with shopping cart functionality, wishlist and more..',
+        'Shop Easy is a simple yet functional product listing web page that fetches data from the Fake Store API. It features a responsive product grid, real-time search by title, price-based sorting (low to high / high to low), and a cart counter to track items added—demonstrating essential e-commerce functionality in a clean, user-friendly interface.',
       imageUrl: '/images/shop-easy-scr.png',
       tags: ['HTML', 'CSS', ' Vanilla JavaScript'],
       demoUrl: 'https://shop-easy-kohl.vercel.app/',
@@ -95,11 +95,23 @@ const ProjectSection: React.FC = () => {
       title: 'Shelf Space',
       description:
         'ShelfSpace is a responsive, component-based Vue 3 web app for managing a personal book collection. It allows users to add, filter, sort, and favorite books, with features like pagination, search, and a modern UI built with Tailwind CSS. The project demonstrates clean UI design, modular architecture, and dynamic form handling',
-      imageUrl: '/images/shelf-space scr.png',
+      imageUrl: '/images/shelf-space-scr.png',
       tags: ['Vue 3', 'Vite', 'Tailwind', 'Vercel'],
       demoUrl: 'https://shelf-space-jade.vercel.app/',
       codeUrl: 'https://github.com/anogbidor/ShelfSpace',
       category: 'Web Development',
+    },
+
+    {
+      title: 'Scientific Calculator',
+      description:
+        'Scientific Calculator is a modern, modular calculator app built with Vue 3 and Tailwind CSS. It supports both basic arithmetic and advanced scientific functions, including memory operations and persistent history via localStorage. With full keyboard support, error handling, and a clean UI, this project showcases Vue’s Composition API and component-based architecture.',
+
+      imageUrl: '/images/scifi-calc.png',
+      tags: ['Vue 3', 'Tailwind', 'Vercel'],
+      demoUrl: 'https://calculator-blue-rho-13.vercel.app/',
+      codeUrl: 'https://github.com/anogbidor/scientific-calculator',
+      category: 'Utilities',
     },
 
     {
@@ -121,15 +133,6 @@ const ProjectSection: React.FC = () => {
       demoUrl: '#',
       codeUrl: '#',
       category: 'Mobile',
-    },
-    {
-      title: 'Scientific Calculator',
-      description: 'A scientific calculator with advanced features.',
-      imageUrl: '/images/scifi-calc.png',
-      tags: ['Vue 3', 'Tailwind', 'Vercel'],
-      demoUrl: 'https://calculator-blue-rho-13.vercel.app/',
-      codeUrl: 'https://github.com/anogbidor/scientific-calculator',
-      category: 'Utilities',
     },
     {
       title: 'E-commerce Dashboard',
