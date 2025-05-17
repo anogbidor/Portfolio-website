@@ -106,7 +106,7 @@ const ProjectSection: React.FC = () => {
       title: 'HealthConnect Platform',
       description:
         'Telemedicine platform connecting patients with healthcare providers.',
-      imageUrl: '/images/project2-screenshot.jpg',
+      imageUrl: '',
       tags: ['TypeScript', 'GraphQL', 'Firebase', 'Redux', 'Material-UI'],
       demoUrl: '#',
       codeUrl: '#',
@@ -116,7 +116,7 @@ const ProjectSection: React.FC = () => {
       title: 'SmartHome Automation',
       description:
         'IoT solution for home automation with voice control integration.',
-      imageUrl: '/images/project3-screenshot.jpg',
+      imageUrl: '',
       tags: ['Python', 'Django', 'PostgreSQL', 'Docker', 'AWS'],
       demoUrl: '#',
       codeUrl: '#',
@@ -135,7 +135,7 @@ const ProjectSection: React.FC = () => {
       title: 'E-commerce Dashboard',
       description:
         'Analytics dashboard for e-commerce businesses with real-time data.',
-      imageUrl: '/images/project5-screenshot.jpg',
+      imageUrl: '',
       tags: ['React', 'D3.js', 'Node.js', 'MySQL', 'Chart.js'],
       demoUrl: '#',
       codeUrl: '#',
@@ -144,7 +144,7 @@ const ProjectSection: React.FC = () => {
     {
       title: 'Fitness Tracker',
       description: 'Mobile application for tracking workouts and nutrition.',
-      imageUrl: '/images/project6-screenshot.jpg',
+      imageUrl: '',
       tags: ['React Native', 'Firebase', 'Redux', 'Expo', 'HealthKit'],
       demoUrl: '#',
       codeUrl: '#',
@@ -197,7 +197,7 @@ const ProjectSection: React.FC = () => {
           left: 0,
           right: 0,
           bottom: 0,
-          backgroundImage: 'url(public/images/projectbckdrp.jpg)',
+          // backgroundImage: 'url(public/images/projectbckdrp.jpg)',
           backgroundRepeat: 'no-repeat',
           backgroundPosition: 'right bottom',
           backgroundSize: isMobile ? '70% auto' : '40% auto',
@@ -652,7 +652,7 @@ const ProjectSection: React.FC = () => {
               transform: 'translateX(-50%)',
               width: '40px',
               height: '40px',
-              backgroundImage: 'url(/images/leaf-divider.svg)',
+              // backgroundImage: 'url(/images/leaf-divider.svg)',
               backgroundRepeat: 'no-repeat',
               backgroundPosition: 'center',
               backgroundSize: 'contain',
