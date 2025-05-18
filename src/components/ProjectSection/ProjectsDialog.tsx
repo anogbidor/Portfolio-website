@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { projects, categories } from './ProjectsData'
+import { projects } from './ProjectsData'
 import CategoryTabs from './CategoryTabs'
 import ProjectCard from './ProjectCard'
 
