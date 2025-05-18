@@ -1,0 +1,15 @@
+import React from 'react'
+import ProjectCard from './ProjectCard'
+import { projects } from './ProjectsData'
+
+const FeaturedProjects: React.FC = () => {
+  return (
+    <div className='grid grid-cols-1 md:grid-cols-2 gap-6'>
+      {projects.slice(0, 4).map((project, index) => (
+        <ProjectCard key={index} project={project} />
+      ))}
+    </div>
+  )
+}
+
+export default FeaturedProjects
