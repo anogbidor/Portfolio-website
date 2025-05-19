@@ -4,7 +4,7 @@ import Container from '@mui/material/Container'
 import { useTheme } from '@mui/material/styles'
 import useMediaQuery from '@mui/material/useMediaQuery'
 import HeroSection from '../components/HeroSection'
-import ProjectSection from './projectSection'
+import ProjectSection from '../components/projectSection/index'
 import SkillSection from '../components/SkillSection'
 
 
