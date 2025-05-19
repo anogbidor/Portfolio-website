@@ -1,15 +1,18 @@
-💻 Developer Portfolio Website
+## 💻 Developer Portfolio Website
 
-A modern, responsive developer portfolio built with React, Next.js, and TypeScript. This project showcases personal and professional work, includes a blog section, contact form, live chat widget, and themed styling with TailwindCSS.
+A modern, responsive developer portfolio built with **React**, **Next.js**, and **TypeScript**. This project showcases personal and professional work, includes a blog section, contact form, live chat widget, and themed styling with **TailwindCSS**.
 
+---
 
-🌐 Live Demo
+### 🌐 Live Demo
 
-👉 https://portfolio-journal.vercel.app/home
+👉 [https://portfolio-journal.vercel.app/home](https://portfolio-journal.vercel.app/home)
 
+---
 
+### 📁 Project Structure
 
-
+```
 src
 ├── components
 │   ├── contact
@@ -46,28 +49,36 @@ src
 ├── theme
 │   └── Theme.ts
 └── react-app-env.d.ts
+```
 
+---
 
+### 🚀 Features
 
-🚀 Features
-	•	Landing Page with smooth scroll navigation
-	•	About, Projects, Skills, and Blogs sections
-	•	Contact Page with form validation and success messaging
-	•	Reusable Form Components (Input, TextArea, Checkbox, etc.)
-	•	Floating Chat Widget with Q&A
-	•	Theme support using a centralized theme configuration
-	•	Responsive Design using TailwindCSS
+* Landing Page with smooth scroll navigation
+* About, Projects, Skills, and Blogs sections
+* Contact Page with form validation and success messaging
+* Reusable Form Components (Input, TextArea, Checkbox, etc.)
+* Floating Chat Widget with Q\&A
+* Theme support using a centralized theme configuration
+* Responsive Design using TailwindCSS
 
+---
 
- 🛠️ Tech Stack
-	•	Framework:  React, Next.js (TypeScript)
-	•	Styling: TailwindCSS, MaterialUI
-	•	Forms: React Hook Form (if used)
-	•	Components: Fully modular and reusable
-	•	Deployment: Vercel (recommended)
+### 🛠️ Tech Stack
 
+* **Framework**: React, Next.js (TypeScript)
+* **Styling**: TailwindCSS, Material UI
+* **Forms**: React Hook Form *(if used)*
+* **Components**: Fully modular and reusable
+* **Deployment**: Vercel (recommended)
 
- # Clone the repo
+---
+
+### 📦 Getting Started
+
+```bash
+# Clone the repo
 git clone https://github.com/your-username/your-repo-name.git
 
 # Navigate to project folder
@@ -78,7 +89,10 @@ npm install
 
 # Run the development server
 npm run dev
+```
 
-📬 Contact
+---
+
+### 📬 Contact
 
 For questions or feedback, feel free to reach out via the Contact Page or connect through the live chat widget.
