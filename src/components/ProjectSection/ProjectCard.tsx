@@ -16,7 +16,7 @@ const ProjectCard: React.FC<{ project: Project }> = ({ project }) => {
       {project.imageUrl && (
         <div className='relative overflow-hidden h-80'>
           {' '}
-          {/* Increased to h-80 (320px) */}
+          
           <img
             src={project.imageUrl}
             alt={project.title}
@@ -24,7 +24,7 @@ const ProjectCard: React.FC<{ project: Project }> = ({ project }) => {
             loading='lazy'
           />
           <div className='absolute inset-0 bg-gradient-to-t from-black/30 via-black/10 to-transparent' />{' '}
-          {/* Stronger gradient */}
+         
         </div>
       )}
 
@@ -34,10 +34,10 @@ const ProjectCard: React.FC<{ project: Project }> = ({ project }) => {
             <h3 className='text-xl font-bold text-gray-900'>{project.title}</h3>
           </div>
 
-          {/* Adjusted description container */}
+          
           <div className='mb-4 max-h-[90px] overflow-y-auto'>
             {' '}
-            {/* Slightly taller */}
+            
             <p className='text-gray-600 leading-relaxed text-sm'>
               {project.description}
             </p>

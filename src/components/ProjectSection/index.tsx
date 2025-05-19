@@ -9,7 +9,7 @@ const ProjectSection: React.FC = () => {
   const closeModal = () => setIsModalOpen(false)
 
   return (
-    <section className='py-16 px-4 max-w-6xl mx-auto'>
+    <section className='py-16 px-4 max-w-6xl mx-auto mb-10'>
       <h2 className='text-4xl font-bold text-center text-green-900 mb-8 relative'>
         Featured Projects
         <span className='block h-1 w-20 bg-gradient-to-r from-green-900 to-green-700 rounded-full mx-auto mt-2' />
@@ -19,7 +19,7 @@ const ProjectSection: React.FC = () => {
         <button
           type='button'
           onClick={openModal}
-          className='text-green-800 border border-green-800 px-6 py-2 rounded font-semibold hover:bg-green-100 transition'
+          className='text-green-800 border border-green-800 px-6 py-2 rounded font-semibold hover:bg-mint-hover transition'
         >
           View All Projects
         </button>
