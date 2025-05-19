@@ -1,12 +1,11 @@
 import React, { useState } from 'react'
 import Box from '@mui/material/Box'
 import Typography from '@mui/material/Typography'
-import Grid from '@mui/material/Grid'
 import Divider from '@mui/material/Divider'
 import Tabs from '@mui/material/Tabs'
 import Tab from '@mui/material/Tab'
 import { AnimatePresence, motion } from 'framer-motion'
-import { skillsData, SkillsCategory } from './skillsData' // <-- Modular import
+import { skillsData, SkillsCategory } from './skillsData'
 
 const fadeVariants = {
   hidden: { opacity: 0 },
@@ -34,6 +33,7 @@ const SkillCard = ({ name, logo }: { name: string; logo: string }) => (
           transform: 'translateY(-5px)',
           boxShadow: '0 8px 16px rgba(0,0,0,0.1)',
         },
+        height: '100%', // Ensure consistent height
       }}
     >
       <Box
@@ -108,13 +108,24 @@ const SkillsSection: React.FC = () => {
           exit='exit'
           transition={{ duration: 0.4 }}
         >
-          <Grid container spacing={4}>
+          <Box
+            sx={{
+              display: 'grid',
+              gridTemplateColumns: {
+                xs: 'repeat(2, 1fr)',
+                sm: 'repeat(3, 1fr)',
+                md: 'repeat(4, 1fr)',
+              },
+              gap: 3,
+              padding: 1,
+            }}
+          >
             {skillsData[tab].map(({ name, logo }) => (
-              <Grid item xs={6} sm={4} md={3} key={name}>
+              <div key={name}>
                 <SkillCard name={name} logo={logo} />
-              </Grid>
+              </div>
             ))}
-          </Grid>
+          </Box>
         </motion.div>
       </AnimatePresence>
 
