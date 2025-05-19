@@ -26,6 +26,14 @@ src
 │   │   │   ├── TextAreaField.tsx
 │   │   │   └── types.ts
 │   │   └── ContactPage.tsx
+│   ├── projectSection
+│   │   ├── CategoryTabs.tsx
+│   │   ├── FeaturedProjects.tsx
+│   │   ├── ProjectCard.tsx
+│   │   ├── ProjectsData.tsx
+│   │   ├── ProjectsDialog.tsx
+│   │   ├── index.tsx
+│   │   └── utils.ts
 │   ├── About.tsx
 │   ├── AppNavBar.tsx
 │   ├── Blogs.tsx
@@ -62,6 +70,11 @@ src
 * Floating Chat Widget with Q\&A
 * Theme support using a centralized theme configuration
 * Responsive Design using TailwindCSS
+* View All Projects Modal with category filter and search
+* Project Card hover animations with consistent styling
+* Dynamic tag styling with contrast-aware colors
+* Tailwind-based gradient hover button effects
+* Modularized and type-safe project data with category filtering
 
 ---
 
@@ -69,9 +82,8 @@ src
 
 * **Framework**: React, Next.js (TypeScript)
 * **Styling**: TailwindCSS, Material UI
-* **Forms**: React Hook Form *(if used)*
 * **Components**: Fully modular and reusable
-* **Deployment**: Vercel (recommended)
+* **Deployment**: Vercel
 
 ---
 
