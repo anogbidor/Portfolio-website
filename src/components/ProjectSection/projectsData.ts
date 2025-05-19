@@ -47,7 +47,7 @@ export const projects = [
     title: 'SmartHome Automation',
     description:
       'A comprehensive IoT home automation system that enables remote control of smart devices through a mobile interface. Features include voice command integration (Alexa/Google Assistant), energy usage monitoring, automated routines, and real-time notifications. The backend handles device synchronization across multiple users.',
-    imageUrl: '/images/smarthome-dashboard.png',
+    imageUrl: '',
     tags: ['Python', 'Django', 'PostgreSQL', 'Docker', 'AWS IoT', 'REST API'],
     demoUrl: '#',
     codeUrl: '#',
@@ -57,7 +57,7 @@ export const projects = [
     title: 'E-commerce Dashboard',
     description:
       'An interactive analytics dashboard for e-commerce businesses featuring real-time sales data visualization. Includes customer segmentation, inventory tracking, and sales forecasting. The dashboard connects to multiple data sources and presents information through customizable widgets and detailed reports.',
-    imageUrl: '/images/ecommerce-dashboard.png',
+    imageUrl: '',
     tags: [
       'React',
       'D3.js',
@@ -74,7 +74,7 @@ export const projects = [
     title: 'Fitness Tracker',
     description:
       'A cross-platform mobile application for comprehensive fitness tracking. Features include workout logging with exercise demonstrations, nutrition tracking with barcode scanning, progress analytics, and social sharing. Integrates with Apple HealthKit/Google Fit and supports offline functionality with cloud synchronization.',
-    imageUrl: '/images/fitness-tracker.png',
+    imageUrl: '',
     tags: [
       'React Native',
       'Firebase',
@@ -91,7 +91,7 @@ export const projects = [
     title: 'TaskFlow Productivity Suite',
     description:
       'A full-featured productivity application combining task management, time tracking, and team collaboration tools. Features include Kanban boards, Gantt charts, time blocking, and integration with calendar services. The application supports real-time collaboration with presence indicators and change notifications.',
-    imageUrl: '/images/taskflow-suite.png',
+    imageUrl: '',
     tags: [
       'MERN Stack',
       'WebSockets',
@@ -107,7 +107,7 @@ export const projects = [
     title: 'Weather Forecast Pro',
     description:
       'A weather application providing hyper-local forecasts with animated weather representations. Features include severe weather alerts, pollen/air quality indexes, and historical weather data comparison. The app uses geolocation and supports saving multiple locations with customizable notification triggers.',
-    imageUrl: '/images/weather-app.png',
+    imageUrl: '',
     tags: [
       'React',
       'OpenWeather API',
