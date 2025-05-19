@@ -1,6 +1,5 @@
 'use client'
 import { useState } from 'react'
-import ContactHeader from './ContactHeader'
 import SuccessMessage from './SuccessMessage'
 import InputField from './InputField'
 import TextAreaField from './TextAreaField'
@@ -8,6 +7,7 @@ import TextAreaField from './TextAreaField'
 import Checkbox from './Checkbox'
 import SubmitButton from './SubmitButton'
 import { FormData, FormErrors } from './types'
+
 
 const ContactForm = () => {
   const [formData, setFormData] = useState<FormData>({
@@ -192,9 +192,9 @@ const ContactForm = () => {
                 label={
                   <>
                     I agree to the{' '}
-                    <a href='#' className='text-green-600 hover:text-green-500'>
+                    <button type='button' className='text-green-600 hover:text-green-500 cursor-pointer'>
                       privacy policy
-                    </a>
+                    </button>
                   </>
                 }
               />
