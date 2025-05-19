@@ -15,6 +15,7 @@ module.exports = {
       },
       backgroundImage: {
         'custom-green': 'linear-gradient(135deg, #546E51, #394C36, #1C261B)',
+        'mint-hover': 'linear-gradient(90deg, #a8e6cf, #dcedc1)',
       },
       keyframes: {
         textShine: {
