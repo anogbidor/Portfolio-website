@@ -10,7 +10,8 @@ const CategoryTabs: React.FC<Props> = ({ activeTab, onTabChange }) => {
   return (
     <div className='flex flex-wrap gap-2 mt-4'>
       {categories.map((category) => (
-        <button
+       <button
+         type='button'
           key={category}
           onClick={() => onTabChange(category)}
           className={`px-4 py-1.5 rounded-full text-sm font-medium border transition ${
