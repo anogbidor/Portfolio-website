@@ -4,9 +4,21 @@ export const categories = [
   'Mobile',
   'Full Stack',
   'Utilities',
-]
+] as const
 
-export const projects = [
+export type Category = (typeof categories)[number]
+
+export interface Project {
+  title: string
+  description: string
+  imageUrl: string
+  tags: string[]
+  demoUrl: string
+  codeUrl: string
+  category: Category
+}
+
+export const projects: Project[] = [
   {
     title: 'Shop Easy',
     description:
