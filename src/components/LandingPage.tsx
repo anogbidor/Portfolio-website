@@ -4,7 +4,7 @@ import Container from '@mui/material/Container'
 import { useTheme } from '@mui/material/styles'
 import useMediaQuery from '@mui/material/useMediaQuery'
 import HeroSection from '../components/HeroSection'
-import ProjectSection from '../components/projectSection/index'
+import Projects from '../components/projectSection/index'
 import SkillSection from '../components/SkillSection'
 
 
@@ -19,7 +19,7 @@ const LandingPage: React.FC = () => {
 
       <Box sx={{ backgroundColor: '#ffffff', pt: 8, pb: 12 }}>
         <Container maxWidth='lg'>
-          <ProjectSection />
+          <Projects />
           <SkillSection />
          
         </Container>
