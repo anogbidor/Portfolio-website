@@ -33,10 +33,7 @@ export const skillsData: Record<
       name: 'Tailwind',
       logo: 'https://www.vectorlogo.zone/logos/tailwindcss/tailwindcss-icon.svg',
     },
-    {
-      name: 'Bootstrap',
-      logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg',
-    },
+    
     {
       name: 'Material UI',
       logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/materialui/materialui-original.svg',
@@ -74,17 +71,14 @@ export const skillsData: Record<
       name: 'Jira',
       logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jira/jira-original.svg',
     },
-    {
-      name: 'Notion',
-      logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/notion/notion-original.svg',
-    },
+   
     {
       name: 'Trello',
       logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/trello/trello-plain.svg',
     },
     {
-      name: 'Confluence',
-      logo: 'https://cdn-icons-png.flaticon.com/512/5969/5969035.png',
+      name: 'Linear',
+      logo: 'https://seeklogo.com/images/L/linear-logo-37899C221D-seeklogo.com.png',
     },
     {
       name: 'Agile',
