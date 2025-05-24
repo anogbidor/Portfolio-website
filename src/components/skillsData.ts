@@ -1,9 +1,6 @@
 export type SkillsCategory = 'Frontend' | 'Backend' | 'Tools & Workflow'
 
-export const skillsData: Record<
-  SkillsCategory,
-  { name: string; logo: string }[]
-> = {
+export const skillsData: Record<SkillsCategory, { name: string; logo: string }[]> = {
   Frontend: [
     {
       name: 'JavaScript',
@@ -33,7 +30,7 @@ export const skillsData: Record<
       name: 'Tailwind',
       logo: 'https://www.vectorlogo.zone/logos/tailwindcss/tailwindcss-icon.svg',
     },
-    
+
     {
       name: 'Material UI',
       logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/materialui/materialui-original.svg',
@@ -52,7 +49,7 @@ export const skillsData: Record<
       name: 'GraphQL',
       logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/graphql/graphql-plain.svg',
     },
-    
+
     {
       name: 'Python',
       logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg',
@@ -71,15 +68,12 @@ export const skillsData: Record<
       name: 'Jira',
       logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jira/jira-original.svg',
     },
-   
+
     {
       name: 'Trello',
       logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/trello/trello-plain.svg',
     },
-    {
-      name: 'Linear',
-      logo: 'https://seeklogo.com/images/L/linear-logo-37899C221D-seeklogo.com.png',
-    },
+    
     {
       name: 'Agile',
       logo: 'https://cdn-icons-png.flaticon.com/512/888/888879.png',
