@@ -5,6 +5,7 @@ import Button from '@mui/material/Button'
 import Container from '@mui/material/Container'
 import Typography from '@mui/material/Typography'
 import Link from 'next/link'
+
 import { useRouter } from 'next/router'
 import Menu from '@mui/material/Menu'
 import MenuItem from '@mui/material/MenuItem'
@@ -73,19 +74,22 @@ const AppNavBar: React.FC = () => {
           }}
         >
           {/* Logo */}
-          <Typography
-            variant='h6'
-            component={Link}
-            href='/home'
-            sx={{
-              fontWeight: 700,
-              fontSize: '1.5rem',
-              letterSpacing: '-0.5px',
-              color: '#ffffff',
-            }}
-          >
-            Logox
-          </Typography>
+
+          <Link href='/home' passHref>
+            <Box
+              component='img'
+              src='/images/portfolio-logo.png'
+              alt='Stackloop Logo'
+              sx={{
+                height: '1.5rem', // keep actual height small
+                width: 'auto',
+                transform: 'scale(7.1)', // visually enlarge without affecting layout
+                transformOrigin: 'left center', // scale from left (better alignment)
+                cursor: 'pointer',
+                display: 'block',
+              }}
+            />
+          </Link>
 
           {/* Desktop Navigation Links */}
           <Box sx={{ display: { xs: 'none', md: 'flex' }, gap: 4 }}>

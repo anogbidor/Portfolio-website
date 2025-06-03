@@ -36,3 +36,44 @@ export const getRandomTagStyle = () => {
     color: textColor,
   }
 }
+
+/**
+ * Returns a random button style with good contrast
+ */
+export const getRandomButtonStyle = () => {
+  const buttonColors = [
+    '#2563eb', // blue-600
+    '#dc2626', // red-600
+    '#16a34a', // green-600
+    '#ca8a04', // yellow-600
+    '#7c3aed', // purple-600
+    '#db2777', // pink-600
+  ]
+  const bgColor = buttonColors[Math.floor(Math.random() * buttonColors.length)]
+
+  return {
+    backgroundColor: bgColor,
+    color: '#FFFFFF', // Always white text for buttons
+  }
+}
+
+/**
+ * Returns a random category badge style
+ */
+export const getRandomCategoryStyle = () => {
+  const categoryColors = [
+    '#0369a1', // blue-700
+    '#b91c1c', // red-700
+    '#15803d', // green-700
+    '#a16207', // yellow-700
+    '#6d28d9', // purple-700
+    '#be123c', // rose-700
+  ]
+  const bgColor =
+    categoryColors[Math.floor(Math.random() * categoryColors.length)]
+
+  return {
+    backgroundColor: bgColor,
+    color: '#FFFFFF', // Always white text for category badges
+  }
+}

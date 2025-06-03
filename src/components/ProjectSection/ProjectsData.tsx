@@ -20,6 +20,24 @@ export interface Project {
 
 export const projects: Project[] = [
   {
+    title: 'E-commerce Dashboard with Analytics',
+    description:
+      'An interactive analytics dashboard for e-commerce businesses featuring real-time sales data visualization. Includes customer segmentation, inventory tracking, and sales forecasting. The dashboard connects to multiple data sources and presents information through customizable widgets and detailed reports.',
+    imageUrl: '/images/shoppora-ss.png', 
+    tags: [
+      'React',
+      'D3.js',
+      'Node.js',
+      'MySQL',
+      'Chart.js',
+      'Data Visualization',
+    ],
+    demoUrl: 'https://ecom-dashboard-indol.vercel.app/login', 
+    codeUrl: 'https://github.com/Anogbidor/ecom-dashboard', 
+    category: 'Full Stack',
+  },
+
+  {
     title: 'Shop Easy',
     description:
       'A responsive e-commerce product listing application built with modern web technologies. Features include dynamic product filtering, cart functionality with quantity adjustments, and smooth animations. Integrated with the Fake Store API to showcase real product data with loading states and error handling.',
@@ -55,6 +73,7 @@ export const projects: Project[] = [
     codeUrl: 'https://github.com/anogbidor/scientific-calculator',
     category: 'Utilities',
   },
+
   {
     title: 'SmartHome Automation',
     description:
@@ -65,23 +84,7 @@ export const projects: Project[] = [
     codeUrl: '#',
     category: 'Mobile',
   },
-  {
-    title: 'E-commerce Dashboard',
-    description:
-      'An interactive analytics dashboard for e-commerce businesses featuring real-time sales data visualization. Includes customer segmentation, inventory tracking, and sales forecasting. The dashboard connects to multiple data sources and presents information through customizable widgets and detailed reports.',
-    imageUrl: '',
-    tags: [
-      'React',
-      'D3.js',
-      'Node.js',
-      'MySQL',
-      'Chart.js',
-      'Data Visualization',
-    ],
-    demoUrl: '#',
-    codeUrl: '#',
-    category: 'Web Development',
-  },
+
   {
     title: 'Fitness Tracker',
     description:
