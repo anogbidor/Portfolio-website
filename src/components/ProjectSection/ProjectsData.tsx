@@ -32,7 +32,7 @@ export const projects: Project[] = [
       'Chart.js',
       'Data Visualization',
     ],
-    demoUrl: 'https://ecom-dashboard-indol.vercel.app/login', 
+    demoUrl: 'https://ecom-dashboard-indol.vercel.app', 
     codeUrl: 'https://github.com/Anogbidor/ecom-dashboard', 
     category: 'Full Stack',
   },
