@@ -23,7 +23,7 @@ export const projects: Project[] = [
     title: 'E-commerce Dashboard with Analytics',
     description:
       'An interactive analytics dashboard for e-commerce businesses featuring real-time sales data visualization. Includes customer segmentation, inventory tracking, and sales forecasting. The dashboard connects to multiple data sources and presents information through customizable widgets and detailed reports.',
-    imageUrl: '/images/shoppora-ss.png', 
+    imageUrl: '/images/Shoppora-ss.png', 
     tags: [
       'React',
       'D3.js',
