@@ -3,9 +3,9 @@ import Box from '@mui/material/Box'
 import Container from '@mui/material/Container'
 import { useTheme } from '@mui/material/styles'
 import useMediaQuery from '@mui/material/useMediaQuery'
-import HeroSection from '../components/HeroSection'
-import Projects from './ProjectSection/index'
-import SkillSection from '../components/SkillSection'
+import HeroSection from './HeroSection'
+import Projects from '../ProjectSection/index'
+import SkillSection from '../skills/SkillSection'
 
 
 const LandingPage: React.FC = () => {

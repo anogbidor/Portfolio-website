@@ -1,5 +1,5 @@
 import * as React from 'react'
-import Blogs from '../components/Blogs'
+import Blogs from '../components/blogSection/Blogs'
 
 
 const BlogsPage: React.FC = () => {

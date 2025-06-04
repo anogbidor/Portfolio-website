@@ -4,9 +4,9 @@ import type { AppProps } from 'next/app'
 import Head from 'next/head'
 import theme from '../theme/Theme'
 import '../styles/global.css'
-import AppNavBar from '../components/AppNavBar'
-import Footer from '../components/Footer'
-import FloatingChat from '../components/FloatingChat'
+import AppNavBar from '../navbar/AppNavBar'
+import Footer from '../footer/Footer'
+import FloatingChat from '../components/chatBot/FloatingChat'
 
 const MyApp: React.FC<AppProps> = ({ Component, pageProps }) => {
   return (
